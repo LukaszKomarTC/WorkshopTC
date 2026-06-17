@@ -175,6 +175,21 @@ class Job_Meta_Boxes {
 			echo '<p><strong>' . esc_html__( 'Client link', 'tossa-workshop' ) . ':</strong><br><input type="text" readonly class="widefat" value="' . esc_attr( $url ) . '" onclick="this.select();" /></p>';
 		}
 
+		// Resend last notification (manual override of the per-status toggle).
+		$client_email = get_post_meta( $job_id, 'client_email', true );
+		if ( $job_number && $client_email ) {
+			// phpcs:ignore WordPress.Security.NonceVerification.Recommended — read-only flash.
+			if ( isset( $_GET['tcw_resent'] ) ) {
+				$ok = '1' === $_GET['tcw_resent']; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+				echo '<p class="description">' . ( $ok ? esc_html__( 'Notification resent.', 'tossa-workshop' ) : esc_html__( 'Could not resend (no valid client email?).', 'tossa-workshop' ) ) . '</p>';
+			}
+			$resend = wp_nonce_url(
+				admin_url( 'admin.php?action=tcw_resend_notification&post=' . $job_id ),
+				'tcw_resend_' . $job_id
+			);
+			echo '<p><a class="button" href="' . esc_url( $resend ) . '">' . esc_html__( 'Resend last notification', 'tossa-workshop' ) . '</a></p>';
+		}
+
 		echo '</div>';
 	}
 

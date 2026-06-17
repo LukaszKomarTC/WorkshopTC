@@ -74,7 +74,7 @@ msgstr ""
 msgid "Approval"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:414 includes/class-job-status-taxonomy.php:98
+#: includes/class-job-meta-boxes.php:429 includes/class-job-status-taxonomy.php:98
 msgid "Approved"
 msgstr ""
 
@@ -132,6 +132,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:94
 msgid "Bike type"
+msgstr ""
+
+#: includes/admin/class-notifications-page.php:151
+msgid "Body"
 msgstr ""
 
 #: includes/class-repair-job-fields.php:51
@@ -194,7 +198,7 @@ msgstr ""
 msgid "City"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:201
+#: includes/class-job-meta-boxes.php:216
 msgid "Clear"
 msgstr ""
 
@@ -250,6 +254,10 @@ msgstr ""
 msgid "Could not render the QR image."
 msgstr ""
 
+#: includes/class-job-meta-boxes.php:184
+msgid "Could not resend (no valid client email?)."
+msgstr ""
+
 #: includes/class-qr-generator.php:117
 msgid "Could not store the QR attachment."
 msgstr ""
@@ -266,7 +274,7 @@ msgstr ""
 msgid "Date received"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:415 includes/class-job-status-taxonomy.php:106
+#: includes/class-job-meta-boxes.php:430 includes/class-job-status-taxonomy.php:106
 msgid "Declined"
 msgstr ""
 
@@ -454,7 +462,7 @@ msgstr ""
 msgid "Internal Notes"
 msgstr ""
 
-#: includes/class-print-label.php:59
+#: includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:167
 msgid "Invalid request."
 msgstr ""
 
@@ -582,12 +590,28 @@ msgstr ""
 msgid "Normal"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:412
+#: includes/class-job-meta-boxes.php:427
 msgid "Not required"
 msgstr ""
 
 #: includes/class-repair-job-fields.php:58
 msgid "Not safe"
+msgstr ""
+
+#: includes/class-job-meta-boxes.php:184
+msgid "Notification resent."
+msgstr ""
+
+#: includes/admin/class-notifications-page.php:97
+msgid "Notification settings saved."
+msgstr ""
+
+#: includes/admin/class-notifications-page.php:61 includes/admin/class-notifications-page.php:62
+msgid "Notifications"
+msgstr ""
+
+#: includes/admin/class-notifications-page.php:139
+msgid "Notify the client when a job enters this status"
 msgstr ""
 
 #: includes/class-bike-fields.php:284
@@ -646,7 +670,7 @@ msgstr ""
 msgid "Pedals"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:413
+#: includes/class-job-meta-boxes.php:428
 msgid "Pending"
 msgstr ""
 
@@ -656,6 +680,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:323
 msgid "Photos"
+msgstr ""
+
+#: includes/admin/class-notifications-page.php:119
+msgid "Placeholders:"
 msgstr ""
 
 #: includes/class-bike-fields.php:63
@@ -742,6 +770,10 @@ msgstr ""
 msgid "Replacement planning"
 msgstr ""
 
+#: includes/class-job-meta-boxes.php:190
+msgid "Resend last notification"
+msgstr ""
+
 #: includes/class-bike-fields.php:40
 msgid "Road"
 msgstr ""
@@ -778,11 +810,11 @@ msgstr ""
 msgid "Search Statuses"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:200
+#: includes/class-job-meta-boxes.php:215
 msgid "Search bikes…"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:198
+#: includes/class-job-meta-boxes.php:213
 msgid "Search by internal ID, serial number, or owner name / email / phone."
 msgstr ""
 
@@ -798,8 +830,12 @@ msgstr ""
 msgid "Select image"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:202 includes/class-job-meta-boxes.php:446
+#: includes/class-job-meta-boxes.php:217 includes/class-job-meta-boxes.php:461
 msgid "Selected:"
+msgstr ""
+
+#: includes/admin/class-notifications-page.php:134
+msgid "Send email"
 msgstr ""
 
 #: includes/class-bike-fields.php:114
@@ -868,6 +904,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:250
 msgid "Stem"
+msgstr ""
+
+#: includes/admin/class-notifications-page.php:143
+msgid "Subject"
 msgstr ""
 
 #: includes/class-bike-fields.php:291
@@ -1010,6 +1050,10 @@ msgstr ""
 msgid "Workshop Mechanic"
 msgstr ""
 
+#: includes/admin/class-notifications-page.php:94
+msgid "Workshop Notifications"
+msgstr ""
+
 #: includes/admin/class-settings-page.php:145
 msgid "Workshop Settings"
 msgstr ""
@@ -1022,11 +1066,15 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
+#: includes/admin/class-notifications-page.php:86
+msgid "You do not have permission to access this page."
+msgstr ""
+
 #: includes/admin/class-settings-page.php:162
 msgid "You do not have permission to access workshop settings."
 msgstr ""
 
-#: includes/class-print-label.php:62
+#: includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:170
 msgid "You do not have permission to do this."
 msgstr ""
 

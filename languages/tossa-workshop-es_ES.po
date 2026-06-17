@@ -103,6 +103,9 @@ msgstr "Estado de la bicicleta a la llegada"
 msgid "Bike type"
 msgstr "Tipo de bicicleta"
 
+msgid "Body"
+msgstr "Cuerpo"
+
 msgid "Bolts"
 msgstr "Tornillería"
 
@@ -189,6 +192,9 @@ msgstr "Valoración del estado"
 
 msgid "Could not render the QR image."
 msgstr "No se pudo generar la imagen QR."
+
+msgid "Could not resend (no valid client email?)."
+msgstr "No se pudo reenviar (¿correo del cliente no válido?)."
 
 msgid "Could not store the QR attachment."
 msgstr "No se pudo guardar el archivo QR."
@@ -445,6 +451,18 @@ msgstr "No requerida"
 msgid "Not safe"
 msgstr "No seguro"
 
+msgid "Notification resent."
+msgstr "Notificación reenviada."
+
+msgid "Notification settings saved."
+msgstr "Ajustes de notificaciones guardados."
+
+msgid "Notifications"
+msgstr "Notificaciones"
+
+msgid "Notify the client when a job enters this status"
+msgstr "Avisar al cliente cuando un trabajo entra en este estado"
+
 msgid "Odometer"
 msgstr "Odómetro"
 
@@ -495,6 +513,9 @@ msgstr "Galería de fotos"
 
 msgid "Photos"
 msgstr "Fotos"
+
+msgid "Placeholders:"
+msgstr "Marcadores:"
 
 msgid "Poor"
 msgstr "Malo"
@@ -559,6 +580,9 @@ msgstr "Número de días de alquiler"
 msgid "Replacement planning"
 msgstr "Planificación de reemplazo"
 
+msgid "Resend last notification"
+msgstr "Reenviar última notificación"
+
 msgid "Road"
 msgstr "Carretera"
 
@@ -603,6 +627,9 @@ msgstr "Seleccionar imagen"
 
 msgid "Selected:"
 msgstr "Seleccionada:"
+
+msgid "Send email"
+msgstr "Enviar correo"
 
 msgid "Serial number"
 msgstr "Número de serie"
@@ -654,6 +681,9 @@ msgstr "Acero"
 
 msgid "Stem"
 msgstr "Potencia"
+
+msgid "Subject"
+msgstr "Asunto"
 
 msgid "Suspension"
 msgstr "Suspensión"
@@ -760,6 +790,9 @@ msgstr "Gerente del taller"
 msgid "Workshop Mechanic"
 msgstr "Mecánico del taller"
 
+msgid "Workshop Notifications"
+msgstr "Notificaciones del taller"
+
 msgid "Workshop Settings"
 msgstr "Ajustes del taller"
 
@@ -768,6 +801,9 @@ msgstr "Año"
 
 msgid "Yes"
 msgstr "Sí"
+
+msgid "You do not have permission to access this page."
+msgstr "No tienes permiso para acceder a esta página."
 
 msgid "You do not have permission to access workshop settings."
 msgstr "No tienes permiso para acceder a los ajustes del taller."

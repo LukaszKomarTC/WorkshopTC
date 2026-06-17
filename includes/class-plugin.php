@@ -66,9 +66,14 @@ final class Plugin {
 		// Front-end scan router.
 		Scan_Router::instance()->register_hooks();
 
+		// Notifications listener (must run on front-end too, e.g. client
+		// approval in M4 fires a status change).
+		Notifier::instance()->register_hooks();
+
 		// Admin-only modules.
 		if ( is_admin() ) {
 			Admin\Settings_Page::instance()->register_hooks();
+			Admin\Notifications_Page::instance()->register_hooks();
 			Bike_Meta_Boxes::instance()->register_hooks();
 			Print_Label::instance()->register_hooks();
 			Job_Meta_Boxes::instance()->register_hooks();
