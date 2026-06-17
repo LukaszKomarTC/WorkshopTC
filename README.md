@@ -39,6 +39,30 @@ These slugs are reserved by the plugin and must not collide with WP Pages:
 Public links are built from `home_url()` by default, overridable via the
 `public_base_url` setting (Workshop → Settings).
 
+## Internationalization (EN + ES) and qTranslate-XT
+
+The target site runs qTranslate-XT. Languages are handled in two layers:
+
+1. **Plugin interface** (admin labels, buttons, client-page chrome) — standard
+   WordPress gettext. Every string is wrapped in `__()`/`_e()` with text domain
+   `tossa-workshop`; a `languages/tossa-workshop.pot` template plus a complete
+   `es_ES.po`/`.mo` ship with the plugin and are updated each milestone. This
+   works with or without qTranslate active.
+2. **Client-facing content** (notification emails, client status page wording)
+   — the plugin's own per-language template/string system keyed on the job's
+   stored `owner_language`. EN and ES are first-class (DE is the spec's third).
+
+Decisions:
+
+- Free-text content fields (mechanic notes, problem description, recommended
+  work, …) are **single-language plain text**, not qTranslate bilingual fields.
+  Client-facing localization comes from the template system above, not from
+  per-field `[:en]…[:es]…` tags.
+- The custom front-end endpoints (`/workshop-scan/`, `/workshop-status/`) must
+  keep working when qTranslate-XT rewrites URLs (e.g. `/es/…` or `?lang=`).
+  Query vars are registered defensively and token validation is independent of
+  any language segment; verify on staging.
+
 ## Repository layout
 
 The plugin lives at the **repository root** (`tossa-workshop.php` is the main
