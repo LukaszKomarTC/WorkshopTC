@@ -95,6 +95,7 @@ class Bike_Fields {
 						'type'     => 'select',
 						'options'  => $opts['bike_type'],
 						'required' => true,
+						'class'    => 'tcw-bike-type',
 					),
 					array(
 						'key'      => 'brand',

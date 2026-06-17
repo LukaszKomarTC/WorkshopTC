@@ -34,6 +34,7 @@ class Roles {
 			'tcw_edit_bikes',
 			'tcw_edit_jobs',
 			'tcw_change_status',
+			'tcw_advance_status_full',
 			'tcw_edit_prices',
 			'tcw_close_jobs',
 			'tcw_manage_settings',
@@ -127,9 +128,10 @@ class Roles {
 		);
 
 		// Front desk — create bikes & jobs, intake, notifications, mark
-		// collected; no full financials, no closing, no settings.
+		// collected (can advance status up to delivered, but not close); no
+		// full financials, no closing, no settings.
 		$front_desk_caps = array_merge(
-			array( 'tcw_view_bikes', 'tcw_edit_bikes', 'tcw_edit_jobs', 'tcw_change_status' ),
+			array( 'tcw_view_bikes', 'tcw_edit_bikes', 'tcw_edit_jobs', 'tcw_change_status', 'tcw_advance_status_full' ),
 			self::bike_caps(),
 			self::job_caps()
 		);

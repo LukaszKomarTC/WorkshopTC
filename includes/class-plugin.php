@@ -71,6 +71,8 @@ final class Plugin {
 			Admin\Settings_Page::instance()->register_hooks();
 			Bike_Meta_Boxes::instance()->register_hooks();
 			Print_Label::instance()->register_hooks();
+			Job_Meta_Boxes::instance()->register_hooks();
+			Bike_Search::instance()->register_hooks();
 		}
 	}
 

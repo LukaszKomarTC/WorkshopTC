@@ -64,6 +64,28 @@ class Job_Status_Taxonomy {
 	}
 
 	/**
+	 * The linear pipeline statuses in order (excludes the side-exit statuses
+	 * declined/cancelled). Used for status-transition gating.
+	 *
+	 * @return string[]
+	 */
+	public static function linear_statuses() {
+		return array(
+			'received',
+			'inspected',
+			'waiting_approval',
+			'approved',
+			'waiting_parts',
+			'parts_arrived',
+			'in_repair',
+			'quality_check',
+			'ready',
+			'delivered',
+			'closed',
+		);
+	}
+
+	/**
 	 * Default human-readable label per status slug.
 	 *
 	 * @return array<string,string>

@@ -33,3 +33,29 @@
 	vertical-align: middle;
 	margin-right: 8px;
 }
+
+/* Bike-picker autocomplete menu (jQuery UI is unstyled in wp-admin). */
+.ui-autocomplete {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	box-shadow: 0 1px 2px rgba( 0, 0, 0, 0.1 );
+	max-height: 280px;
+	overflow-y: auto;
+	z-index: 100000;
+}
+
+.ui-autocomplete .ui-menu-item {
+	padding: 6px 10px;
+	cursor: pointer;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.ui-autocomplete .ui-menu-item:hover,
+.ui-autocomplete .ui-menu-item.ui-state-focus,
+.ui-autocomplete .ui-menu-item-wrapper.ui-state-active {
+	background: #2271b1;
+	color: #fff;
+}

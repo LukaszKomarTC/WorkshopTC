@@ -13,8 +13,14 @@ msgstr "(obligatorio)"
 msgid "A timestamp is recorded automatically when first checked."
 msgstr "Se registra automáticamente la fecha y hora al marcarlo por primera vez."
 
+msgid "Accessories received"
+msgstr "Accesorios recibidos"
+
 msgid "Accident history"
 msgstr "Historial de accidentes"
+
+msgid "Actual completion"
+msgstr "Finalización real"
 
 msgid "Add New"
 msgstr "Añadir nuevo"
@@ -34,6 +40,9 @@ msgstr "Añadir fotos"
 msgid "Add photos and optionally label each (left, right, drivetrain, cockpit, damage, before/after)."
 msgstr "Añade fotos y, opcionalmente, etiqueta cada una (izquierda, derecha, transmisión, cabina, daño, antes/después)."
 
+msgid "After photos"
+msgstr "Fotos posteriores"
+
 msgid "All Bikes"
 msgstr "Todas las bicicletas"
 
@@ -46,14 +55,26 @@ msgstr "Todos los estados"
 msgid "Aluminium"
 msgstr "Aluminio"
 
+msgid "Approval"
+msgstr "Aprobación"
+
 msgid "Approved"
 msgstr "Aprobado"
+
+msgid "Assigned mechanic"
+msgstr "Mecánico asignado"
 
 msgid "Attention needed"
 msgstr "Requiere atención"
 
+msgid "Bags"
+msgstr "Bolsas"
+
 msgid "Basic Details"
 msgstr "Datos básicos"
+
+msgid "Battery"
+msgstr "Batería"
 
 msgid "Battery Wh"
 msgstr "Batería (Wh)"
@@ -70,11 +91,23 @@ msgstr "Modelo de la batería"
 msgid "Battery serial"
 msgstr "Nº de serie de la batería"
 
+msgid "Bike"
+msgstr "Bicicleta"
+
 msgid "Bike %s. Please contact the shop for details."
 msgstr "Bicicleta %s. Contacta con la tienda para más información."
 
+msgid "Bike condition on arrival"
+msgstr "Estado de la bicicleta a la llegada"
+
 msgid "Bike type"
 msgstr "Tipo de bicicleta"
+
+msgid "Bolts"
+msgstr "Tornillería"
+
+msgid "Bottle cages"
+msgstr "Portabidones"
 
 msgid "Brake pad type"
 msgstr "Tipo de pastillas de freno"
@@ -109,17 +142,47 @@ msgstr "Cadena"
 msgid "Charger"
 msgstr "Cargador"
 
+msgid "Child seat"
+msgstr "Silla infantil"
+
 msgid "City"
 msgstr "Ciudad"
 
+msgid "Clear"
+msgstr "Borrar"
+
+msgid "Client approval required"
+msgstr "Requiere aprobación del cliente"
+
+msgid "Client declined"
+msgstr "Cliente rechazó"
+
+msgid "Client link"
+msgstr "Enlace para el cliente"
+
+msgid "Client notes"
+msgstr "Notas del cliente"
+
 msgid "Closed"
 msgstr "Cerrado"
+
+msgid "Closing notes"
+msgstr "Notas de cierre"
+
+msgid "Collected by"
+msgstr "Recogido por"
+
+msgid "Collection date/time"
+msgstr "Fecha/hora de recogida"
 
 msgid "Colour"
 msgstr "Color"
 
 msgid "Components"
 msgstr "Componentes"
+
+msgid "Computer mount"
+msgstr "Soporte de ciclocomputador"
 
 msgid "Condition rating"
 msgstr "Valoración del estado"
@@ -135,6 +198,9 @@ msgstr "Bielas"
 
 msgid "Customer bike"
 msgstr "Bicicleta de cliente"
+
+msgid "Date received"
+msgstr "Fecha de recepción"
 
 msgid "Declined"
 msgstr "Rechazado"
@@ -166,6 +232,9 @@ msgstr "E-Road"
 msgid "E-bike"
 msgstr "E-bike"
 
+msgid "E-bike system"
+msgstr "Sistema e-bike"
+
 msgid "Edit Bike"
 msgstr "Editar bicicleta"
 
@@ -178,11 +247,17 @@ msgstr "Editar estado"
 msgid "English"
 msgstr "Inglés"
 
+msgid "Estimate amount"
+msgstr "Importe del presupuesto"
+
 msgid "Excellent"
 msgstr "Excelente"
 
 msgid "Fair"
 msgstr "Regular"
+
+msgid "Final price"
+msgstr "Precio final"
 
 msgid "Firmware"
 msgstr "Firmware"
@@ -220,6 +295,9 @@ msgstr "Francés"
 msgid "GDPR consent given"
 msgstr "Consentimiento RGPD otorgado"
 
+msgid "Gears"
+msgstr "Cambios"
+
 msgid "General"
 msgstr "General"
 
@@ -235,6 +313,9 @@ msgstr "Gravel"
 msgid "Handlebar"
 msgstr "Manillar"
 
+msgid "High"
+msgstr "Alta"
+
 msgid "Identification"
 msgstr "Identificación"
 
@@ -243,6 +324,18 @@ msgstr "En reparación"
 
 msgid "Inspected"
 msgstr "Inspeccionado"
+
+msgid "Inspection & Estimate"
+msgstr "Inspección y presupuesto"
+
+msgid "Inspection notes"
+msgstr "Notas de inspección"
+
+msgid "Intake"
+msgstr "Recepción"
+
+msgid "Intake photos"
+msgstr "Fotos de recepción"
 
 msgid "Internal ID"
 msgstr "ID interno"
@@ -253,11 +346,20 @@ msgstr "Notas internas"
 msgid "Invalid request."
 msgstr "Solicitud no válida."
 
+msgid "Job Details"
+msgstr "Detalles del trabajo"
+
+msgid "Job ID"
+msgstr "ID del trabajo"
+
 msgid "Kids"
 msgstr "Infantil"
 
 msgid "Label"
 msgstr "Etiqueta"
+
+msgid "Labour time"
+msgstr "Tiempo de mano de obra"
 
 msgid "Last brake-pad change"
 msgstr "Último cambio de pastillas"
@@ -280,14 +382,23 @@ msgstr "Último mantenimiento de la suspensión"
 msgid "Last tyre change"
 msgstr "Último cambio de neumáticos"
 
+msgid "Lights"
+msgstr "Luces"
+
 msgid "Linked WordPress/WooCommerce user"
 msgstr "Usuario de WordPress/WooCommerce vinculado"
+
+msgid "Low"
+msgstr "Baja"
 
 msgid "MTB"
 msgstr "MTB"
 
 msgid "Maintenance Summary"
 msgstr "Resumen de mantenimiento"
+
+msgid "Mandatory work"
+msgstr "Trabajo obligatorio"
 
 msgid "Mechanic notes"
 msgstr "Notas del mecánico"
@@ -325,11 +436,23 @@ msgstr "No se encontraron trabajos de reparación"
 msgid "No repair jobs found in Trash"
 msgstr "No se encontraron trabajos de reparación en la papelera"
 
+msgid "Normal"
+msgstr "Normal"
+
+msgid "Not required"
+msgstr "No requerida"
+
+msgid "Not safe"
+msgstr "No seguro"
+
 msgid "Odometer"
 msgstr "Odómetro"
 
 msgid "Open scan URL"
 msgstr "Abrir URL de escaneo"
+
+msgid "Optional work"
+msgstr "Trabajo opcional"
 
 msgid "Other"
 msgstr "Otro"
@@ -349,8 +472,23 @@ msgstr "Teléfono del propietario"
 msgid "Parts Arrived"
 msgstr "Piezas recibidas"
 
+msgid "Parts used"
+msgstr "Piezas utilizadas"
+
+msgid "Passed"
+msgstr "Apto"
+
+msgid "Passed with notes"
+msgstr "Apto con observaciones"
+
+msgid "Payment link"
+msgstr "Enlace de pago"
+
 msgid "Pedals"
 msgstr "Pedales"
+
+msgid "Pending"
+msgstr "Pendiente"
 
 msgid "Photo gallery"
 msgstr "Galería de fotos"
@@ -370,6 +508,15 @@ msgstr "Imprimir"
 msgid "Print label"
 msgstr "Imprimir etiqueta"
 
+msgid "Priority"
+msgstr "Prioridad"
+
+msgid "Problem description"
+msgstr "Descripción del problema"
+
+msgid "Promised completion"
+msgstr "Finalización prometida"
+
 msgid "Public base URL"
 msgstr "URL base pública"
 
@@ -379,11 +526,17 @@ msgstr "Código QR %s"
 msgid "Quality Check"
 msgstr "Control de calidad"
 
+msgid "Quality check"
+msgstr "Control de calidad"
+
 msgid "Ready for Pickup"
 msgstr "Listo para recoger"
 
 msgid "Received"
 msgstr "Recibido"
+
+msgid "Recommended work"
+msgstr "Trabajo recomendado"
 
 msgid "Recurring problems"
 msgstr "Problemas recurrentes"
@@ -418,6 +571,9 @@ msgstr "Sillín"
 msgid "Safe"
 msgstr "Seguro"
 
+msgid "Safety issues"
+msgstr "Problemas de seguridad"
+
 msgid "Safety status"
 msgstr "Estado de seguridad"
 
@@ -430,6 +586,12 @@ msgstr "Buscar trabajos de reparación"
 msgid "Search Statuses"
 msgstr "Buscar estados"
 
+msgid "Search bikes…"
+msgstr "Buscar bicicletas…"
+
+msgid "Search by internal ID, serial number, or owner name / email / phone."
+msgstr "Busca por ID interno, número de serie o nombre / correo / teléfono del propietario."
+
 msgid "Seatpost"
 msgstr "Tija"
 
@@ -438,6 +600,9 @@ msgstr "Número de cuadro secundario"
 
 msgid "Select image"
 msgstr "Seleccionar imagen"
+
+msgid "Selected:"
+msgstr "Seleccionada:"
 
 msgid "Serial number"
 msgstr "Número de serie"
@@ -475,6 +640,12 @@ msgstr "Español"
 msgid "Speeds"
 msgstr "Velocidades"
 
+msgid "Status"
+msgstr "Estado"
+
+msgid "Status & Client"
+msgstr "Estado y cliente"
+
 msgid "Statuses"
 msgstr "Estados"
 
@@ -486,6 +657,12 @@ msgstr "Potencia"
 
 msgid "Suspension"
 msgstr "Suspensión"
+
+msgid "Test ride"
+msgstr "Prueba de rodaje"
+
+msgid "The Job ID and client link are generated automatically on first save."
+msgstr "El ID del trabajo y el enlace para el cliente se generan automáticamente al guardar por primera vez."
 
 msgid "The internal ID and QR code are generated automatically when you first save this bike."
 msgstr "El ID interno y el código QR se generan automáticamente al guardar la bicicleta por primera vez."
@@ -520,6 +697,9 @@ msgstr "No seguro"
 msgid "Update Status"
 msgstr "Actualizar estado"
 
+msgid "Urgent"
+msgstr "Urgente"
+
 msgid "Used to build scan / status links. Leave empty to use the site URL."
 msgstr "Se usa para generar los enlaces de escaneo / estado. Déjalo vacío para usar la URL del sitio."
 
@@ -535,6 +715,9 @@ msgstr "Ver bicicleta"
 msgid "View Repair Job"
 msgstr "Ver trabajo de reparación"
 
+msgid "Visible damage"
+msgstr "Daños visibles"
+
 msgid "Waiting for Approval"
 msgstr "Esperando aprobación"
 
@@ -547,8 +730,20 @@ msgstr "Avisos"
 msgid "Wheel size"
 msgstr "Tamaño de rueda"
 
+msgid "Wheels"
+msgstr "Ruedas"
+
 msgid "Wheelset"
 msgstr "Ruedas"
+
+msgid "When enabled, the client can approve or decline via their status link."
+msgstr "Si se activa, el cliente puede aprobar o rechazar desde su enlace de estado."
+
+msgid "Work & Completion"
+msgstr "Trabajo y finalización"
+
+msgid "Work log"
+msgstr "Registro de trabajo"
 
 msgid "Workshop"
 msgstr "Taller"

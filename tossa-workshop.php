@@ -3,7 +3,7 @@
  * Plugin Name:       Tossa Workshop
  * Plugin URI:        https://tossacycling.com/
  * Description:       Workshop management for Tossa Cycling: bikes with permanent internal IDs + QR codes, structured repair jobs, status pipeline, client notifications and token-gated status pages.
- * Version:           0.2.0
+ * Version:           0.3.0
  * Requires at least: 6.4
  * Requires PHP:      8.1
  * Author:            Tossa Cycling
@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) || exit;
  * Constants
  * -----------------------------------------------------------------------------
  */
-define( 'TCW_VERSION', '0.2.0' );
+define( 'TCW_VERSION', '0.3.0' );
 define( 'TCW_PLUGIN_FILE', __FILE__ );
 define( 'TCW_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'TCW_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

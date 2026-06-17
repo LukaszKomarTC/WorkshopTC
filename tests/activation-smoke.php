@@ -114,4 +114,41 @@ if ( false === strpos( $url, '/workshop-scan/?id=TCB-000001' ) ) {
 	exit( 1 );
 }
 
+// Repair-job field catalog.
+$jobfields = TossaWorkshop\Repair_Job_Fields::all_fields();
+echo 'Repair-job fields defined: ' . count( $jobfields ) . "\n";
+foreach ( array( 'priority', 'date_received', 'accessories_received', 'quality_check', 'final_price', 'estimate_amount' ) as $k ) {
+	if ( ! isset( $jobfields[ $k ] ) ) {
+		echo "FAIL: missing job field '{$k}'\n";
+		exit( 1 );
+	}
+}
+// bike_id and status are handled specially, NOT generic fields.
+if ( isset( $jobfields['bike_id'] ) || isset( $jobfields['status'] ) ) {
+	echo "FAIL: bike_id/status must not be generic fields\n";
+	exit( 1 );
+}
+echo "Job catalog: spot-checked keys present, bike_id/status excluded\n";
+
+// Linear pipeline length.
+$linear = TossaWorkshop\Job_Status_Taxonomy::linear_statuses();
+echo 'Linear pipeline statuses: ' . count( $linear ) . "\n";
+if ( 11 !== count( $linear ) || 'quality_check' !== $linear[7] ) {
+	echo "FAIL: linear pipeline wrong\n";
+	exit( 1 );
+}
+
+// New gating cap granted to front desk, withheld from mechanic.
+$fd  = $GLOBALS['__roles']['tcw_front_desk']->caps ?? array();
+$mec = $GLOBALS['__roles']['tcw_mechanic']->caps ?? array();
+if ( empty( $fd['tcw_advance_status_full'] ) ) {
+	echo "FAIL: front desk missing tcw_advance_status_full\n";
+	exit( 1 );
+}
+if ( ! empty( $mec['tcw_advance_status_full'] ) ) {
+	echo "FAIL: mechanic should not have tcw_advance_status_full\n";
+	exit( 1 );
+}
+echo "Status gating cap: front desk yes, mechanic no\n";
+
 echo "\nSMOKE TEST PASSED\n";
