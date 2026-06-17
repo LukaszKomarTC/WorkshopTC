@@ -39,19 +39,33 @@ These slugs are reserved by the plugin and must not collide with WP Pages:
 Public links are built from `home_url()` by default, overridable via the
 `public_base_url` setting (Workshop → Settings).
 
+## Repository layout
+
+The plugin lives at the **repository root** (`tossa-workshop.php` is the main
+file). This is deliberate so the repo works with
+[git-plugin-loader](https://github.com/LukaszKomarTC/git-plugin-loader), which
+clones the whole repo into `wp-content/plugins/<repo>/` and relies on
+WordPress's `get_plugins()` — which only scans one directory deep. A nested
+`tossa-workshop/` subfolder would hide the plugin header and make the plugin
+impossible to activate.
+
+For a conventional manual upload (Plugins → Add New → Upload), zip the repo
+contents into a `tossa-workshop/` wrapper folder first.
+
 ## Development / verification
 
 There is no WordPress runtime in the build container, so verification is:
 
 - `php -l` syntax lint across all PHP files.
-- Standalone logic tests (no WordPress required):
+- Standalone tests (no WordPress required):
 
   ```sh
-  php tests/test-id-generator.php
+  php tests/test-id-generator.php   # ID format / sequencing / uniqueness
+  php tests/activation-smoke.php    # boots plugin + activator under WP stubs
   ```
 
 Activation, CPT/taxonomy registration, QR generation and the scan/status
-routers must be smoke-tested on a real WordPress staging site.
+routers must still be smoke-tested on a real WordPress staging site.
 
 ## Milestones
 
