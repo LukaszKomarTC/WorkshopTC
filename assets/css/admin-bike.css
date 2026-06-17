@@ -1,0 +1,35 @@
+.tcw-identity code {
+	display: inline-block;
+	margin-top: 2px;
+}
+
+.tcw-gallery-items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin: 0 0 12px;
+	padding: 0;
+	list-style: none;
+}
+
+.tcw-gallery-item {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	width: 110px;
+	margin: 0;
+}
+
+.tcw-gallery-item img {
+	display: block;
+}
+
+.tcw-gallery-item input[type="text"] {
+	width: 100%;
+}
+
+.tcw-attachment-preview img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+}

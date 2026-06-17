@@ -1,0 +1,820 @@
+# Tossa Workshop - translation template
+msgid ""
+msgstr ""
+"Project-Id-Version: Tossa Workshop\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+#: includes/class-bike-meta-boxes.php:212
+msgid "(required)"
+msgstr ""
+
+#: includes/class-bike-fields.php:167
+msgid "A timestamp is recorded automatically when first checked."
+msgstr ""
+
+#: includes/class-bike-fields.php:456
+msgid "Accident history"
+msgstr ""
+
+#: includes/class-bike-cpt.php:61 includes/class-repair-job-cpt.php:61
+msgid "Add New"
+msgstr ""
+
+#: includes/class-bike-cpt.php:62
+msgid "Add New Bike"
+msgstr ""
+
+#: includes/class-repair-job-cpt.php:62
+msgid "Add New Repair Job"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:111
+msgid "Add New Status"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:383 includes/class-bike-meta-boxes.php:572
+msgid "Add photos"
+msgstr ""
+
+#: includes/class-bike-fields.php:331
+msgid "Add photos and optionally label each (left, right, drivetrain, cockpit, damage, before/after)."
+msgstr ""
+
+#: includes/class-bike-cpt.php:69
+msgid "All Bikes"
+msgstr ""
+
+#: includes/class-repair-job-cpt.php:69
+msgid "All Repair Jobs"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:108
+msgid "All Statuses"
+msgstr ""
+
+#: includes/class-bike-fields.php:54
+msgid "Aluminium"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:76
+msgid "Approved"
+msgstr ""
+
+#: includes/class-bike-fields.php:67
+msgid "Attention needed"
+msgstr ""
+
+#: includes/class-bike-fields.php:173
+msgid "Basic Details"
+msgstr ""
+
+#: includes/class-bike-fields.php:274
+msgid "Battery Wh"
+msgstr ""
+
+#: includes/class-bike-fields.php:266
+msgid "Battery brand"
+msgstr ""
+
+#: includes/class-bike-fields.php:451
+msgid "Battery health (%)"
+msgstr ""
+
+#: includes/class-bike-fields.php:267
+msgid "Battery model"
+msgstr ""
+
+#: includes/class-bike-fields.php:268
+msgid "Battery serial"
+msgstr ""
+
+#: includes/class-scan-router.php:157
+msgid "Bike %s. Please contact the shop for details."
+msgstr ""
+
+#: includes/class-bike-fields.php:94
+msgid "Bike type"
+msgstr ""
+
+#: includes/class-bike-fields.php:230
+msgid "Brake pad type"
+msgstr ""
+
+#: includes/class-bike-fields.php:229
+msgid "Brakes"
+msgstr ""
+
+#: includes/class-bike-fields.php:101
+msgid "Brand"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:85
+msgid "Cancelled"
+msgstr ""
+
+#: includes/class-bike-fields.php:53
+msgid "Carbon"
+msgstr ""
+
+#: includes/class-bike-fields.php:49
+msgid "Cargo"
+msgstr ""
+
+#: includes/class-bike-fields.php:225
+msgid "Cassette"
+msgstr ""
+
+#: includes/class-bike-fields.php:36
+msgid "Catalan"
+msgstr ""
+
+#: includes/class-bike-fields.php:200
+msgid "Category"
+msgstr ""
+
+#: includes/class-bike-fields.php:226
+msgid "Chain"
+msgstr ""
+
+#: includes/class-bike-fields.php:281
+msgid "Charger"
+msgstr ""
+
+#: includes/class-bike-fields.php:46
+msgid "City"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:83
+msgid "Closed"
+msgstr ""
+
+#: includes/class-bike-fields.php:185
+msgid "Colour"
+msgstr ""
+
+#: includes/class-bike-fields.php:214
+msgid "Components"
+msgstr ""
+
+#: includes/class-bike-fields.php:379
+msgid "Condition rating"
+msgstr ""
+
+#: includes/class-qr-generator.php:93
+msgid "Could not render the QR image."
+msgstr ""
+
+#: includes/class-qr-generator.php:117
+msgid "Could not store the QR attachment."
+msgstr ""
+
+#: includes/class-bike-fields.php:224
+msgid "Crankset"
+msgstr ""
+
+#: includes/class-bike-fields.php:29
+msgid "Customer bike"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:84
+msgid "Declined"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:82
+msgid "Delivered"
+msgstr ""
+
+#: includes/class-bike-fields.php:227
+msgid "Derailleurs"
+msgstr ""
+
+#: includes/class-bike-fields.php:280
+msgid "Display model"
+msgstr ""
+
+#: includes/class-bike-fields.php:221
+msgid "Drivetrain brand"
+msgstr ""
+
+#: includes/class-bike-fields.php:222
+msgid "Drivetrain model"
+msgstr ""
+
+#: includes/class-bike-fields.php:43
+msgid "E-Gravel"
+msgstr ""
+
+#: includes/class-bike-fields.php:45
+msgid "E-MTB"
+msgstr ""
+
+#: includes/class-bike-fields.php:41
+msgid "E-Road"
+msgstr ""
+
+#: includes/class-bike-fields.php:256
+msgid "E-bike"
+msgstr ""
+
+#: includes/class-bike-cpt.php:63
+msgid "Edit Bike"
+msgstr ""
+
+#: includes/class-repair-job-cpt.php:63
+msgid "Edit Repair Job"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:109
+msgid "Edit Status"
+msgstr ""
+
+#: includes/class-bike-fields.php:34
+msgid "English"
+msgstr ""
+
+#: includes/class-bike-fields.php:60
+msgid "Excellent"
+msgstr ""
+
+#: includes/class-bike-fields.php:62
+msgid "Fair"
+msgstr ""
+
+#: includes/class-bike-fields.php:282
+msgid "Firmware"
+msgstr ""
+
+#: includes/class-bike-fields.php:417
+msgid "Fleet"
+msgstr ""
+
+#: includes/class-bike-fields.php:30
+msgid "Fleet bike"
+msgstr ""
+
+#: includes/class-bike-fields.php:424
+msgid "Fleet number"
+msgstr ""
+
+#: includes/class-bike-fields.php:297
+msgid "Fork brand"
+msgstr ""
+
+#: includes/class-bike-fields.php:298
+msgid "Fork model"
+msgstr ""
+
+#: includes/class-bike-fields.php:300
+msgid "Fork serial"
+msgstr ""
+
+#: includes/class-bike-fields.php:299
+msgid "Fork travel"
+msgstr ""
+
+#: includes/class-bike-fields.php:206
+msgid "Frame material"
+msgstr ""
+
+#: includes/class-bike-fields.php:190
+msgid "Frame size"
+msgstr ""
+
+#: includes/class-bike-fields.php:37
+msgid "French"
+msgstr ""
+
+#: includes/class-bike-fields.php:165
+msgid "GDPR consent given"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:69
+msgid "General"
+msgstr ""
+
+#: includes/class-bike-fields.php:35
+msgid "German"
+msgstr ""
+
+#: includes/class-bike-fields.php:61
+msgid "Good"
+msgstr ""
+
+#: includes/class-bike-fields.php:42
+msgid "Gravel"
+msgstr ""
+
+#: includes/class-bike-fields.php:248
+msgid "Handlebar"
+msgstr ""
+
+#: includes/class-bike-fields.php:87
+msgid "Identification"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:79
+msgid "In Repair"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:74
+msgid "Inspected"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:146
+msgid "Internal ID"
+msgstr ""
+
+#: includes/class-bike-fields.php:393
+msgid "Internal Notes"
+msgstr ""
+
+#: includes/class-print-label.php:59
+msgid "Invalid request."
+msgstr ""
+
+#: includes/class-bike-fields.php:48
+msgid "Kids"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:377 includes/class-bike-meta-boxes.php:571
+msgid "Label"
+msgstr ""
+
+#: includes/class-bike-fields.php:354
+msgid "Last brake-pad change"
+msgstr ""
+
+#: includes/class-bike-fields.php:364
+msgid "Last cassette change"
+msgstr ""
+
+#: includes/class-bike-fields.php:359
+msgid "Last chain change"
+msgstr ""
+
+#: includes/class-bike-fields.php:441
+msgid "Last rental date"
+msgstr ""
+
+#: includes/class-bike-fields.php:309 includes/class-bike-fields.php:344
+msgid "Last service date"
+msgstr ""
+
+#: includes/class-bike-fields.php:374
+msgid "Last suspension service"
+msgstr ""
+
+#: includes/class-bike-fields.php:369
+msgid "Last tyre change"
+msgstr ""
+
+#: includes/class-bike-fields.php:137
+msgid "Linked WordPress/WooCommerce user"
+msgstr ""
+
+#: includes/class-bike-fields.php:44
+msgid "MTB"
+msgstr ""
+
+#: includes/class-bike-fields.php:337
+msgid "Maintenance Summary"
+msgstr ""
+
+#: includes/class-bike-fields.php:400
+msgid "Mechanic notes"
+msgstr ""
+
+#: includes/class-bike-fields.php:107
+msgid "Model"
+msgstr ""
+
+#: includes/class-bike-fields.php:263
+msgid "Motor brand"
+msgstr ""
+
+#: includes/class-bike-fields.php:264
+msgid "Motor model"
+msgstr ""
+
+#: includes/class-bike-fields.php:265
+msgid "Motor serial"
+msgstr ""
+
+#: includes/class-bike-cpt.php:64
+msgid "New Bike"
+msgstr ""
+
+#: includes/class-repair-job-cpt.php:64
+msgid "New Repair Job"
+msgstr ""
+
+#: includes/class-bike-fields.php:314 includes/class-bike-fields.php:349
+msgid "Next service due"
+msgstr ""
+
+#: includes/class-bike-cpt.php:67
+msgid "No bikes found"
+msgstr ""
+
+#: includes/class-bike-cpt.php:68
+msgid "No bikes found in Trash"
+msgstr ""
+
+#: includes/class-repair-job-cpt.php:67
+msgid "No repair jobs found"
+msgstr ""
+
+#: includes/class-repair-job-cpt.php:68
+msgid "No repair jobs found in Trash"
+msgstr ""
+
+#: includes/class-bike-fields.php:283
+msgid "Odometer"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:156
+msgid "Open scan URL"
+msgstr ""
+
+#: includes/class-bike-fields.php:50
+msgid "Other"
+msgstr ""
+
+#: includes/class-bike-fields.php:130
+msgid "Owner / Client"
+msgstr ""
+
+#: includes/class-bike-fields.php:148
+msgid "Owner email"
+msgstr ""
+
+#: includes/class-bike-fields.php:142
+msgid "Owner name"
+msgstr ""
+
+#: includes/class-bike-fields.php:153
+msgid "Owner phone"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:78
+msgid "Parts Arrived"
+msgstr ""
+
+#: includes/class-bike-fields.php:245
+msgid "Pedals"
+msgstr ""
+
+#: includes/class-bike-fields.php:329
+msgid "Photo gallery"
+msgstr ""
+
+#: includes/class-bike-fields.php:322
+msgid "Photos"
+msgstr ""
+
+#: includes/class-bike-fields.php:63
+msgid "Poor"
+msgstr ""
+
+#: includes/class-bike-fields.php:158
+msgid "Preferred language"
+msgstr ""
+
+#: includes/class-print-label.php:117
+msgid "Print"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:162
+msgid "Print label"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:72
+msgid "Public base URL"
+msgstr ""
+
+#: includes/class-qr-generator.php:106
+msgid "QR code %s"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:80
+msgid "Quality Check"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:81
+msgid "Ready for Pickup"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:73
+msgid "Received"
+msgstr ""
+
+#: includes/class-bike-fields.php:405
+msgid "Recurring problems"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:168
+msgid "Regenerate QR"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:337 includes/class-bike-meta-boxes.php:378 includes/class-bike-meta-boxes.php:570
+msgid "Remove"
+msgstr ""
+
+#: includes/class-bike-fields.php:436
+msgid "Rental active"
+msgstr ""
+
+#: includes/class-bike-fields.php:429
+msgid "Rental category"
+msgstr ""
+
+#: includes/class-bike-fields.php:446
+msgid "Rental days count"
+msgstr ""
+
+#: includes/class-bike-fields.php:461
+msgid "Replacement planning"
+msgstr ""
+
+#: includes/class-bike-fields.php:40
+msgid "Road"
+msgstr ""
+
+#: includes/class-bike-fields.php:231
+msgid "Rotor sizes"
+msgstr ""
+
+#: includes/class-bike-fields.php:246
+msgid "Saddle"
+msgstr ""
+
+#: includes/class-bike-fields.php:66
+msgid "Safe"
+msgstr ""
+
+#: includes/class-bike-fields.php:385
+msgid "Safety status"
+msgstr ""
+
+#: includes/class-bike-cpt.php:66
+msgid "Search Bikes"
+msgstr ""
+
+#: includes/class-repair-job-cpt.php:66
+msgid "Search Repair Jobs"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:112
+msgid "Search Statuses"
+msgstr ""
+
+#: includes/class-bike-fields.php:247
+msgid "Seatpost"
+msgstr ""
+
+#: includes/class-bike-fields.php:118
+msgid "Secondary frame number"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:336 includes/class-bike-meta-boxes.php:569
+msgid "Select image"
+msgstr ""
+
+#: includes/class-bike-fields.php:113
+msgid "Serial number"
+msgstr ""
+
+#: includes/class-bike-fields.php:123
+msgid "Serial photo"
+msgstr ""
+
+#: includes/class-bike-fields.php:228
+msgid "Shifters"
+msgstr ""
+
+#: includes/class-bike-fields.php:301
+msgid "Shock brand"
+msgstr ""
+
+#: includes/class-bike-fields.php:302
+msgid "Shock model"
+msgstr ""
+
+#: includes/class-bike-fields.php:303
+msgid "Shock travel"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:74
+msgid "Shop address"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:73
+msgid "Shop phone"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:73
+msgid "Shown on printed labels (and later on client communications)."
+msgstr ""
+
+#: includes/class-scan-router.php:162
+msgid "Sorry, we could not find that bike. Please contact the shop."
+msgstr ""
+
+#: includes/class-bike-fields.php:33
+msgid "Spanish"
+msgstr ""
+
+#: includes/class-bike-fields.php:223
+msgid "Speeds"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:107
+msgid "Statuses"
+msgstr ""
+
+#: includes/class-bike-fields.php:55
+msgid "Steel"
+msgstr ""
+
+#: includes/class-bike-fields.php:249
+msgid "Stem"
+msgstr ""
+
+#: includes/class-bike-fields.php:290
+msgid "Suspension"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:170
+msgid "The internal ID and QR code are generated automatically when you first save this bike."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:127
+msgid "The public base URL must start with http:// or https://. It has been cleared."
+msgstr ""
+
+#: includes/class-bike-fields.php:56
+msgid "Titanium"
+msgstr ""
+
+#: includes/class-scan-router.php:154 includes/class-scan-router.php:161
+msgid "Tossa Cycling"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:166
+msgid "Tossa Workshop"
+msgstr ""
+
+#: includes/class-bike-fields.php:47
+msgid "Trekking"
+msgstr ""
+
+#: includes/class-bike-fields.php:239
+msgid "Tubeless"
+msgstr ""
+
+#: includes/class-bike-fields.php:233
+msgid "Tyres"
+msgstr ""
+
+#: includes/class-bike-fields.php:57
+msgid "Unknown"
+msgstr ""
+
+#: includes/class-bike-fields.php:68
+msgid "Unsafe"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:110
+msgid "Update Status"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:72
+msgid "Used to build scan / status links. Leave empty to use the site URL."
+msgstr ""
+
+#: includes/class-bike-fields.php:432
+msgid "Used to build the fleet ID, e.g. TCF-EMTB-001."
+msgstr ""
+
+#: includes/class-bike-fields.php:144
+msgid "Used when no linked user is selected."
+msgstr ""
+
+#: includes/class-bike-cpt.php:65
+msgid "View Bike"
+msgstr ""
+
+#: includes/class-repair-job-cpt.php:65
+msgid "View Repair Job"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:75
+msgid "Waiting for Approval"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:77
+msgid "Waiting for Parts"
+msgstr ""
+
+#: includes/class-bike-fields.php:410
+msgid "Warning flags"
+msgstr ""
+
+#: includes/class-bike-fields.php:195
+msgid "Wheel size"
+msgstr ""
+
+#: includes/class-bike-fields.php:232
+msgid "Wheelset"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:146
+msgid "Workshop"
+msgstr ""
+
+#: includes/class-roles.php:138
+msgid "Workshop Front Desk"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:67
+msgid "Workshop ID & QR"
+msgstr ""
+
+#: includes/class-roles.php:109
+msgid "Workshop Manager"
+msgstr ""
+
+#: includes/class-roles.php:125
+msgid "Workshop Mechanic"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:145
+msgid "Workshop Settings"
+msgstr ""
+
+#: includes/class-bike-fields.php:180
+msgid "Year"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:250
+msgid "Yes"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:162
+msgid "You do not have permission to access workshop settings."
+msgstr ""
+
+#: includes/class-print-label.php:62
+msgid "You do not have permission to do this."
+msgstr ""
+
+#: includes/class-bike-cpt.php:60
+msgctxt "admin menu"
+msgid "Bikes"
+msgstr ""
+
+#: includes/class-repair-job-cpt.php:60
+msgctxt "admin menu"
+msgid "Repair Jobs"
+msgstr ""
+
+#: includes/class-bike-cpt.php:58
+msgctxt "post type general name"
+msgid "Bikes"
+msgstr ""
+
+#: includes/class-repair-job-cpt.php:58
+msgctxt "post type general name"
+msgid "Repair Jobs"
+msgstr ""
+
+#: includes/class-bike-cpt.php:59
+msgctxt "post type singular name"
+msgid "Bike"
+msgstr ""
+
+#: includes/class-repair-job-cpt.php:59
+msgctxt "post type singular name"
+msgid "Repair Job"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:105
+msgctxt "taxonomy general name"
+msgid "Job Statuses"
+msgstr ""
+
+#: includes/class-job-status-taxonomy.php:106
+msgctxt "taxonomy singular name"
+msgid "Job Status"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:287
+msgid "— None —"
+msgstr ""
+
+#: includes/class-bike-meta-boxes.php:231
+msgid "— Select —"
+msgstr ""
+

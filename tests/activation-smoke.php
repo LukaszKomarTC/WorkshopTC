@@ -64,6 +64,13 @@ function add_menu_page() {}
 function current_user_can() { return true; }
 function wp_die( $m ) { throw new \RuntimeException( $m ); }
 function wp_parse_args( $a, $d ) { return array_merge( $d, (array) $a ); }
+function add_rewrite_rule( $regex, $query, $after = 'bottom' ) {}
+function register_setting( $group, $name, $args = array() ) {}
+function add_settings_section( $id, $title, $cb, $page ) {}
+function add_settings_field( $id, $title, $cb, $page, $section = 'default', $args = array() ) {}
+function home_url( $path = '' ) { return 'https://example.test' . $path; }
+function untrailingslashit( $s ) { return rtrim( $s, '/' ); }
+function __return_false() { return false; }
 
 // --- Boot -----------------------------------------------------------------
 echo "Loading main plugin file...\n";
@@ -86,4 +93,25 @@ echo "  OK (init)\n";
 
 echo "\nRoles registered: " . implode( ', ', array_keys( $GLOBALS['__roles'] ) ) . "\n";
 echo 'Manager cap count: ' . count( $GLOBALS['__roles']['tcw_workshop_manager']->caps ?? array() ) . "\n";
+
+// Field catalog integrity (guards the array_merge fix).
+$all = TossaWorkshop\Bike_Fields::all_fields();
+echo 'Bike fields defined: ' . count( $all ) . "\n";
+$required = array( 'bike_type', 'brand', 'model', 'tubeless', 'stem', 'odometer', 'shock_travel', 'rental_category' );
+foreach ( $required as $k ) {
+	if ( ! isset( $all[ $k ] ) ) {
+		echo "FAIL: missing field '{$k}' (array_merge regression?)\n";
+		exit( 1 );
+	}
+}
+echo "Field catalog: all spot-checked keys present\n";
+
+// Scan URL building.
+$url = TossaWorkshop\QR_Generator::scan_url( 'TCB-000001' );
+echo 'Scan URL: ' . $url . "\n";
+if ( false === strpos( $url, '/workshop-scan/?id=TCB-000001' ) ) {
+	echo "FAIL: scan URL malformed\n";
+	exit( 1 );
+}
+
 echo "\nSMOKE TEST PASSED\n";

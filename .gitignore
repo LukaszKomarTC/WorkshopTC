@@ -1,3 +1,6 @@
 # Build artifacts
 tossa-workshop.zip
 *.zip
+
+# Sample / scratch artifacts
+sample-qr-*.png

@@ -1,0 +1,620 @@
+# Tossa Workshop - Spanish (es_ES)
+msgid ""
+msgstr ""
+"Project-Id-Version: Tossa Workshop\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "(required)"
+msgstr "(obligatorio)"
+
+msgid "A timestamp is recorded automatically when first checked."
+msgstr "Se registra automáticamente la fecha y hora al marcarlo por primera vez."
+
+msgid "Accident history"
+msgstr "Historial de accidentes"
+
+msgid "Add New"
+msgstr "Añadir nuevo"
+
+msgid "Add New Bike"
+msgstr "Añadir bicicleta"
+
+msgid "Add New Repair Job"
+msgstr "Añadir trabajo de reparación"
+
+msgid "Add New Status"
+msgstr "Añadir estado"
+
+msgid "Add photos"
+msgstr "Añadir fotos"
+
+msgid "Add photos and optionally label each (left, right, drivetrain, cockpit, damage, before/after)."
+msgstr "Añade fotos y, opcionalmente, etiqueta cada una (izquierda, derecha, transmisión, cabina, daño, antes/después)."
+
+msgid "All Bikes"
+msgstr "Todas las bicicletas"
+
+msgid "All Repair Jobs"
+msgstr "Todos los trabajos de reparación"
+
+msgid "All Statuses"
+msgstr "Todos los estados"
+
+msgid "Aluminium"
+msgstr "Aluminio"
+
+msgid "Approved"
+msgstr "Aprobado"
+
+msgid "Attention needed"
+msgstr "Requiere atención"
+
+msgid "Basic Details"
+msgstr "Datos básicos"
+
+msgid "Battery Wh"
+msgstr "Batería (Wh)"
+
+msgid "Battery brand"
+msgstr "Marca de la batería"
+
+msgid "Battery health (%)"
+msgstr "Salud de la batería (%)"
+
+msgid "Battery model"
+msgstr "Modelo de la batería"
+
+msgid "Battery serial"
+msgstr "Nº de serie de la batería"
+
+msgid "Bike %s. Please contact the shop for details."
+msgstr "Bicicleta %s. Contacta con la tienda para más información."
+
+msgid "Bike type"
+msgstr "Tipo de bicicleta"
+
+msgid "Brake pad type"
+msgstr "Tipo de pastillas de freno"
+
+msgid "Brakes"
+msgstr "Frenos"
+
+msgid "Brand"
+msgstr "Marca"
+
+msgid "Cancelled"
+msgstr "Cancelado"
+
+msgid "Carbon"
+msgstr "Carbono"
+
+msgid "Cargo"
+msgstr "Carga"
+
+msgid "Cassette"
+msgstr "Casete"
+
+msgid "Catalan"
+msgstr "Catalán"
+
+msgid "Category"
+msgstr "Categoría"
+
+msgid "Chain"
+msgstr "Cadena"
+
+msgid "Charger"
+msgstr "Cargador"
+
+msgid "City"
+msgstr "Ciudad"
+
+msgid "Closed"
+msgstr "Cerrado"
+
+msgid "Colour"
+msgstr "Color"
+
+msgid "Components"
+msgstr "Componentes"
+
+msgid "Condition rating"
+msgstr "Valoración del estado"
+
+msgid "Could not render the QR image."
+msgstr "No se pudo generar la imagen QR."
+
+msgid "Could not store the QR attachment."
+msgstr "No se pudo guardar el archivo QR."
+
+msgid "Crankset"
+msgstr "Bielas"
+
+msgid "Customer bike"
+msgstr "Bicicleta de cliente"
+
+msgid "Declined"
+msgstr "Rechazado"
+
+msgid "Delivered"
+msgstr "Entregado"
+
+msgid "Derailleurs"
+msgstr "Cambios"
+
+msgid "Display model"
+msgstr "Modelo del display"
+
+msgid "Drivetrain brand"
+msgstr "Marca de la transmisión"
+
+msgid "Drivetrain model"
+msgstr "Modelo de la transmisión"
+
+msgid "E-Gravel"
+msgstr "E-Gravel"
+
+msgid "E-MTB"
+msgstr "E-MTB"
+
+msgid "E-Road"
+msgstr "E-Road"
+
+msgid "E-bike"
+msgstr "E-bike"
+
+msgid "Edit Bike"
+msgstr "Editar bicicleta"
+
+msgid "Edit Repair Job"
+msgstr "Editar trabajo de reparación"
+
+msgid "Edit Status"
+msgstr "Editar estado"
+
+msgid "English"
+msgstr "Inglés"
+
+msgid "Excellent"
+msgstr "Excelente"
+
+msgid "Fair"
+msgstr "Regular"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "Fleet"
+msgstr "Flota"
+
+msgid "Fleet bike"
+msgstr "Bicicleta de flota"
+
+msgid "Fleet number"
+msgstr "Número de flota"
+
+msgid "Fork brand"
+msgstr "Marca de la horquilla"
+
+msgid "Fork model"
+msgstr "Modelo de la horquilla"
+
+msgid "Fork serial"
+msgstr "Nº de serie de la horquilla"
+
+msgid "Fork travel"
+msgstr "Recorrido de la horquilla"
+
+msgid "Frame material"
+msgstr "Material del cuadro"
+
+msgid "Frame size"
+msgstr "Talla del cuadro"
+
+msgid "French"
+msgstr "Francés"
+
+msgid "GDPR consent given"
+msgstr "Consentimiento RGPD otorgado"
+
+msgid "General"
+msgstr "General"
+
+msgid "German"
+msgstr "Alemán"
+
+msgid "Good"
+msgstr "Bueno"
+
+msgid "Gravel"
+msgstr "Gravel"
+
+msgid "Handlebar"
+msgstr "Manillar"
+
+msgid "Identification"
+msgstr "Identificación"
+
+msgid "In Repair"
+msgstr "En reparación"
+
+msgid "Inspected"
+msgstr "Inspeccionado"
+
+msgid "Internal ID"
+msgstr "ID interno"
+
+msgid "Internal Notes"
+msgstr "Notas internas"
+
+msgid "Invalid request."
+msgstr "Solicitud no válida."
+
+msgid "Kids"
+msgstr "Infantil"
+
+msgid "Label"
+msgstr "Etiqueta"
+
+msgid "Last brake-pad change"
+msgstr "Último cambio de pastillas"
+
+msgid "Last cassette change"
+msgstr "Último cambio de casete"
+
+msgid "Last chain change"
+msgstr "Último cambio de cadena"
+
+msgid "Last rental date"
+msgstr "Última fecha de alquiler"
+
+msgid "Last service date"
+msgstr "Fecha del último mantenimiento"
+
+msgid "Last suspension service"
+msgstr "Último mantenimiento de la suspensión"
+
+msgid "Last tyre change"
+msgstr "Último cambio de neumáticos"
+
+msgid "Linked WordPress/WooCommerce user"
+msgstr "Usuario de WordPress/WooCommerce vinculado"
+
+msgid "MTB"
+msgstr "MTB"
+
+msgid "Maintenance Summary"
+msgstr "Resumen de mantenimiento"
+
+msgid "Mechanic notes"
+msgstr "Notas del mecánico"
+
+msgid "Model"
+msgstr "Modelo"
+
+msgid "Motor brand"
+msgstr "Marca del motor"
+
+msgid "Motor model"
+msgstr "Modelo del motor"
+
+msgid "Motor serial"
+msgstr "Nº de serie del motor"
+
+msgid "New Bike"
+msgstr "Nueva bicicleta"
+
+msgid "New Repair Job"
+msgstr "Nuevo trabajo de reparación"
+
+msgid "Next service due"
+msgstr "Próximo mantenimiento"
+
+msgid "No bikes found"
+msgstr "No se encontraron bicicletas"
+
+msgid "No bikes found in Trash"
+msgstr "No se encontraron bicicletas en la papelera"
+
+msgid "No repair jobs found"
+msgstr "No se encontraron trabajos de reparación"
+
+msgid "No repair jobs found in Trash"
+msgstr "No se encontraron trabajos de reparación en la papelera"
+
+msgid "Odometer"
+msgstr "Odómetro"
+
+msgid "Open scan URL"
+msgstr "Abrir URL de escaneo"
+
+msgid "Other"
+msgstr "Otro"
+
+msgid "Owner / Client"
+msgstr "Propietario / Cliente"
+
+msgid "Owner email"
+msgstr "Correo del propietario"
+
+msgid "Owner name"
+msgstr "Nombre del propietario"
+
+msgid "Owner phone"
+msgstr "Teléfono del propietario"
+
+msgid "Parts Arrived"
+msgstr "Piezas recibidas"
+
+msgid "Pedals"
+msgstr "Pedales"
+
+msgid "Photo gallery"
+msgstr "Galería de fotos"
+
+msgid "Photos"
+msgstr "Fotos"
+
+msgid "Poor"
+msgstr "Malo"
+
+msgid "Preferred language"
+msgstr "Idioma preferido"
+
+msgid "Print"
+msgstr "Imprimir"
+
+msgid "Print label"
+msgstr "Imprimir etiqueta"
+
+msgid "Public base URL"
+msgstr "URL base pública"
+
+msgid "QR code %s"
+msgstr "Código QR %s"
+
+msgid "Quality Check"
+msgstr "Control de calidad"
+
+msgid "Ready for Pickup"
+msgstr "Listo para recoger"
+
+msgid "Received"
+msgstr "Recibido"
+
+msgid "Recurring problems"
+msgstr "Problemas recurrentes"
+
+msgid "Regenerate QR"
+msgstr "Regenerar QR"
+
+msgid "Remove"
+msgstr "Eliminar"
+
+msgid "Rental active"
+msgstr "Alquiler activo"
+
+msgid "Rental category"
+msgstr "Categoría de alquiler"
+
+msgid "Rental days count"
+msgstr "Número de días de alquiler"
+
+msgid "Replacement planning"
+msgstr "Planificación de reemplazo"
+
+msgid "Road"
+msgstr "Carretera"
+
+msgid "Rotor sizes"
+msgstr "Tamaño de los discos"
+
+msgid "Saddle"
+msgstr "Sillín"
+
+msgid "Safe"
+msgstr "Seguro"
+
+msgid "Safety status"
+msgstr "Estado de seguridad"
+
+msgid "Search Bikes"
+msgstr "Buscar bicicletas"
+
+msgid "Search Repair Jobs"
+msgstr "Buscar trabajos de reparación"
+
+msgid "Search Statuses"
+msgstr "Buscar estados"
+
+msgid "Seatpost"
+msgstr "Tija"
+
+msgid "Secondary frame number"
+msgstr "Número de cuadro secundario"
+
+msgid "Select image"
+msgstr "Seleccionar imagen"
+
+msgid "Serial number"
+msgstr "Número de serie"
+
+msgid "Serial photo"
+msgstr "Foto del número de serie"
+
+msgid "Shifters"
+msgstr "Mandos de cambio"
+
+msgid "Shock brand"
+msgstr "Marca del amortiguador"
+
+msgid "Shock model"
+msgstr "Modelo del amortiguador"
+
+msgid "Shock travel"
+msgstr "Recorrido del amortiguador"
+
+msgid "Shop address"
+msgstr "Dirección de la tienda"
+
+msgid "Shop phone"
+msgstr "Teléfono de la tienda"
+
+msgid "Shown on printed labels (and later on client communications)."
+msgstr "Se muestra en las etiquetas impresas (y más adelante en las comunicaciones al cliente)."
+
+msgid "Sorry, we could not find that bike. Please contact the shop."
+msgstr "Lo sentimos, no hemos encontrado esa bicicleta. Contacta con la tienda."
+
+msgid "Spanish"
+msgstr "Español"
+
+msgid "Speeds"
+msgstr "Velocidades"
+
+msgid "Statuses"
+msgstr "Estados"
+
+msgid "Steel"
+msgstr "Acero"
+
+msgid "Stem"
+msgstr "Potencia"
+
+msgid "Suspension"
+msgstr "Suspensión"
+
+msgid "The internal ID and QR code are generated automatically when you first save this bike."
+msgstr "El ID interno y el código QR se generan automáticamente al guardar la bicicleta por primera vez."
+
+msgid "The public base URL must start with http:// or https://. It has been cleared."
+msgstr "La URL base pública debe empezar por http:// o https://. Se ha borrado."
+
+msgid "Titanium"
+msgstr "Titanio"
+
+msgid "Tossa Cycling"
+msgstr "Tossa Cycling"
+
+msgid "Tossa Workshop"
+msgstr "Taller Tossa"
+
+msgid "Trekking"
+msgstr "Trekking"
+
+msgid "Tubeless"
+msgstr "Tubeless"
+
+msgid "Tyres"
+msgstr "Neumáticos"
+
+msgid "Unknown"
+msgstr "Desconocido"
+
+msgid "Unsafe"
+msgstr "No seguro"
+
+msgid "Update Status"
+msgstr "Actualizar estado"
+
+msgid "Used to build scan / status links. Leave empty to use the site URL."
+msgstr "Se usa para generar los enlaces de escaneo / estado. Déjalo vacío para usar la URL del sitio."
+
+msgid "Used to build the fleet ID, e.g. TCF-EMTB-001."
+msgstr "Se usa para generar el ID de flota, p. ej. TCF-EMTB-001."
+
+msgid "Used when no linked user is selected."
+msgstr "Se usa cuando no se selecciona un usuario vinculado."
+
+msgid "View Bike"
+msgstr "Ver bicicleta"
+
+msgid "View Repair Job"
+msgstr "Ver trabajo de reparación"
+
+msgid "Waiting for Approval"
+msgstr "Esperando aprobación"
+
+msgid "Waiting for Parts"
+msgstr "Esperando piezas"
+
+msgid "Warning flags"
+msgstr "Avisos"
+
+msgid "Wheel size"
+msgstr "Tamaño de rueda"
+
+msgid "Wheelset"
+msgstr "Ruedas"
+
+msgid "Workshop"
+msgstr "Taller"
+
+msgid "Workshop Front Desk"
+msgstr "Recepción del taller"
+
+msgid "Workshop ID & QR"
+msgstr "ID del taller y QR"
+
+msgid "Workshop Manager"
+msgstr "Gerente del taller"
+
+msgid "Workshop Mechanic"
+msgstr "Mecánico del taller"
+
+msgid "Workshop Settings"
+msgstr "Ajustes del taller"
+
+msgid "Year"
+msgstr "Año"
+
+msgid "Yes"
+msgstr "Sí"
+
+msgid "You do not have permission to access workshop settings."
+msgstr "No tienes permiso para acceder a los ajustes del taller."
+
+msgid "You do not have permission to do this."
+msgstr "No tienes permiso para hacer esto."
+
+msgctxt "admin menu"
+msgid "Bikes"
+msgstr "Bicicletas"
+
+msgctxt "admin menu"
+msgid "Repair Jobs"
+msgstr "Trabajos de reparación"
+
+msgctxt "post type general name"
+msgid "Bikes"
+msgstr "Bicicletas"
+
+msgctxt "post type general name"
+msgid "Repair Jobs"
+msgstr "Trabajos de reparación"
+
+msgctxt "post type singular name"
+msgid "Bike"
+msgstr "Bicicleta"
+
+msgctxt "post type singular name"
+msgid "Repair Job"
+msgstr "Trabajo de reparación"
+
+msgctxt "taxonomy general name"
+msgid "Job Statuses"
+msgstr "Estados de trabajo"
+
+msgctxt "taxonomy singular name"
+msgid "Job Status"
+msgstr "Estado de trabajo"
+
+msgid "— None —"
+msgstr "— Ninguno —"
+
+msgid "— Select —"
+msgstr "— Seleccionar —"
+

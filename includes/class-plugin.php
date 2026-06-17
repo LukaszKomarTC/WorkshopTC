@@ -63,9 +63,14 @@ final class Plugin {
 		Repair_Job_CPT::instance()->register_hooks();
 		Job_Status_Taxonomy::instance()->register_hooks();
 
-		// Admin settings skeleton.
+		// Front-end scan router.
+		Scan_Router::instance()->register_hooks();
+
+		// Admin-only modules.
 		if ( is_admin() ) {
 			Admin\Settings_Page::instance()->register_hooks();
+			Bike_Meta_Boxes::instance()->register_hooks();
+			Print_Label::instance()->register_hooks();
 		}
 	}
 

@@ -23,6 +23,9 @@ class Activator {
 	 * @return void
 	 */
 	public static function activate() {
+		// Load translations so seeded status term labels are localized.
+		load_plugin_textdomain( 'tossa-workshop', false, dirname( TCW_PLUGIN_BASENAME ) . '/languages' );
+
 		// Capabilities first so the current admin keeps access to the new CPTs.
 		Roles::add_roles();
 
@@ -31,6 +34,9 @@ class Activator {
 		Bike_CPT::instance()->register();
 		Repair_Job_CPT::instance()->register();
 		Job_Status_Taxonomy::instance()->register();
+
+		// Register front-end rewrite rules so the flush below persists them.
+		Scan_Router::instance()->add_rewrite_rules();
 
 		// Seed the fixed status terms (idempotent).
 		Job_Status_Taxonomy::insert_terms();
@@ -41,6 +47,7 @@ class Activator {
 		}
 
 		update_option( self::VERSION_OPTION, TCW_VERSION );
+		update_option( 'tcw_rewrite_version', TCW_VERSION, false );
 
 		/**
 		 * Fires after activation tasks complete, before rewrite flush.
