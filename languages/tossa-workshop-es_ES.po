@@ -157,8 +157,14 @@ msgstr "Borrar"
 msgid "Client approval required"
 msgstr "Requiere aprobación del cliente"
 
+msgid "Client approved estimate — %s"
+msgstr "El cliente aprobó el presupuesto — %s"
+
 msgid "Client declined"
 msgstr "Cliente rechazó"
+
+msgid "Client declined estimate — %s"
+msgstr "El cliente rechazó el presupuesto — %s"
 
 msgid "Client email:"
 msgstr "Correo del cliente:"
@@ -168,6 +174,9 @@ msgstr "Enlace para el cliente"
 
 msgid "Client notes"
 msgstr "Notas del cliente"
+
+msgid "Client: %s"
+msgstr "Cliente: %s"
 
 msgid "Closed"
 msgstr "Cerrado"
@@ -183,6 +192,9 @@ msgstr "Fecha/hora de recogida"
 
 msgid "Colour"
 msgstr "Color"
+
+msgid "Comments: %s"
+msgstr "Comentarios: %s"
 
 msgid "Components"
 msgstr "Componentes"
@@ -667,11 +679,14 @@ msgstr "Recorrido del amortiguador"
 msgid "Shop address"
 msgstr "Dirección de la tienda"
 
+msgid "Shop contact email"
+msgstr "Correo de contacto de la tienda"
+
 msgid "Shop phone"
 msgstr "Teléfono de la tienda"
 
-msgid "Shown on printed labels (and later on client communications)."
-msgstr "Se muestra en las etiquetas impresas (y más adelante en las comunicaciones al cliente)."
+msgid "Shown on labels and used for the WhatsApp link (digits only, e.g. 34123456789)."
+msgstr "Se muestra en las etiquetas y se usa para el enlace de WhatsApp (solo dígitos, p. ej. 34123456789)."
 
 msgid "Sorry, we could not find that bike. Please contact the shop."
 msgstr "Lo sentimos, no hemos encontrado esa bicicleta. Contacta con la tienda."
@@ -681,6 +696,9 @@ msgstr "Español"
 
 msgid "Speeds"
 msgstr "Velocidades"
+
+msgid "Staff notification email"
+msgstr "Correo de notificación al personal"
 
 msgid "Status"
 msgstr "Estado"
@@ -745,6 +763,9 @@ msgstr "Actualizar estado"
 msgid "Urgent"
 msgstr "Urgente"
 
+msgid "Used for the \"Ask a question\" link on the client page."
+msgstr "Se usa para el enlace «Hacer una pregunta» en la página del cliente."
+
 msgid "Used to build scan / status links. Leave empty to use the site URL."
 msgstr "Se usa para generar los enlaces de escaneo / estado. Déjalo vacío para usar la URL del sitio."
 
@@ -783,6 +804,9 @@ msgstr "Ruedas"
 
 msgid "When enabled, the client can approve or decline via their status link."
 msgstr "Si se activa, el cliente puede aprobar o rechazar desde su enlace de estado."
+
+msgid "Where client approve/decline alerts are sent. Defaults to the site admin email."
+msgstr "Adónde se envían los avisos de aprobación/rechazo del cliente. Por defecto, al correo del administrador del sitio."
 
 msgid "Work & Completion"
 msgstr "Trabajo y finalización"

@@ -171,7 +171,7 @@ class Job_Meta_Boxes {
 		// Client status link (page lands in M4; the token already exists).
 		$token = get_post_meta( $job_id, 'client_token', true );
 		if ( $token && $job_number ) {
-			$url = QR_Generator::base_url() . '/workshop-status/?job=' . rawurlencode( $job_number ) . '&token=' . rawurlencode( $token );
+			$url = Client_Status_Page::url( $job_number, $token );
 			echo '<p><strong>' . esc_html__( 'Client link', 'tossa-workshop' ) . ':</strong><br><input type="text" readonly class="widefat" value="' . esc_attr( $url ) . '" onclick="this.select();" /></p>';
 		}
 

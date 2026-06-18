@@ -206,8 +206,16 @@ msgstr ""
 msgid "Client approval required"
 msgstr ""
 
+#: includes/class-notifier.php:213
+msgid "Client approved estimate — %s"
+msgstr ""
+
 #: includes/class-repair-job-fields.php:59
 msgid "Client declined"
+msgstr ""
+
+#: includes/class-notifier.php:216
+msgid "Client declined estimate — %s"
 msgstr ""
 
 #: includes/class-job-meta-boxes.php:186
@@ -220,6 +228,10 @@ msgstr ""
 
 #: includes/class-repair-job-fields.php:120
 msgid "Client notes"
+msgstr ""
+
+#: includes/class-notifier.php:223
+msgid "Client: %s"
 msgstr ""
 
 #: includes/class-job-status-taxonomy.php:105
@@ -240,6 +252,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:186
 msgid "Colour"
+msgstr ""
+
+#: includes/class-notifier.php:226
+msgid "Comments: %s"
 msgstr ""
 
 #: includes/class-bike-fields.php:215
@@ -462,7 +478,7 @@ msgstr ""
 msgid "Internal Notes"
 msgstr ""
 
-#: includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:195
+#: includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:244
 msgid "Invalid request."
 msgstr ""
 
@@ -886,12 +902,16 @@ msgstr ""
 msgid "Shop address"
 msgstr ""
 
+#: includes/admin/class-settings-page.php:75
+msgid "Shop contact email"
+msgstr ""
+
 #: includes/admin/class-settings-page.php:73
 msgid "Shop phone"
 msgstr ""
 
 #: includes/admin/class-settings-page.php:73
-msgid "Shown on printed labels (and later on client communications)."
+msgid "Shown on labels and used for the WhatsApp link (digits only, e.g. 34123456789)."
 msgstr ""
 
 #: includes/class-scan-router.php:162
@@ -904,6 +924,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:224
 msgid "Speeds"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:76
+msgid "Staff notification email"
 msgstr ""
 
 #: includes/class-job-meta-boxes.php:144
@@ -946,7 +970,7 @@ msgstr ""
 msgid "The internal ID and QR code are generated automatically when you first save this bike."
 msgstr ""
 
-#: includes/admin/class-settings-page.php:127
+#: includes/admin/class-settings-page.php:129
 msgid "The public base URL must start with http:// or https://. It has been cleared."
 msgstr ""
 
@@ -958,7 +982,7 @@ msgstr ""
 msgid "Tossa Cycling"
 msgstr ""
 
-#: includes/admin/class-settings-page.php:166
+#: includes/admin/class-settings-page.php:170
 msgid "Tossa Workshop"
 msgstr ""
 
@@ -988,6 +1012,10 @@ msgstr ""
 
 #: includes/class-repair-job-fields.php:33
 msgid "Urgent"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:75
+msgid "Used for the "Ask a question" link on the client page."
 msgstr ""
 
 #: includes/admin/class-settings-page.php:72
@@ -1042,6 +1070,10 @@ msgstr ""
 msgid "When enabled, the client can approve or decline via their status link."
 msgstr ""
 
+#: includes/admin/class-settings-page.php:76
+msgid "Where client approve/decline alerts are sent. Defaults to the site admin email."
+msgstr ""
+
 #: includes/class-repair-job-fields.php:192
 msgid "Work & Completion"
 msgstr ""
@@ -1050,7 +1082,7 @@ msgstr ""
 msgid "Work log"
 msgstr ""
 
-#: includes/admin/class-settings-page.php:146
+#: includes/admin/class-settings-page.php:150
 msgid "Workshop"
 msgstr ""
 
@@ -1074,7 +1106,7 @@ msgstr ""
 msgid "Workshop Notifications"
 msgstr ""
 
-#: includes/admin/class-settings-page.php:145
+#: includes/admin/class-settings-page.php:149
 msgid "Workshop Settings"
 msgstr ""
 
@@ -1090,11 +1122,11 @@ msgstr ""
 msgid "You do not have permission to access this page."
 msgstr ""
 
-#: includes/admin/class-settings-page.php:162
+#: includes/admin/class-settings-page.php:166
 msgid "You do not have permission to access workshop settings."
 msgstr ""
 
-#: includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:198
+#: includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:247
 msgid "You do not have permission to do this."
 msgstr ""
 

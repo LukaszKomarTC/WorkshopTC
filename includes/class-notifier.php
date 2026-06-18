@@ -148,9 +148,7 @@ class Notifier {
 
 		$job_number = get_post_meta( $job_id, 'job_id', true );
 		$token      = get_post_meta( $job_id, 'client_token', true );
-		$status_url = ( $job_number && $token )
-			? QR_Generator::base_url() . '/workshop-status/?job=' . rawurlencode( $job_number ) . '&token=' . rawurlencode( $token )
-			: '';
+		$status_url = ( $job_number && $token ) ? Client_Status_Page::url( $job_number, $token ) : '';
 
 		return array(
 			'client_name'  => (string) get_post_meta( $job_id, 'client_name', true ),
@@ -180,6 +178,59 @@ class Notifier {
 			return number_format( (float) $value, 2, '.', ',' ) . ' €';
 		}
 		return number_format( (float) $value, 2, ',', '.' ) . ' €';
+	}
+
+	/**
+	 * Email staff about a client approval decision (spec §9). Staff-facing, so
+	 * it uses gettext (site/admin language).
+	 *
+	 * @param int    $job_id   Job ID.
+	 * @param string $decision 'approved' or 'declined'.
+	 * @param string $comments Optional client comments.
+	 * @return bool
+	 */
+	public function notify_staff_decision( $job_id, $decision, $comments = '' ) {
+		$settings = Admin\Settings_Page::get_settings();
+		$to       = ! empty( $settings['staff_notify_email'] ) ? $settings['staff_notify_email'] : get_option( 'admin_email' );
+
+		/**
+		 * Filter the staff notification recipient.
+		 *
+		 * @param string $to     Email address.
+		 * @param int    $job_id Job ID.
+		 */
+		$to = apply_filters( 'tcw_staff_notify_email', $to, $job_id );
+		if ( ! $to || ! is_email( $to ) ) {
+			return false;
+		}
+
+		// sanitize_text_field strips CR/LF, hardening the subject against header
+		// injection even though job_id is plugin-generated.
+		$job_number = sanitize_text_field( get_post_meta( $job_id, 'job_id', true ) );
+		$client     = get_post_meta( $job_id, 'client_name', true );
+		$edit_url   = get_edit_post_link( $job_id, 'raw' );
+
+		if ( 'approved' === $decision ) {
+			/* translators: %s: job ID */
+			$subject = sprintf( __( 'Client approved estimate — %s', 'tossa-workshop' ), $job_number );
+		} else {
+			/* translators: %s: job ID */
+			$subject = sprintf( __( 'Client declined estimate — %s', 'tossa-workshop' ), $job_number );
+		}
+
+		$lines   = array();
+		$lines[] = $subject;
+		$lines[] = '';
+		/* translators: %s: client name */
+		$lines[] = sprintf( __( 'Client: %s', 'tossa-workshop' ), $client ? $client : '—' );
+		if ( '' !== trim( (string) $comments ) ) {
+			/* translators: %s: client comments */
+			$lines[] = sprintf( __( 'Comments: %s', 'tossa-workshop' ), $comments );
+		}
+		$lines[] = '';
+		$lines[] = $edit_url;
+
+		return (bool) wp_mail( $to, $subject, implode( "\n", $lines ) );
 	}
 
 	/**

@@ -69,9 +69,11 @@ class Settings_Page {
 		add_settings_section( 'tcw_general', __( 'General', 'tossa-workshop' ), '__return_false', self::MENU_SLUG );
 
 		$fields = array(
-			'public_base_url' => array( __( 'Public base URL', 'tossa-workshop' ), 'url', __( 'Used to build scan / status links. Leave empty to use the site URL.', 'tossa-workshop' ) ),
-			'shop_phone'      => array( __( 'Shop phone', 'tossa-workshop' ), 'text', __( 'Shown on printed labels (and later on client communications).', 'tossa-workshop' ) ),
-			'shop_address'    => array( __( 'Shop address', 'tossa-workshop' ), 'text', '' ),
+			'public_base_url'    => array( __( 'Public base URL', 'tossa-workshop' ), 'url', __( 'Used to build scan / status links. Leave empty to use the site URL.', 'tossa-workshop' ) ),
+			'shop_phone'         => array( __( 'Shop phone', 'tossa-workshop' ), 'text', __( 'Shown on labels and used for the WhatsApp link (digits only, e.g. 34123456789).', 'tossa-workshop' ) ),
+			'shop_address'       => array( __( 'Shop address', 'tossa-workshop' ), 'text', '' ),
+			'shop_email'         => array( __( 'Shop contact email', 'tossa-workshop' ), 'text', __( 'Used for the "Ask a question" link on the client page.', 'tossa-workshop' ) ),
+			'staff_notify_email' => array( __( 'Staff notification email', 'tossa-workshop' ), 'text', __( 'Where client approve/decline alerts are sent. Defaults to the site admin email.', 'tossa-workshop' ) ),
 		);
 
 		foreach ( $fields as $key => $def ) {
@@ -129,9 +131,11 @@ class Settings_Page {
 		}
 
 		return array(
-			'public_base_url' => $base,
-			'shop_phone'      => isset( $input['shop_phone'] ) ? sanitize_text_field( $input['shop_phone'] ) : '',
-			'shop_address'    => isset( $input['shop_address'] ) ? sanitize_text_field( $input['shop_address'] ) : '',
+			'public_base_url'    => $base,
+			'shop_phone'         => isset( $input['shop_phone'] ) ? sanitize_text_field( $input['shop_phone'] ) : '',
+			'shop_address'       => isset( $input['shop_address'] ) ? sanitize_text_field( $input['shop_address'] ) : '',
+			'shop_email'         => isset( $input['shop_email'] ) ? sanitize_email( $input['shop_email'] ) : '',
+			'staff_notify_email' => isset( $input['staff_notify_email'] ) ? sanitize_email( $input['staff_notify_email'] ) : '',
 		);
 	}
 
@@ -184,10 +188,12 @@ class Settings_Page {
 		$defaults = array(
 			// Public base URL used to build scan / status links. Empty means
 			// "use home_url()".
-			'public_base_url' => '',
-			// Shop contact details, used on labels and (later) emails/client page.
-			'shop_phone'      => '',
-			'shop_address'    => '',
+			'public_base_url'    => '',
+			// Shop contact details, used on labels, emails and the client page.
+			'shop_phone'         => '',
+			'shop_address'       => '',
+			'shop_email'         => '',
+			'staff_notify_email' => '',
 		);
 
 		$stored = get_option( self::OPTION_KEY, array() );
