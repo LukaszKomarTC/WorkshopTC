@@ -74,7 +74,7 @@ msgstr ""
 msgid "Approval"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:429 includes/class-job-status-taxonomy.php:98
+#: includes/class-job-meta-boxes.php:450 includes/class-job-status-taxonomy.php:98
 msgid "Approved"
 msgstr ""
 
@@ -198,7 +198,7 @@ msgstr ""
 msgid "City"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:216
+#: includes/class-job-meta-boxes.php:237
 msgid "Clear"
 msgstr ""
 
@@ -208,6 +208,10 @@ msgstr ""
 
 #: includes/class-repair-job-fields.php:59
 msgid "Client declined"
+msgstr ""
+
+#: includes/class-job-meta-boxes.php:186
+msgid "Client email:"
 msgstr ""
 
 #: includes/class-job-meta-boxes.php:175
@@ -254,10 +258,6 @@ msgstr ""
 msgid "Could not render the QR image."
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:184
-msgid "Could not resend (no valid client email?)."
-msgstr ""
-
 #: includes/class-qr-generator.php:117
 msgid "Could not store the QR attachment."
 msgstr ""
@@ -274,7 +274,7 @@ msgstr ""
 msgid "Date received"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:430 includes/class-job-status-taxonomy.php:106
+#: includes/class-job-meta-boxes.php:451 includes/class-job-status-taxonomy.php:106
 msgid "Declined"
 msgstr ""
 
@@ -462,7 +462,7 @@ msgstr ""
 msgid "Internal Notes"
 msgstr ""
 
-#: includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:167
+#: includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:173
 msgid "Invalid request."
 msgstr ""
 
@@ -496,6 +496,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:360
 msgid "Last chain change"
+msgstr ""
+
+#: includes/class-job-meta-boxes.php:191
+msgid "Last notification:"
 msgstr ""
 
 #: includes/class-bike-fields.php:442
@@ -578,6 +582,14 @@ msgstr ""
 msgid "No bikes found in Trash"
 msgstr ""
 
+#: includes/class-job-meta-boxes.php:184
+msgid "No client email on file — notifications cannot be sent. Add an email to the bike owner."
+msgstr ""
+
+#: includes/class-job-meta-boxes.php:197
+msgid "No notification sent yet for this job."
+msgstr ""
+
 #: includes/class-repair-job-cpt.php:67
 msgid "No repair jobs found"
 msgstr ""
@@ -590,7 +602,7 @@ msgstr ""
 msgid "Normal"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:427
+#: includes/class-job-meta-boxes.php:448
 msgid "Not required"
 msgstr ""
 
@@ -598,7 +610,7 @@ msgstr ""
 msgid "Not safe"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:184
+#: includes/class-job-meta-boxes.php:203
 msgid "Notification resent."
 msgstr ""
 
@@ -670,7 +682,7 @@ msgstr ""
 msgid "Pedals"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:428
+#: includes/class-job-meta-boxes.php:449
 msgid "Pending"
 msgstr ""
 
@@ -770,7 +782,11 @@ msgstr ""
 msgid "Replacement planning"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:190
+#: includes/class-job-meta-boxes.php:203
+msgid "Resend failed — check the email/SMTP setup."
+msgstr ""
+
+#: includes/class-job-meta-boxes.php:210
 msgid "Resend last notification"
 msgstr ""
 
@@ -810,11 +826,11 @@ msgstr ""
 msgid "Search Statuses"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:215
+#: includes/class-job-meta-boxes.php:236
 msgid "Search bikes…"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:213
+#: includes/class-job-meta-boxes.php:234
 msgid "Search by internal ID, serial number, or owner name / email / phone."
 msgstr ""
 
@@ -830,7 +846,7 @@ msgstr ""
 msgid "Select image"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:217 includes/class-job-meta-boxes.php:461
+#: includes/class-job-meta-boxes.php:238 includes/class-job-meta-boxes.php:482
 msgid "Selected:"
 msgstr ""
 
@@ -1074,7 +1090,7 @@ msgstr ""
 msgid "You do not have permission to access workshop settings."
 msgstr ""
 
-#: includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:170
+#: includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:176
 msgid "You do not have permission to do this."
 msgstr ""
 
@@ -1116,6 +1132,10 @@ msgstr ""
 #: includes/class-job-status-taxonomy.php:128
 msgctxt "taxonomy singular name"
 msgid "Job Status"
+msgstr ""
+
+#: includes/class-job-meta-boxes.php:193
+msgid "wp_mail reported failure — check the site email / SMTP setup."
 msgstr ""
 
 #: includes/class-field-kit.php:174

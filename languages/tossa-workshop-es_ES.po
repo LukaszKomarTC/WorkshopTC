@@ -160,6 +160,9 @@ msgstr "Requiere aprobación del cliente"
 msgid "Client declined"
 msgstr "Cliente rechazó"
 
+msgid "Client email:"
+msgstr "Correo del cliente:"
+
 msgid "Client link"
 msgstr "Enlace para el cliente"
 
@@ -192,9 +195,6 @@ msgstr "Valoración del estado"
 
 msgid "Could not render the QR image."
 msgstr "No se pudo generar la imagen QR."
-
-msgid "Could not resend (no valid client email?)."
-msgstr "No se pudo reenviar (¿correo del cliente no válido?)."
 
 msgid "Could not store the QR attachment."
 msgstr "No se pudo guardar el archivo QR."
@@ -376,6 +376,9 @@ msgstr "Último cambio de casete"
 msgid "Last chain change"
 msgstr "Último cambio de cadena"
 
+msgid "Last notification:"
+msgstr "Última notificación:"
+
 msgid "Last rental date"
 msgstr "Última fecha de alquiler"
 
@@ -435,6 +438,12 @@ msgstr "No se encontraron bicicletas"
 
 msgid "No bikes found in Trash"
 msgstr "No se encontraron bicicletas en la papelera"
+
+msgid "No client email on file — notifications cannot be sent. Add an email to the bike owner."
+msgstr "No hay correo del cliente — no se pueden enviar notificaciones. Añade un correo al propietario de la bicicleta."
+
+msgid "No notification sent yet for this job."
+msgstr "Todavía no se ha enviado ninguna notificación para este trabajo."
 
 msgid "No repair jobs found"
 msgstr "No se encontraron trabajos de reparación"
@@ -579,6 +588,9 @@ msgstr "Número de días de alquiler"
 
 msgid "Replacement planning"
 msgstr "Planificación de reemplazo"
+
+msgid "Resend failed — check the email/SMTP setup."
+msgstr "El reenvío falló — revisa la configuración de correo/SMTP."
 
 msgid "Resend last notification"
 msgstr "Reenviar última notificación"
@@ -842,6 +854,9 @@ msgstr "Estados de trabajo"
 msgctxt "taxonomy singular name"
 msgid "Job Status"
 msgstr "Estado de trabajo"
+
+msgid "wp_mail reported failure — check the site email / SMTP setup."
+msgstr "wp_mail informó de un fallo — revisa la configuración de correo / SMTP del sitio."
 
 msgid "— None —"
 msgstr "— Ninguno —"
