@@ -297,6 +297,7 @@ $es = array(
 	'No notification sent yet for this job.' => 'Todavía no se ha enviado ninguna notificación para este trabajo.',
 	'Resend failed — check the email/SMTP setup.' => 'El reenvío falló — revisa la configuración de correo/SMTP.',
 	'wp_mail reported failure — check the site email / SMTP setup.' => 'wp_mail informó de un fallo — revisa la configuración de correo / SMTP del sitio.',
+	'Reason:' => 'Motivo:',
 	"admin menu\x04Bikes" => 'Bicicletas',
 	"admin menu\x04Repair Jobs" => 'Trabajos de reparación',
 	"post type general name\x04Bikes" => 'Bicicletas',

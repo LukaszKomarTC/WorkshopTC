@@ -74,7 +74,7 @@ msgstr ""
 msgid "Approval"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:450 includes/class-job-status-taxonomy.php:98
+#: includes/class-job-meta-boxes.php:453 includes/class-job-status-taxonomy.php:98
 msgid "Approved"
 msgstr ""
 
@@ -198,7 +198,7 @@ msgstr ""
 msgid "City"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:237
+#: includes/class-job-meta-boxes.php:240
 msgid "Clear"
 msgstr ""
 
@@ -274,7 +274,7 @@ msgstr ""
 msgid "Date received"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:451 includes/class-job-status-taxonomy.php:106
+#: includes/class-job-meta-boxes.php:454 includes/class-job-status-taxonomy.php:106
 msgid "Declined"
 msgstr ""
 
@@ -462,7 +462,7 @@ msgstr ""
 msgid "Internal Notes"
 msgstr ""
 
-#: includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:173
+#: includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:195
 msgid "Invalid request."
 msgstr ""
 
@@ -586,7 +586,7 @@ msgstr ""
 msgid "No client email on file — notifications cannot be sent. Add an email to the bike owner."
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:197
+#: includes/class-job-meta-boxes.php:200
 msgid "No notification sent yet for this job."
 msgstr ""
 
@@ -602,7 +602,7 @@ msgstr ""
 msgid "Normal"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:448
+#: includes/class-job-meta-boxes.php:451
 msgid "Not required"
 msgstr ""
 
@@ -610,7 +610,7 @@ msgstr ""
 msgid "Not safe"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:203
+#: includes/class-job-meta-boxes.php:206
 msgid "Notification resent."
 msgstr ""
 
@@ -682,7 +682,7 @@ msgstr ""
 msgid "Pedals"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:449
+#: includes/class-job-meta-boxes.php:452
 msgid "Pending"
 msgstr ""
 
@@ -746,6 +746,10 @@ msgstr ""
 msgid "Ready for Pickup"
 msgstr ""
 
+#: includes/class-job-meta-boxes.php:195
+msgid "Reason:"
+msgstr ""
+
 #: includes/class-job-status-taxonomy.php:95
 msgid "Received"
 msgstr ""
@@ -782,11 +786,11 @@ msgstr ""
 msgid "Replacement planning"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:203
+#: includes/class-job-meta-boxes.php:206
 msgid "Resend failed — check the email/SMTP setup."
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:210
+#: includes/class-job-meta-boxes.php:213
 msgid "Resend last notification"
 msgstr ""
 
@@ -826,11 +830,11 @@ msgstr ""
 msgid "Search Statuses"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:236
+#: includes/class-job-meta-boxes.php:239
 msgid "Search bikes…"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:234
+#: includes/class-job-meta-boxes.php:237
 msgid "Search by internal ID, serial number, or owner name / email / phone."
 msgstr ""
 
@@ -846,7 +850,7 @@ msgstr ""
 msgid "Select image"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:238 includes/class-job-meta-boxes.php:482
+#: includes/class-job-meta-boxes.php:241 includes/class-job-meta-boxes.php:485
 msgid "Selected:"
 msgstr ""
 
@@ -1090,7 +1094,7 @@ msgstr ""
 msgid "You do not have permission to access workshop settings."
 msgstr ""
 
-#: includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:176
+#: includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:198
 msgid "You do not have permission to do this."
 msgstr ""
 

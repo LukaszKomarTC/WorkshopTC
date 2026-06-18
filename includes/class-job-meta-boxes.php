@@ -191,6 +191,9 @@ class Job_Meta_Boxes {
 					echo '<p class="description">' . esc_html__( 'Last notification:', 'tossa-workshop' ) . ' ' . esc_html( $mark . ' ' . $last['status'] . ' → ' . $last['to'] . ' (' . $last['timestamp'] . ')' );
 					if ( empty( $last['sent'] ) ) {
 						echo '<br><span style="color:#b32d2e;">' . esc_html__( 'wp_mail reported failure — check the site email / SMTP setup.', 'tossa-workshop' ) . '</span>';
+						if ( ! empty( $last['error'] ) ) {
+							echo '<br><span style="color:#b32d2e;">' . esc_html__( 'Reason:', 'tossa-workshop' ) . ' ' . esc_html( $last['error'] ) . '</span>';
+						}
 					}
 					echo '</p>';
 				} else {

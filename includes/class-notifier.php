@@ -28,6 +28,13 @@ class Notifier {
 	private static $instance = null;
 
 	/**
+	 * Last wp_mail error message captured during a send attempt.
+	 *
+	 * @var string
+	 */
+	private $mail_error = '';
+
+	/**
 	 * Get the singleton instance.
 	 *
 	 * @return Notifier
@@ -47,6 +54,19 @@ class Notifier {
 	public function register_hooks() {
 		add_action( 'tcw_job_status_changed', array( $this, 'on_status_changed' ), 10, 3 );
 		add_action( 'admin_action_tcw_resend_notification', array( $this, 'handle_resend' ) );
+		add_action( 'wp_mail_failed', array( $this, 'capture_mail_error' ) );
+	}
+
+	/**
+	 * Capture the mailer error message so failures can be explained.
+	 *
+	 * @param \WP_Error $error Error from wp_mail.
+	 * @return void
+	 */
+	public function capture_mail_error( $error ) {
+		if ( is_wp_error( $error ) ) {
+			$this->mail_error = $error->get_error_message();
+		}
 	}
 
 	/**
@@ -86,7 +106,8 @@ class Notifier {
 		$subject = Notification_Templates::render( $tpl['subject'], $vars );
 		$body    = Notification_Templates::render( $tpl['body'], $vars );
 
-		$sent = (bool) wp_mail( $email, $subject, $body );
+		$this->mail_error = '';
+		$sent             = (bool) wp_mail( $email, $subject, $body );
 
 		update_post_meta(
 			$job_id,
@@ -97,6 +118,7 @@ class Notifier {
 				'to'        => $email,
 				'timestamp' => current_time( 'mysql' ),
 				'sent'      => $sent,
+				'error'     => $sent ? '' : $this->mail_error,
 			)
 		);
 

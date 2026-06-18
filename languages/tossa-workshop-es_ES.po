@@ -562,6 +562,9 @@ msgstr "Control de calidad"
 msgid "Ready for Pickup"
 msgstr "Listo para recoger"
 
+msgid "Reason:"
+msgstr "Motivo:"
+
 msgid "Received"
 msgstr "Recibido"
 
