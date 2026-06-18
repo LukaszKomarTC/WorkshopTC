@@ -7,6 +7,9 @@ msgstr ""
 "Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "# Repairs"
+msgstr "# Reparaciones"
+
 msgid "(required)"
 msgstr "(obligatorio)"
 
@@ -52,11 +55,29 @@ msgstr "Todos los trabajos de reparación"
 msgid "All Statuses"
 msgstr "Todos los estados"
 
+msgid "All bike types"
+msgstr "Todos los tipos de bici"
+
+msgid "All mechanics"
+msgstr "Todos los mecánicos"
+
+msgid "All priorities"
+msgstr "Todas las prioridades"
+
+msgid "All statuses"
+msgstr "Todos los estados"
+
+msgid "All types"
+msgstr "Todos los tipos"
+
 msgid "Aluminium"
 msgstr "Aluminio"
 
 msgid "Approval"
 msgstr "Aprobación"
+
+msgid "Approval pending"
+msgstr "Aprobación pendiente"
 
 msgid "Approved"
 msgstr "Aprobado"
@@ -121,6 +142,9 @@ msgstr "Frenos"
 msgid "Brand"
 msgstr "Marca"
 
+msgid "Brand / Model"
+msgstr "Marca / Modelo"
+
 msgid "Cancelled"
 msgstr "Cancelado"
 
@@ -153,6 +177,9 @@ msgstr "Ciudad"
 
 msgid "Clear"
 msgstr "Borrar"
+
+msgid "Client"
+msgstr "Cliente"
 
 msgid "Client approval required"
 msgstr "Requiere aprobación del cliente"
@@ -213,6 +240,9 @@ msgstr "No se pudo guardar el archivo QR."
 
 msgid "Crankset"
 msgstr "Bielas"
+
+msgid "Customer"
+msgstr "Cliente"
 
 msgid "Customer bike"
 msgstr "Bicicleta de cliente"
@@ -394,6 +424,9 @@ msgstr "Última notificación:"
 msgid "Last rental date"
 msgstr "Última fecha de alquiler"
 
+msgid "Last service"
+msgstr "Último mantenimiento"
+
 msgid "Last service date"
 msgstr "Fecha del último mantenimiento"
 
@@ -420,6 +453,9 @@ msgstr "Resumen de mantenimiento"
 
 msgid "Mandatory work"
 msgstr "Trabajo obligatorio"
+
+msgid "Mechanic"
+msgstr "Mecánico"
 
 msgid "Mechanic notes"
 msgstr "Notas del mecánico"
@@ -496,6 +532,9 @@ msgstr "Trabajo opcional"
 msgid "Other"
 msgstr "Otro"
 
+msgid "Owner"
+msgstr "Propietario"
+
 msgid "Owner / Client"
 msgstr "Propietario / Cliente"
 
@@ -556,6 +595,9 @@ msgstr "Prioridad"
 msgid "Problem description"
 msgstr "Descripción del problema"
 
+msgid "Promised"
+msgstr "Prometida"
+
 msgid "Promised completion"
 msgstr "Finalización prometida"
 
@@ -573,6 +615,9 @@ msgstr "Control de calidad"
 
 msgid "Ready for Pickup"
 msgstr "Listo para recoger"
+
+msgid "Ready for pickup"
+msgstr "Lista para recoger"
 
 msgid "Reason:"
 msgstr "Motivo:"
@@ -658,6 +703,9 @@ msgstr "Seleccionada:"
 msgid "Send email"
 msgstr "Enviar correo"
 
+msgid "Serial"
+msgstr "Número de serie"
+
 msgid "Serial number"
 msgstr "Número de serie"
 
@@ -687,6 +735,9 @@ msgstr "Teléfono de la tienda"
 
 msgid "Shown on labels and used for the WhatsApp link (digits only, e.g. 34123456789)."
 msgstr "Se muestra en las etiquetas y se usa para el enlace de WhatsApp (solo dígitos, p. ej. 34123456789)."
+
+msgid "Size"
+msgstr "Talla"
 
 msgid "Sorry, we could not find that bike. Please contact the shop."
 msgstr "Lo sentimos, no hemos encontrado esa bicicleta. Contacta con la tienda."
@@ -748,6 +799,9 @@ msgstr "Trekking"
 msgid "Tubeless"
 msgstr "Tubeless"
 
+msgid "Type"
+msgstr "Tipo"
+
 msgid "Tyres"
 msgstr "Neumáticos"
 
@@ -788,6 +842,12 @@ msgid "Waiting for Approval"
 msgstr "Esperando aprobación"
 
 msgid "Waiting for Parts"
+msgstr "Esperando piezas"
+
+msgid "Waiting for approval"
+msgstr "Esperando aprobación"
+
+msgid "Waiting for parts"
 msgstr "Esperando piezas"
 
 msgid "Warning flags"

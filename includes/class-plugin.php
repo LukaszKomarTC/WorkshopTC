@@ -79,6 +79,8 @@ final class Plugin {
 			Print_Label::instance()->register_hooks();
 			Job_Meta_Boxes::instance()->register_hooks();
 			Bike_Search::instance()->register_hooks();
+			Admin\Jobs_List::instance()->register_hooks();
+			Admin\Bikes_List::instance()->register_hooks();
 		}
 	}
 

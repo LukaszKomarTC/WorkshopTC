@@ -6,6 +6,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: \n"
 
+#: includes/admin/class-bikes-list.php:73
+msgid "# Repairs"
+msgstr ""
+
 #: includes/class-field-kit.php:40
 msgid "(required)"
 msgstr ""
@@ -66,15 +70,39 @@ msgstr ""
 msgid "All Statuses"
 msgstr ""
 
+#: includes/admin/class-jobs-list.php:202
+msgid "All bike types"
+msgstr ""
+
+#: includes/admin/class-jobs-list.php:212
+msgid "All mechanics"
+msgstr ""
+
+#: includes/admin/class-jobs-list.php:194
+msgid "All priorities"
+msgstr ""
+
+#: includes/admin/class-jobs-list.php:186
+msgid "All statuses"
+msgstr ""
+
+#: includes/admin/class-bikes-list.php:145
+msgid "All types"
+msgstr ""
+
 #: includes/class-bike-fields.php:54
 msgid "Aluminium"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:161
+#: includes/admin/class-jobs-list.php:74 includes/class-job-meta-boxes.php:161
 msgid "Approval"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:453 includes/class-job-status-taxonomy.php:98
+#: includes/admin/class-jobs-list.php:218
+msgid "Approval pending"
+msgstr ""
+
+#: includes/admin/class-jobs-list.php:154 includes/class-job-meta-boxes.php:453 includes/class-job-status-taxonomy.php:98
 msgid "Approved"
 msgstr ""
 
@@ -118,7 +146,7 @@ msgstr ""
 msgid "Battery serial"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:91 includes/class-job-meta-boxes.php:168
+#: includes/admin/class-jobs-list.php:68 includes/class-job-meta-boxes.php:91 includes/class-job-meta-boxes.php:168
 msgid "Bike"
 msgstr ""
 
@@ -158,6 +186,10 @@ msgstr ""
 msgid "Brand"
 msgstr ""
 
+#: includes/admin/class-bikes-list.php:67
+msgid "Brand / Model"
+msgstr ""
+
 #: includes/class-job-status-taxonomy.php:107
 msgid "Cancelled"
 msgstr ""
@@ -178,7 +210,7 @@ msgstr ""
 msgid "Catalan"
 msgstr ""
 
-#: includes/class-bike-fields.php:201
+#: includes/admin/class-bikes-list.php:69 includes/class-bike-fields.php:201
 msgid "Category"
 msgstr ""
 
@@ -202,11 +234,15 @@ msgstr ""
 msgid "Clear"
 msgstr ""
 
+#: includes/admin/class-jobs-list.php:67
+msgid "Client"
+msgstr ""
+
 #: includes/class-repair-job-fields.php:184
 msgid "Client approval required"
 msgstr ""
 
-#: includes/class-notifier.php:213
+#: includes/class-notifier.php:215
 msgid "Client approved estimate — %s"
 msgstr ""
 
@@ -214,7 +250,7 @@ msgstr ""
 msgid "Client declined"
 msgstr ""
 
-#: includes/class-notifier.php:216
+#: includes/class-notifier.php:218
 msgid "Client declined estimate — %s"
 msgstr ""
 
@@ -230,7 +266,7 @@ msgstr ""
 msgid "Client notes"
 msgstr ""
 
-#: includes/class-notifier.php:223
+#: includes/class-notifier.php:225
 msgid "Client: %s"
 msgstr ""
 
@@ -254,7 +290,7 @@ msgstr ""
 msgid "Colour"
 msgstr ""
 
-#: includes/class-notifier.php:226
+#: includes/class-notifier.php:228
 msgid "Comments: %s"
 msgstr ""
 
@@ -282,6 +318,10 @@ msgstr ""
 msgid "Crankset"
 msgstr ""
 
+#: includes/admin/class-bikes-list.php:106 includes/admin/class-bikes-list.php:146 includes/admin/class-jobs-list.php:203
+msgid "Customer"
+msgstr ""
+
 #: includes/class-bike-fields.php:29
 msgid "Customer bike"
 msgstr ""
@@ -290,7 +330,7 @@ msgstr ""
 msgid "Date received"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:454 includes/class-job-status-taxonomy.php:106
+#: includes/admin/class-jobs-list.php:155 includes/class-job-meta-boxes.php:454 includes/class-job-status-taxonomy.php:106
 msgid "Declined"
 msgstr ""
 
@@ -362,7 +402,7 @@ msgstr ""
 msgid "Fair"
 msgstr ""
 
-#: includes/class-repair-job-fields.php:229
+#: includes/admin/class-jobs-list.php:75 includes/class-repair-job-fields.php:229
 msgid "Final price"
 msgstr ""
 
@@ -370,7 +410,7 @@ msgstr ""
 msgid "Firmware"
 msgstr ""
 
-#: includes/class-bike-fields.php:418
+#: includes/admin/class-bikes-list.php:106 includes/admin/class-bikes-list.php:146 includes/admin/class-jobs-list.php:203 includes/class-bike-fields.php:418
 msgid "Fleet"
 msgstr ""
 
@@ -470,7 +510,7 @@ msgstr ""
 msgid "Intake photos"
 msgstr ""
 
-#: includes/class-bike-meta-boxes.php:146
+#: includes/admin/class-bikes-list.php:65 includes/class-bike-meta-boxes.php:146
 msgid "Internal ID"
 msgstr ""
 
@@ -478,7 +518,7 @@ msgstr ""
 msgid "Internal Notes"
 msgstr ""
 
-#: includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:244
+#: includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:246
 msgid "Invalid request."
 msgstr ""
 
@@ -486,7 +526,7 @@ msgstr ""
 msgid "Job Details"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:139
+#: includes/admin/class-jobs-list.php:66 includes/class-job-meta-boxes.php:139
 msgid "Job ID"
 msgstr ""
 
@@ -520,6 +560,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:442
 msgid "Last rental date"
+msgstr ""
+
+#: includes/admin/class-bikes-list.php:72
+msgid "Last service"
 msgstr ""
 
 #: includes/class-bike-fields.php:310 includes/class-bike-fields.php:345
@@ -556,6 +600,10 @@ msgstr ""
 
 #: includes/class-repair-job-fields.php:168
 msgid "Mandatory work"
+msgstr ""
+
+#: includes/admin/class-jobs-list.php:73
+msgid "Mechanic"
 msgstr ""
 
 #: includes/class-bike-fields.php:401
@@ -618,7 +666,7 @@ msgstr ""
 msgid "Normal"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:451
+#: includes/admin/class-jobs-list.php:152 includes/class-job-meta-boxes.php:451
 msgid "Not required"
 msgstr ""
 
@@ -656,6 +704,10 @@ msgstr ""
 
 #: includes/class-repair-job-fields.php:44 includes/class-bike-fields.php:50
 msgid "Other"
+msgstr ""
+
+#: includes/admin/class-bikes-list.php:66
+msgid "Owner"
 msgstr ""
 
 #: includes/class-bike-fields.php:131
@@ -698,7 +750,7 @@ msgstr ""
 msgid "Pedals"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:452
+#: includes/admin/class-jobs-list.php:153 includes/class-job-meta-boxes.php:452
 msgid "Pending"
 msgstr ""
 
@@ -730,12 +782,16 @@ msgstr ""
 msgid "Print label"
 msgstr ""
 
-#: includes/class-repair-job-fields.php:91
+#: includes/admin/class-jobs-list.php:70 includes/class-repair-job-fields.php:91
 msgid "Priority"
 msgstr ""
 
 #: includes/class-repair-job-fields.php:115
 msgid "Problem description"
+msgstr ""
+
+#: includes/admin/class-jobs-list.php:72
+msgid "Promised"
 msgstr ""
 
 #: includes/class-repair-job-fields.php:98
@@ -762,11 +818,15 @@ msgstr ""
 msgid "Ready for Pickup"
 msgstr ""
 
+#: includes/admin/class-jobs-list.php:319
+msgid "Ready for pickup"
+msgstr ""
+
 #: includes/class-job-meta-boxes.php:195
 msgid "Reason:"
 msgstr ""
 
-#: includes/class-job-status-taxonomy.php:95
+#: includes/admin/class-jobs-list.php:71 includes/class-job-status-taxonomy.php:95
 msgid "Received"
 msgstr ""
 
@@ -874,6 +934,10 @@ msgstr ""
 msgid "Send email"
 msgstr ""
 
+#: includes/admin/class-bikes-list.php:71
+msgid "Serial"
+msgstr ""
+
 #: includes/class-bike-fields.php:114
 msgid "Serial number"
 msgstr ""
@@ -914,6 +978,10 @@ msgstr ""
 msgid "Shown on labels and used for the WhatsApp link (digits only, e.g. 34123456789)."
 msgstr ""
 
+#: includes/admin/class-bikes-list.php:70
+msgid "Size"
+msgstr ""
+
 #: includes/class-scan-router.php:162
 msgid "Sorry, we could not find that bike. Please contact the shop."
 msgstr ""
@@ -930,7 +998,7 @@ msgstr ""
 msgid "Staff notification email"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:144
+#: includes/admin/class-jobs-list.php:69 includes/class-job-meta-boxes.php:144
 msgid "Status"
 msgstr ""
 
@@ -994,6 +1062,10 @@ msgstr ""
 msgid "Tubeless"
 msgstr ""
 
+#: includes/admin/class-bikes-list.php:68
+msgid "Type"
+msgstr ""
+
 #: includes/class-repair-job-fields.php:50 includes/class-bike-fields.php:234
 msgid "Tyres"
 msgstr ""
@@ -1048,6 +1120,14 @@ msgstr ""
 
 #: includes/class-job-status-taxonomy.php:99
 msgid "Waiting for Parts"
+msgstr ""
+
+#: includes/admin/class-jobs-list.php:317
+msgid "Waiting for approval"
+msgstr ""
+
+#: includes/admin/class-jobs-list.php:318
+msgid "Waiting for parts"
 msgstr ""
 
 #: includes/class-bike-fields.php:411
@@ -1126,7 +1206,7 @@ msgstr ""
 msgid "You do not have permission to access workshop settings."
 msgstr ""
 
-#: includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:247
+#: includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:249
 msgid "You do not have permission to do this."
 msgstr ""
 
