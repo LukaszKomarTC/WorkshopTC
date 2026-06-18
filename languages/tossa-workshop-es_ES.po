@@ -97,6 +97,9 @@ msgstr "Datos básicos"
 msgid "Battery"
 msgstr "Batería"
 
+msgid "Battery / Motor"
+msgstr "Batería / Motor"
+
 msgid "Battery Wh"
 msgstr "Batería (Wh)"
 
@@ -169,6 +172,9 @@ msgstr "Cadena"
 msgid "Charger"
 msgstr "Cargador"
 
+msgid "Check saved."
+msgstr "Revisión guardada."
+
 msgid "Child seat"
 msgstr "Silla infantil"
 
@@ -232,6 +238,9 @@ msgstr "Soporte de ciclocomputador"
 msgid "Condition rating"
 msgstr "Valoración del estado"
 
+msgid "Condition:"
+msgstr "Estado:"
+
 msgid "Could not render the QR image."
 msgstr "No se pudo generar la imagen QR."
 
@@ -241,11 +250,17 @@ msgstr "No se pudo guardar el archivo QR."
 msgid "Crankset"
 msgstr "Bielas"
 
+msgid "Create a linked repair job (status: received)"
+msgstr "Crear un trabajo de reparación vinculado (estado: recibido)"
+
 msgid "Customer"
 msgstr "Cliente"
 
 msgid "Customer bike"
 msgstr "Bicicleta de cliente"
+
+msgid "Damage notes"
+msgstr "Notas de daños"
 
 msgid "Date received"
 msgstr "Fecha de recepción"
@@ -261,6 +276,9 @@ msgstr "Cambios"
 
 msgid "Display model"
 msgstr "Modelo del display"
+
+msgid "Drivetrain"
+msgstr "Transmisión"
 
 msgid "Drivetrain brand"
 msgstr "Marca de la transmisión"
@@ -318,6 +336,12 @@ msgstr "Bicicleta de flota"
 
 msgid "Fleet number"
 msgstr "Número de flota"
+
+msgid "Fleet quick-check"
+msgstr "Revisión rápida de flota"
+
+msgid "Follow-up"
+msgstr "Seguimiento"
 
 msgid "Fork brand"
 msgstr "Marca de la horquilla"
@@ -394,6 +418,9 @@ msgstr "Notas internas"
 msgid "Invalid request."
 msgstr "Solicitud no válida."
 
+msgid "Issues"
+msgstr "Incidencias"
+
 msgid "Job Details"
 msgstr "Detalles del trabajo"
 
@@ -417,6 +444,9 @@ msgstr "Último cambio de casete"
 
 msgid "Last chain change"
 msgstr "Último cambio de cadena"
+
+msgid "Last check:"
+msgstr "Última revisión:"
 
 msgid "Last notification:"
 msgstr "Última notificación:"
@@ -454,6 +484,9 @@ msgstr "Resumen de mantenimiento"
 msgid "Mandatory work"
 msgstr "Trabajo obligatorio"
 
+msgid "Mark the bike as not currently rentable"
+msgstr "Marcar la bicicleta como no disponible para alquiler"
+
 msgid "Mechanic"
 msgstr "Mecánico"
 
@@ -471,6 +504,9 @@ msgstr "Modelo del motor"
 
 msgid "Motor serial"
 msgstr "Nº de serie del motor"
+
+msgid "Needs attention"
+msgstr "Requiere atención"
 
 msgid "New Bike"
 msgstr "Nueva bicicleta"
@@ -492,6 +528,9 @@ msgstr "No hay correo del cliente — no se pueden enviar notificaciones. Añade
 
 msgid "No notification sent yet for this job."
 msgstr "Todavía no se ha enviado ninguna notificación para este trabajo."
+
+msgid "No post-rental checks recorded yet."
+msgstr "Todavía no hay revisiones posteriores al alquiler."
 
 msgid "No repair jobs found"
 msgstr "No se encontraron trabajos de reparación"
@@ -520,6 +559,9 @@ msgstr "Notificaciones"
 msgid "Notify the client when a job enters this status"
 msgstr "Avisar al cliente cuando un trabajo entra en este estado"
 
+msgid "OK"
+msgstr "OK"
+
 msgid "Odometer"
 msgstr "Odómetro"
 
@@ -531,6 +573,9 @@ msgstr "Trabajo opcional"
 
 msgid "Other"
 msgstr "Otro"
+
+msgid "Overall condition OK"
+msgstr "Estado general correcto"
 
 msgid "Owner"
 msgstr "Propietario"
@@ -580,6 +625,9 @@ msgstr "Marcadores:"
 msgid "Poor"
 msgstr "Malo"
 
+msgid "Post-rental check follow-up."
+msgstr "Seguimiento de revisión posterior al alquiler."
+
 msgid "Preferred language"
 msgstr "Idioma preferido"
 
@@ -628,6 +676,9 @@ msgstr "Recibido"
 msgid "Recommended work"
 msgstr "Trabajo recomendado"
 
+msgid "Record post-rental check"
+msgstr "Registrar revisión posterior al alquiler"
+
 msgid "Recurring problems"
 msgstr "Problemas recurrentes"
 
@@ -645,6 +696,9 @@ msgstr "Categoría de alquiler"
 
 msgid "Rental days count"
 msgstr "Número de días de alquiler"
+
+msgid "Replace"
+msgstr "Sustituir"
 
 msgid "Replacement planning"
 msgstr "Planificación de reemplazo"
@@ -672,6 +726,9 @@ msgstr "Problemas de seguridad"
 
 msgid "Safety status"
 msgstr "Estado de seguridad"
+
+msgid "Save check"
+msgstr "Guardar revisión"
 
 msgid "Search Bikes"
 msgstr "Buscar bicicletas"
@@ -783,6 +840,9 @@ msgstr "El ID interno y el código QR se generan automáticamente al guardar la 
 
 msgid "The public base URL must start with http:// or https://. It has been cleared."
 msgstr "La URL base pública debe empezar por http:// o https://. Se ha borrado."
+
+msgid "This page is only available for fleet bikes."
+msgstr "Esta página solo está disponible para bicicletas de flota."
 
 msgid "Titanium"
 msgstr "Titanio"

@@ -335,7 +335,7 @@ class Job_Meta_Boxes {
 		}
 
 		// --- Inherit client contact from the bike (once) ------------------
-		$this->maybe_inherit_contact( $post_id );
+		Job_Factory::inherit_contact( $post_id );
 
 		// --- Approval status follows the approval_required flag -----------
 		$this->sync_approval_status( $post_id );
@@ -350,45 +350,6 @@ class Job_Meta_Boxes {
 
 		// --- Auto title ---------------------------------------------------
 		$this->update_title( $post_id, $post );
-	}
-
-	/**
-	 * Copy client contact from the linked bike onto the job once, so historical
-	 * notifications stay correct even if the bike owner later changes.
-	 *
-	 * @param int $job_id Job ID.
-	 * @return void
-	 */
-	private function maybe_inherit_contact( $job_id ) {
-		if ( get_post_meta( $job_id, 'client_contact_inherited', true ) ) {
-			return;
-		}
-		$bike_id = (int) get_post_meta( $job_id, 'bike_id', true );
-		if ( ! $bike_id ) {
-			return;
-		}
-
-		$email = get_post_meta( $bike_id, 'owner_email', true );
-		$phone = get_post_meta( $bike_id, 'owner_phone', true );
-		$lang  = get_post_meta( $bike_id, 'owner_language', true );
-		$name  = get_post_meta( $bike_id, 'owner_name', true );
-
-		if ( ! $name ) {
-			$user_id = (int) get_post_meta( $bike_id, 'owner_user_id', true );
-			if ( $user_id ) {
-				$user = get_userdata( $user_id );
-				if ( $user ) {
-					$name  = $user->display_name;
-					$email = $email ? $email : $user->user_email;
-				}
-			}
-		}
-
-		update_post_meta( $job_id, 'client_name', sanitize_text_field( $name ) );
-		update_post_meta( $job_id, 'client_email', sanitize_email( $email ) );
-		update_post_meta( $job_id, 'client_phone', sanitize_text_field( $phone ) );
-		update_post_meta( $job_id, 'client_language', $lang ? $lang : 'es' );
-		update_post_meta( $job_id, 'client_contact_inherited', '1' );
 	}
 
 	/**

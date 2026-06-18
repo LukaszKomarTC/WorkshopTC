@@ -70,19 +70,19 @@ msgstr ""
 msgid "All Statuses"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:202
+#: includes/admin/class-jobs-list.php:203
 msgid "All bike types"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:212
+#: includes/admin/class-jobs-list.php:213
 msgid "All mechanics"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:194
+#: includes/admin/class-jobs-list.php:195
 msgid "All priorities"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:186
+#: includes/admin/class-jobs-list.php:187
 msgid "All statuses"
 msgstr ""
 
@@ -94,15 +94,15 @@ msgstr ""
 msgid "Aluminium"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:74 includes/class-job-meta-boxes.php:161
+#: includes/admin/class-jobs-list.php:75 includes/class-job-meta-boxes.php:161
 msgid "Approval"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:218
+#: includes/admin/class-jobs-list.php:220
 msgid "Approval pending"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:154 includes/class-job-meta-boxes.php:453 includes/class-job-status-taxonomy.php:98
+#: includes/admin/class-jobs-list.php:155 includes/class-job-meta-boxes.php:414 includes/class-job-status-taxonomy.php:98
 msgid "Approved"
 msgstr ""
 
@@ -126,6 +126,10 @@ msgstr ""
 msgid "Battery"
 msgstr ""
 
+#: includes/admin/class-fleet-check.php:73
+msgid "Battery / Motor"
+msgstr ""
+
 #: includes/class-bike-fields.php:275
 msgid "Battery Wh"
 msgstr ""
@@ -146,7 +150,7 @@ msgstr ""
 msgid "Battery serial"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:68 includes/class-job-meta-boxes.php:91 includes/class-job-meta-boxes.php:168
+#: includes/admin/class-jobs-list.php:69 includes/class-job-meta-boxes.php:91 includes/class-job-meta-boxes.php:168
 msgid "Bike"
 msgstr ""
 
@@ -178,7 +182,7 @@ msgstr ""
 msgid "Brake pad type"
 msgstr ""
 
-#: includes/class-repair-job-fields.php:47 includes/class-bike-fields.php:230
+#: includes/admin/class-fleet-check.php:71 includes/class-repair-job-fields.php:47 includes/class-bike-fields.php:230
 msgid "Brakes"
 msgstr ""
 
@@ -222,6 +226,10 @@ msgstr ""
 msgid "Charger"
 msgstr ""
 
+#: includes/admin/class-fleet-check.php:193
+msgid "Check saved."
+msgstr ""
+
 #: includes/class-repair-job-fields.php:43
 msgid "Child seat"
 msgstr ""
@@ -234,7 +242,7 @@ msgstr ""
 msgid "Clear"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:67
+#: includes/admin/class-jobs-list.php:68
 msgid "Client"
 msgstr ""
 
@@ -306,6 +314,10 @@ msgstr ""
 msgid "Condition rating"
 msgstr ""
 
+#: includes/admin/class-fleet-check.php:153
+msgid "Condition:"
+msgstr ""
+
 #: includes/class-qr-generator.php:93
 msgid "Could not render the QR image."
 msgstr ""
@@ -318,7 +330,11 @@ msgstr ""
 msgid "Crankset"
 msgstr ""
 
-#: includes/admin/class-bikes-list.php:106 includes/admin/class-bikes-list.php:146 includes/admin/class-jobs-list.php:203
+#: includes/admin/class-fleet-check.php:226
+msgid "Create a linked repair job (status: received)"
+msgstr ""
+
+#: includes/admin/class-bikes-list.php:106 includes/admin/class-bikes-list.php:146 includes/admin/class-jobs-list.php:204
 msgid "Customer"
 msgstr ""
 
@@ -326,11 +342,15 @@ msgstr ""
 msgid "Customer bike"
 msgstr ""
 
+#: includes/admin/class-fleet-check.php:216
+msgid "Damage notes"
+msgstr ""
+
 #: includes/class-repair-job-fields.php:85
 msgid "Date received"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:155 includes/class-job-meta-boxes.php:454 includes/class-job-status-taxonomy.php:106
+#: includes/admin/class-jobs-list.php:156 includes/class-job-meta-boxes.php:415 includes/class-job-status-taxonomy.php:106
 msgid "Declined"
 msgstr ""
 
@@ -344,6 +364,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:281
 msgid "Display model"
+msgstr ""
+
+#: includes/admin/class-fleet-check.php:72
+msgid "Drivetrain"
 msgstr ""
 
 #: includes/class-bike-fields.php:222
@@ -402,7 +426,7 @@ msgstr ""
 msgid "Fair"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:75 includes/class-repair-job-fields.php:229
+#: includes/admin/class-jobs-list.php:76 includes/class-repair-job-fields.php:229
 msgid "Final price"
 msgstr ""
 
@@ -410,7 +434,7 @@ msgstr ""
 msgid "Firmware"
 msgstr ""
 
-#: includes/admin/class-bikes-list.php:106 includes/admin/class-bikes-list.php:146 includes/admin/class-jobs-list.php:203 includes/class-bike-fields.php:418
+#: includes/admin/class-bikes-list.php:106 includes/admin/class-bikes-list.php:146 includes/admin/class-jobs-list.php:204 includes/class-bike-fields.php:418
 msgid "Fleet"
 msgstr ""
 
@@ -420,6 +444,14 @@ msgstr ""
 
 #: includes/class-bike-fields.php:425
 msgid "Fleet number"
+msgstr ""
+
+#: includes/admin/class-fleet-check.php:95 includes/admin/class-fleet-check.php:96 includes/admin/class-fleet-check.php:132 includes/admin/class-fleet-check.php:190
+msgid "Fleet quick-check"
+msgstr ""
+
+#: includes/admin/class-fleet-check.php:224
+msgid "Follow-up"
 msgstr ""
 
 #: includes/class-bike-fields.php:298
@@ -518,15 +550,19 @@ msgstr ""
 msgid "Internal Notes"
 msgstr ""
 
-#: includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:246
+#: includes/admin/class-fleet-check.php:245 includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:246
 msgid "Invalid request."
+msgstr ""
+
+#: includes/admin/class-fleet-check.php:153
+msgid "Issues"
 msgstr ""
 
 #: includes/class-repair-job-fields.php:75
 msgid "Job Details"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:66 includes/class-job-meta-boxes.php:139
+#: includes/admin/class-jobs-list.php:67 includes/class-job-meta-boxes.php:139
 msgid "Job ID"
 msgstr ""
 
@@ -552,6 +588,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:360
 msgid "Last chain change"
+msgstr ""
+
+#: includes/admin/class-fleet-check.php:152
+msgid "Last check:"
 msgstr ""
 
 #: includes/class-job-meta-boxes.php:191
@@ -602,7 +642,11 @@ msgstr ""
 msgid "Mandatory work"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:73
+#: includes/admin/class-fleet-check.php:227
+msgid "Mark the bike as not currently rentable"
+msgstr ""
+
+#: includes/admin/class-jobs-list.php:74
 msgid "Mechanic"
 msgstr ""
 
@@ -624,6 +668,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:266
 msgid "Motor serial"
+msgstr ""
+
+#: includes/admin/class-fleet-check.php:58
+msgid "Needs attention"
 msgstr ""
 
 #: includes/class-bike-cpt.php:64
@@ -654,6 +702,10 @@ msgstr ""
 msgid "No notification sent yet for this job."
 msgstr ""
 
+#: includes/admin/class-fleet-check.php:155
+msgid "No post-rental checks recorded yet."
+msgstr ""
+
 #: includes/class-repair-job-cpt.php:67
 msgid "No repair jobs found"
 msgstr ""
@@ -666,7 +718,7 @@ msgstr ""
 msgid "Normal"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:152 includes/class-job-meta-boxes.php:451
+#: includes/admin/class-jobs-list.php:153 includes/class-job-meta-boxes.php:412
 msgid "Not required"
 msgstr ""
 
@@ -690,6 +742,10 @@ msgstr ""
 msgid "Notify the client when a job enters this status"
 msgstr ""
 
+#: includes/admin/class-fleet-check.php:57 includes/admin/class-fleet-check.php:153
+msgid "OK"
+msgstr ""
+
 #: includes/class-bike-fields.php:284
 msgid "Odometer"
 msgstr ""
@@ -704,6 +760,10 @@ msgstr ""
 
 #: includes/class-repair-job-fields.php:44 includes/class-bike-fields.php:50
 msgid "Other"
+msgstr ""
+
+#: includes/admin/class-fleet-check.php:200
+msgid "Overall condition OK"
 msgstr ""
 
 #: includes/admin/class-bikes-list.php:66
@@ -750,7 +810,7 @@ msgstr ""
 msgid "Pedals"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:153 includes/class-job-meta-boxes.php:452
+#: includes/admin/class-jobs-list.php:154 includes/class-job-meta-boxes.php:413
 msgid "Pending"
 msgstr ""
 
@@ -758,7 +818,7 @@ msgstr ""
 msgid "Photo gallery"
 msgstr ""
 
-#: includes/class-bike-fields.php:323
+#: includes/admin/class-fleet-check.php:220 includes/class-bike-fields.php:323
 msgid "Photos"
 msgstr ""
 
@@ -768,6 +828,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:63
 msgid "Poor"
+msgstr ""
+
+#: includes/admin/class-fleet-check.php:283
+msgid "Post-rental check follow-up."
 msgstr ""
 
 #: includes/class-bike-fields.php:159
@@ -782,7 +846,7 @@ msgstr ""
 msgid "Print label"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:70 includes/class-repair-job-fields.php:91
+#: includes/admin/class-jobs-list.php:71 includes/class-repair-job-fields.php:91
 msgid "Priority"
 msgstr ""
 
@@ -790,7 +854,7 @@ msgstr ""
 msgid "Problem description"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:72
+#: includes/admin/class-jobs-list.php:73
 msgid "Promised"
 msgstr ""
 
@@ -818,7 +882,7 @@ msgstr ""
 msgid "Ready for Pickup"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:319
+#: includes/admin/class-jobs-list.php:338
 msgid "Ready for pickup"
 msgstr ""
 
@@ -826,12 +890,16 @@ msgstr ""
 msgid "Reason:"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:71 includes/class-job-status-taxonomy.php:95
+#: includes/admin/class-jobs-list.php:72 includes/class-job-status-taxonomy.php:95
 msgid "Received"
 msgstr ""
 
 #: includes/class-repair-job-fields.php:163
 msgid "Recommended work"
+msgstr ""
+
+#: includes/admin/class-fleet-check.php:158
+msgid "Record post-rental check"
 msgstr ""
 
 #: includes/class-bike-fields.php:406
@@ -856,6 +924,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:447
 msgid "Rental days count"
+msgstr ""
+
+#: includes/admin/class-fleet-check.php:59
+msgid "Replace"
 msgstr ""
 
 #: includes/class-bike-fields.php:462
@@ -894,6 +966,10 @@ msgstr ""
 msgid "Safety status"
 msgstr ""
 
+#: includes/admin/class-fleet-check.php:231
+msgid "Save check"
+msgstr ""
+
 #: includes/class-bike-cpt.php:66
 msgid "Search Bikes"
 msgstr ""
@@ -926,7 +1002,7 @@ msgstr ""
 msgid "Select image"
 msgstr ""
 
-#: includes/class-job-meta-boxes.php:241 includes/class-job-meta-boxes.php:485
+#: includes/class-job-meta-boxes.php:241 includes/class-job-meta-boxes.php:446
 msgid "Selected:"
 msgstr ""
 
@@ -998,7 +1074,7 @@ msgstr ""
 msgid "Staff notification email"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:69 includes/class-job-meta-boxes.php:144
+#: includes/admin/class-jobs-list.php:70 includes/class-job-meta-boxes.php:144
 msgid "Status"
 msgstr ""
 
@@ -1042,6 +1118,10 @@ msgstr ""
 msgid "The public base URL must start with http:// or https://. It has been cleared."
 msgstr ""
 
+#: includes/admin/class-fleet-check.php:174
+msgid "This page is only available for fleet bikes."
+msgstr ""
+
 #: includes/class-bike-fields.php:56
 msgid "Titanium"
 msgstr ""
@@ -1066,7 +1146,7 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: includes/class-repair-job-fields.php:50 includes/class-bike-fields.php:234
+#: includes/admin/class-fleet-check.php:70 includes/class-repair-job-fields.php:50 includes/class-bike-fields.php:234
 msgid "Tyres"
 msgstr ""
 
@@ -1122,11 +1202,11 @@ msgstr ""
 msgid "Waiting for Parts"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:317
+#: includes/admin/class-jobs-list.php:336
 msgid "Waiting for approval"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:318
+#: includes/admin/class-jobs-list.php:337
 msgid "Waiting for parts"
 msgstr ""
 
@@ -1194,7 +1274,7 @@ msgstr ""
 msgid "Year"
 msgstr ""
 
-#: includes/class-field-kit.php:95
+#: includes/admin/class-fleet-check.php:201 includes/class-field-kit.php:95
 msgid "Yes"
 msgstr ""
 
@@ -1206,7 +1286,7 @@ msgstr ""
 msgid "You do not have permission to access workshop settings."
 msgstr ""
 
-#: includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:249
+#: includes/admin/class-fleet-check.php:168 includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:249
 msgid "You do not have permission to do this."
 msgstr ""
 

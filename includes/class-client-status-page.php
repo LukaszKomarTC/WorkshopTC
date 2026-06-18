@@ -314,6 +314,14 @@ class Client_Status_Page {
 			</dl>
 
 			<?php
+			// Payment link, surfaced only when ready (M6, optional).
+			$payment = get_post_meta( $job_id, 'payment_link', true );
+			if ( 'ready' === $status && $payment ) :
+				?>
+				<p><a class="tcw-btn tcw-btn-ok" style="display:block;text-align:center;" href="<?php echo esc_url( $payment ); ?>" target="_blank" rel="noopener"><?php echo esc_html( Client_Status_Copy::t( 'pay', $lang ) ); ?></a></p>
+			<?php endif; ?>
+
+			<?php
 			$this->work_block( $job_id, 'recommended_work', Client_Status_Copy::t( 'recommended', $lang ) );
 			$this->work_block( $job_id, 'mandatory_work', Client_Status_Copy::t( 'mandatory', $lang ) );
 			$this->work_block( $job_id, 'optional_work', Client_Status_Copy::t( 'optional', $lang ) );
