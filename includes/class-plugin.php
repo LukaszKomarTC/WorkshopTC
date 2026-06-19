@@ -85,6 +85,7 @@ final class Plugin {
 			Admin\Jobs_List::instance()->register_hooks();
 			Admin\Bikes_List::instance()->register_hooks();
 			Admin\Fleet_Check::instance()->register_hooks();
+			Admin\Help_Page::instance()->register_hooks();
 		}
 	}
 

@@ -46,12 +46,20 @@ msgstr ""
 msgid "Add New Status"
 msgstr ""
 
+#: includes/admin/class-help-page.php:85
+msgid "Add a bike under "Bikes". On the first save it gets a permanent internal ID (TCB-000001 for customers, TCF- for fleet) and a QR code."
+msgstr ""
+
 #: includes/class-field-kit.php:261 includes/class-assets.php:35
 msgid "Add photos"
 msgstr ""
 
 #: includes/class-bike-fields.php:332
 msgid "Add photos and optionally label each (left, right, drivetrain, cockpit, damage, before/after)."
+msgstr ""
+
+#: includes/admin/class-help-page.php:110
+msgid "After installing or updating the plugin"
 msgstr ""
 
 #: includes/class-repair-job-fields.php:212
@@ -254,6 +262,10 @@ msgstr ""
 msgid "Client approved estimate — %s"
 msgstr ""
 
+#: includes/admin/class-help-page.php:125
+msgid "Client contact details are stored with each bike and copied onto its jobs. A customer workshop data is included in the WordPress Tools, Export/Erase Personal Data screens, so access and erasure requests can be handled there."
+msgstr ""
+
 #: includes/class-repair-job-fields.php:59
 msgid "Client declined"
 msgstr ""
@@ -330,6 +342,10 @@ msgstr ""
 msgid "Condition:"
 msgstr ""
 
+#: includes/admin/class-help-page.php:114
+msgid "Confirm the site can send email. If notifications are not arriving, install or configure an SMTP plugin. The job Status box shows the exact reason when a send fails."
+msgstr ""
+
 #: includes/class-qr-generator.php:93
 msgid "Could not render the QR image."
 msgstr ""
@@ -340,6 +356,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:225
 msgid "Crankset"
+msgstr ""
+
+#: includes/admin/class-help-page.php:87
+msgid "Create a Repair Job, link the bike with the search box (by internal ID, serial, or owner name/email/phone), and fill in the intake details."
 msgstr ""
 
 #: includes/admin/class-fleet-check.php:225
@@ -358,8 +378,16 @@ msgstr ""
 msgid "Damage notes"
 msgstr ""
 
+#: includes/admin/class-help-page.php:124
+msgid "Data & privacy"
+msgstr ""
+
 #: includes/class-privacy.php:270 includes/class-repair-job-fields.php:85
 msgid "Date received"
+msgstr ""
+
+#: includes/admin/class-help-page.php:112
+msgid "Deactivate and reactivate the plugin once. This registers the scan/status web addresses and grants the staff roles their permissions."
 msgstr ""
 
 #: includes/admin/class-jobs-list.php:156 includes/class-job-meta-boxes.php:415 includes/class-job-status-taxonomy.php:106
@@ -430,12 +458,20 @@ msgstr ""
 msgid "Estimate amount"
 msgstr ""
 
+#: includes/admin/class-help-page.php:83
+msgid "Everyday workflow"
+msgstr ""
+
 #: includes/class-bike-fields.php:60
 msgid "Excellent"
 msgstr ""
 
 #: includes/class-bike-fields.php:62
 msgid "Fair"
+msgstr ""
+
+#: includes/admin/class-help-page.php:115
+msgid "Fill in the Workshop settings above (phone, address, emails)."
 msgstr ""
 
 #: includes/admin/class-jobs-list.php:76 includes/class-repair-job-fields.php:229
@@ -520,6 +556,14 @@ msgstr ""
 
 #: includes/class-bike-fields.php:249
 msgid "Handlebar"
+msgstr ""
+
+#: includes/admin/class-help-page.php:63
+msgid "Help"
+msgstr ""
+
+#: includes/admin/class-help-page.php:62
+msgid "Help & Getting started"
 msgstr ""
 
 #: includes/class-repair-job-fields.php:32
@@ -650,6 +694,10 @@ msgstr ""
 msgid "Maintenance Summary"
 msgstr ""
 
+#: includes/admin/class-help-page.php:113
+msgid "Make sure pretty permalinks are enabled (Settings, Permalinks) so the scan and client pages work."
+msgstr ""
+
 #: includes/class-repair-job-fields.php:168
 msgid "Mandatory work"
 msgstr ""
@@ -680,6 +728,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:266
 msgid "Motor serial"
+msgstr ""
+
+#: includes/admin/class-help-page.php:88
+msgid "Move the job through the status pipeline using the Status dropdown. Each change is logged and can email the client."
 msgstr ""
 
 #: includes/admin/class-fleet-check.php:58
@@ -764,6 +816,10 @@ msgstr ""
 
 #: includes/class-bike-meta-boxes.php:156
 msgid "Open scan URL"
+msgstr ""
+
+#: includes/admin/class-help-page.php:86
+msgid "Open the bike and use "Print label" to print the QR and ID, then stick it on the bike."
 msgstr ""
 
 #: includes/class-repair-job-fields.php:173
@@ -874,7 +930,7 @@ msgstr ""
 msgid "Promised completion"
 msgstr ""
 
-#: includes/admin/class-settings-page.php:72
+#: includes/admin/class-settings-page.php:72 includes/admin/class-help-page.php:95
 msgid "Public base URL"
 msgstr ""
 
@@ -954,6 +1010,10 @@ msgstr ""
 msgid "Resend last notification"
 msgstr ""
 
+#: includes/admin/class-help-page.php:118
+msgid "Reserved web addresses"
+msgstr ""
+
 #: includes/class-bike-fields.php:40
 msgid "Road"
 msgstr ""
@@ -980,6 +1040,10 @@ msgstr ""
 
 #: includes/admin/class-fleet-check.php:230
 msgid "Save check"
+msgstr ""
+
+#: includes/admin/class-help-page.php:90
+msgid "Scanning a bike QR code sends staff straight to its record; the public sees only a "contact the shop" page."
 msgstr ""
 
 #: includes/class-bike-cpt.php:66
@@ -1034,6 +1098,14 @@ msgstr ""
 msgid "Serial photo"
 msgstr ""
 
+#: includes/admin/class-help-page.php:93
+msgid "Settings (Workshop, Settings)"
+msgstr ""
+
+#: includes/admin/class-help-page.php:89
+msgid "Share the client link (shown in the job Status box) so the client can follow progress and approve or decline an estimate."
+msgstr ""
+
 #: includes/class-bike-fields.php:229
 msgid "Shifters"
 msgstr ""
@@ -1050,15 +1122,15 @@ msgstr ""
 msgid "Shock travel"
 msgstr ""
 
-#: includes/admin/class-settings-page.php:74
+#: includes/admin/class-settings-page.php:74 includes/admin/class-help-page.php:97
 msgid "Shop address"
 msgstr ""
 
-#: includes/admin/class-settings-page.php:75
+#: includes/admin/class-settings-page.php:75 includes/admin/class-help-page.php:98
 msgid "Shop contact email"
 msgstr ""
 
-#: includes/admin/class-settings-page.php:73
+#: includes/admin/class-settings-page.php:73 includes/admin/class-help-page.php:96
 msgid "Shop phone"
 msgstr ""
 
@@ -1082,7 +1154,7 @@ msgstr ""
 msgid "Speeds"
 msgstr ""
 
-#: includes/admin/class-settings-page.php:76
+#: includes/admin/class-settings-page.php:76 includes/admin/class-help-page.php:99
 msgid "Staff notification email"
 msgstr ""
 
@@ -1146,6 +1218,10 @@ msgstr ""
 msgid "Tossa Workshop"
 msgstr ""
 
+#: includes/admin/class-help-page.php:81
+msgid "Tossa Workshop - Help & Getting started"
+msgstr ""
+
 #: includes/class-bike-fields.php:47
 msgid "Trekking"
 msgstr ""
@@ -1160,6 +1236,10 @@ msgstr ""
 
 #: includes/admin/class-fleet-check.php:70 includes/class-repair-job-fields.php:50 includes/class-bike-fields.php:234
 msgid "Tyres"
+msgstr ""
+
+#: includes/admin/class-help-page.php:101
+msgid "Under Workshop, Notifications you can turn the client email on or off per status and edit the subject/body for each language (Spanish, English, German)."
 msgstr ""
 
 #: includes/class-bike-fields.php:57
@@ -1246,6 +1326,10 @@ msgstr ""
 msgid "Where client approve/decline alerts are sent. Defaults to the site admin email."
 msgstr ""
 
+#: includes/admin/class-help-page.php:103
+msgid "Who can do what"
+msgstr ""
+
 #: includes/class-repair-job-fields.php:192
 msgid "Work & Completion"
 msgstr ""
@@ -1258,7 +1342,7 @@ msgstr ""
 msgid "Workshop"
 msgstr ""
 
-#: includes/class-roles.php:140
+#: includes/admin/class-help-page.php:107 includes/class-roles.php:140
 msgid "Workshop Front Desk"
 msgstr ""
 
@@ -1266,11 +1350,11 @@ msgstr ""
 msgid "Workshop ID & QR"
 msgstr ""
 
-#: includes/class-roles.php:110
+#: includes/admin/class-help-page.php:105 includes/class-roles.php:110
 msgid "Workshop Manager"
 msgstr ""
 
-#: includes/class-roles.php:126
+#: includes/admin/class-help-page.php:106 includes/class-roles.php:126
 msgid "Workshop Mechanic"
 msgstr ""
 
@@ -1298,7 +1382,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: includes/admin/class-notifications-page.php:86
+#: includes/admin/class-notifications-page.php:86 includes/admin/class-help-page.php:77
 msgid "You do not have permission to access this page."
 msgstr ""
 
@@ -1318,6 +1402,14 @@ msgstr ""
 #: includes/class-repair-job-cpt.php:60
 msgctxt "admin menu"
 msgid "Repair Jobs"
+msgstr ""
+
+#: includes/admin/class-help-page.php:107
+msgid "creates bikes and jobs, runs intake, sends notifications and marks bikes collected; no full financials."
+msgstr ""
+
+#: includes/admin/class-help-page.php:105
+msgid "full access, including prices, closing jobs and settings."
 msgstr ""
 
 #: includes/class-bike-cpt.php:58
@@ -1340,6 +1432,22 @@ msgctxt "post type singular name"
 msgid "Repair Job"
 msgstr ""
 
+#: includes/admin/class-help-page.php:121
+msgid "private client status page (opened via the per-job link)."
+msgstr ""
+
+#: includes/admin/class-help-page.php:97
+msgid "shown as the pickup address when a job is ready."
+msgstr ""
+
+#: includes/admin/class-help-page.php:96
+msgid "shown on printed labels and used for the WhatsApp button on the client page (digits only, e.g. 34123456789)."
+msgstr ""
+
+#: includes/admin/class-help-page.php:120
+msgid "staff QR scan router."
+msgstr ""
+
 #: includes/class-job-status-taxonomy.php:127
 msgctxt "taxonomy general name"
 msgid "Job Statuses"
@@ -1348,6 +1456,22 @@ msgstr ""
 #: includes/class-job-status-taxonomy.php:128
 msgctxt "taxonomy singular name"
 msgid "Job Status"
+msgstr ""
+
+#: includes/admin/class-help-page.php:95
+msgid "the address used to build scan and client links. Leave empty to use the site URL."
+msgstr ""
+
+#: includes/admin/class-help-page.php:98
+msgid "used for the "Ask a question" link on the client page."
+msgstr ""
+
+#: includes/admin/class-help-page.php:99
+msgid "where client approve/decline alerts are sent (defaults to the site admin email)."
+msgstr ""
+
+#: includes/admin/class-help-page.php:106
+msgid "works on jobs and moves status up to Quality check; cannot edit prices or close jobs."
 msgstr ""
 
 #: includes/class-job-meta-boxes.php:193

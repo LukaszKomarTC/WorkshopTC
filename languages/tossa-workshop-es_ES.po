@@ -37,11 +37,17 @@ msgstr "Añadir trabajo de reparación"
 msgid "Add New Status"
 msgstr "Añadir estado"
 
+msgid "Add a bike under \"Bikes\". On the first save it gets a permanent internal ID (TCB-000001 for customers, TCF- for fleet) and a QR code."
+msgstr "Añade una bicicleta en \"Bicicletas\". Al guardar por primera vez recibe un ID interno permanente (TCB-000001 para clientes, TCF- para flota) y un código QR."
+
 msgid "Add photos"
 msgstr "Añadir fotos"
 
 msgid "Add photos and optionally label each (left, right, drivetrain, cockpit, damage, before/after)."
 msgstr "Añade fotos y, opcionalmente, etiqueta cada una (izquierda, derecha, transmisión, cabina, daño, antes/después)."
+
+msgid "After installing or updating the plugin"
+msgstr "Después de instalar o actualizar el plugin"
 
 msgid "After photos"
 msgstr "Fotos posteriores"
@@ -193,6 +199,9 @@ msgstr "Requiere aprobación del cliente"
 msgid "Client approved estimate — %s"
 msgstr "El cliente aprobó el presupuesto — %s"
 
+msgid "Client contact details are stored with each bike and copied onto its jobs. A customer workshop data is included in the WordPress Tools, Export/Erase Personal Data screens, so access and erasure requests can be handled there."
+msgstr "Los datos de contacto del cliente se guardan en cada bicicleta y se copian en sus trabajos. Los datos del cliente se incluyen en las pantallas Herramientas, Exportar/Borrar datos personales de WordPress, para poder gestionar allí las solicitudes de acceso y borrado."
+
 msgid "Client declined"
 msgstr "Cliente rechazó"
 
@@ -250,6 +259,9 @@ msgstr "Valoración del estado"
 msgid "Condition:"
 msgstr "Estado:"
 
+msgid "Confirm the site can send email. If notifications are not arriving, install or configure an SMTP plugin. The job Status box shows the exact reason when a send fails."
+msgstr "Comprueba que el sitio puede enviar correos. Si las notificaciones no llegan, instala o configura un plugin SMTP. El recuadro Estado del trabajo muestra el motivo exacto cuando un envío falla."
+
 msgid "Could not render the QR image."
 msgstr "No se pudo generar la imagen QR."
 
@@ -258,6 +270,9 @@ msgstr "No se pudo guardar el archivo QR."
 
 msgid "Crankset"
 msgstr "Bielas"
+
+msgid "Create a Repair Job, link the bike with the search box (by internal ID, serial, or owner name/email/phone), and fill in the intake details."
+msgstr "Crea un Trabajo de reparación, vincula la bicicleta con el buscador (por ID interno, número de serie o nombre/correo/teléfono del propietario) y rellena los datos de recepción."
 
 msgid "Create a linked repair job (status: received)"
 msgstr "Crear un trabajo de reparación vinculado (estado: recibido)"
@@ -271,8 +286,14 @@ msgstr "Bicicleta de cliente"
 msgid "Damage notes"
 msgstr "Notas de daños"
 
+msgid "Data & privacy"
+msgstr "Datos y privacidad"
+
 msgid "Date received"
 msgstr "Fecha de recepción"
+
+msgid "Deactivate and reactivate the plugin once. This registers the scan/status web addresses and grants the staff roles their permissions."
+msgstr "Desactiva y vuelve a activar el plugin una vez. Esto registra las direcciones web de escaneo/estado y concede los permisos a los roles del personal."
 
 msgid "Declined"
 msgstr "Rechazado"
@@ -325,11 +346,17 @@ msgstr "Inglés"
 msgid "Estimate amount"
 msgstr "Importe del presupuesto"
 
+msgid "Everyday workflow"
+msgstr "Flujo de trabajo diario"
+
 msgid "Excellent"
 msgstr "Excelente"
 
 msgid "Fair"
 msgstr "Regular"
+
+msgid "Fill in the Workshop settings above (phone, address, emails)."
+msgstr "Rellena los ajustes del taller indicados arriba (teléfono, dirección, correos)."
 
 msgid "Final price"
 msgstr "Precio final"
@@ -393,6 +420,12 @@ msgstr "Gravel"
 
 msgid "Handlebar"
 msgstr "Manillar"
+
+msgid "Help"
+msgstr "Ayuda"
+
+msgid "Help & Getting started"
+msgstr "Ayuda y primeros pasos"
 
 msgid "High"
 msgstr "Alta"
@@ -490,6 +523,9 @@ msgstr "MTB"
 msgid "Maintenance Summary"
 msgstr "Resumen de mantenimiento"
 
+msgid "Make sure pretty permalinks are enabled (Settings, Permalinks) so the scan and client pages work."
+msgstr "Asegúrate de que los enlaces permanentes \"bonitos\" están activados (Ajustes, Enlaces permanentes) para que funcionen las páginas de escaneo y de cliente."
+
 msgid "Mandatory work"
 msgstr "Trabajo obligatorio"
 
@@ -513,6 +549,9 @@ msgstr "Modelo del motor"
 
 msgid "Motor serial"
 msgstr "Nº de serie del motor"
+
+msgid "Move the job through the status pipeline using the Status dropdown. Each change is logged and can email the client."
+msgstr "Haz avanzar el trabajo por el flujo de estados con el desplegable Estado. Cada cambio se registra y puede enviar un correo al cliente."
 
 msgid "Needs attention"
 msgstr "Requiere atención"
@@ -576,6 +615,9 @@ msgstr "Odómetro"
 
 msgid "Open scan URL"
 msgstr "Abrir URL de escaneo"
+
+msgid "Open the bike and use \"Print label\" to print the QR and ID, then stick it on the bike."
+msgstr "Abre la bicicleta y usa \"Imprimir etiqueta\" para imprimir el QR y el ID, y pégalo en la bicicleta."
 
 msgid "Optional work"
 msgstr "Trabajo opcional"
@@ -718,6 +760,9 @@ msgstr "El reenvío falló — revisa la configuración de correo/SMTP."
 msgid "Resend last notification"
 msgstr "Reenviar última notificación"
 
+msgid "Reserved web addresses"
+msgstr "Direcciones web reservadas"
+
 msgid "Road"
 msgstr "Carretera"
 
@@ -738,6 +783,9 @@ msgstr "Estado de seguridad"
 
 msgid "Save check"
 msgstr "Guardar revisión"
+
+msgid "Scanning a bike QR code sends staff straight to its record; the public sees only a \"contact the shop\" page."
+msgstr "Al escanear el código QR de una bicicleta, el personal va directo a su ficha; el público solo ve una página de \"contacta con la tienda\"."
 
 msgid "Search Bikes"
 msgstr "Buscar bicicletas"
@@ -777,6 +825,12 @@ msgstr "Número de serie"
 
 msgid "Serial photo"
 msgstr "Foto del número de serie"
+
+msgid "Settings (Workshop, Settings)"
+msgstr "Ajustes (Taller, Ajustes)"
+
+msgid "Share the client link (shown in the job Status box) so the client can follow progress and approve or decline an estimate."
+msgstr "Comparte el enlace para el cliente (en el recuadro Estado del trabajo) para que pueda seguir el progreso y aprobar o rechazar un presupuesto."
 
 msgid "Shifters"
 msgstr "Mandos de cambio"
@@ -862,6 +916,9 @@ msgstr "Tossa Cycling"
 msgid "Tossa Workshop"
 msgstr "Taller Tossa"
 
+msgid "Tossa Workshop - Help & Getting started"
+msgstr "Taller Tossa - Ayuda y primeros pasos"
+
 msgid "Trekking"
 msgstr "Trekking"
 
@@ -873,6 +930,9 @@ msgstr "Tipo"
 
 msgid "Tyres"
 msgstr "Neumáticos"
+
+msgid "Under Workshop, Notifications you can turn the client email on or off per status and edit the subject/body for each language (Spanish, English, German)."
+msgstr "En Taller, Notificaciones puedes activar o desactivar el correo al cliente por estado y editar el asunto/cuerpo para cada idioma (español, inglés, alemán)."
 
 msgid "Unknown"
 msgstr "Desconocido"
@@ -937,6 +997,9 @@ msgstr "Si se activa, el cliente puede aprobar o rechazar desde su enlace de est
 msgid "Where client approve/decline alerts are sent. Defaults to the site admin email."
 msgstr "Adónde se envían los avisos de aprobación/rechazo del cliente. Por defecto, al correo del administrador del sitio."
 
+msgid "Who can do what"
+msgstr "Quién puede hacer qué"
+
 msgid "Work & Completion"
 msgstr "Trabajo y finalización"
 
@@ -993,6 +1056,12 @@ msgctxt "admin menu"
 msgid "Repair Jobs"
 msgstr "Trabajos de reparación"
 
+msgid "creates bikes and jobs, runs intake, sends notifications and marks bikes collected; no full financials."
+msgstr "crea bicicletas y trabajos, hace la recepción, envía notificaciones y marca bicicletas como recogidas; sin datos financieros completos."
+
+msgid "full access, including prices, closing jobs and settings."
+msgstr "acceso completo, incluidos precios, cierre de trabajos y ajustes."
+
 msgctxt "post type general name"
 msgid "Bikes"
 msgstr "Bicicletas"
@@ -1009,6 +1078,18 @@ msgctxt "post type singular name"
 msgid "Repair Job"
 msgstr "Trabajo de reparación"
 
+msgid "private client status page (opened via the per-job link)."
+msgstr "página privada de estado para el cliente (se abre con el enlace de cada trabajo)."
+
+msgid "shown as the pickup address when a job is ready."
+msgstr "se muestra como dirección de recogida cuando un trabajo está listo."
+
+msgid "shown on printed labels and used for the WhatsApp button on the client page (digits only, e.g. 34123456789)."
+msgstr "se muestra en las etiquetas impresas y se usa para el botón de WhatsApp en la página del cliente (solo dígitos, p. ej. 34123456789)."
+
+msgid "staff QR scan router."
+msgstr "enrutador de escaneo QR para el personal."
+
 msgctxt "taxonomy general name"
 msgid "Job Statuses"
 msgstr "Estados de trabajo"
@@ -1016,6 +1097,18 @@ msgstr "Estados de trabajo"
 msgctxt "taxonomy singular name"
 msgid "Job Status"
 msgstr "Estado de trabajo"
+
+msgid "the address used to build scan and client links. Leave empty to use the site URL."
+msgstr "la dirección usada para generar los enlaces de escaneo y de cliente. Déjalo vacío para usar la URL del sitio."
+
+msgid "used for the \"Ask a question\" link on the client page."
+msgstr "se usa para el enlace \"Hacer una pregunta\" en la página del cliente."
+
+msgid "where client approve/decline alerts are sent (defaults to the site admin email)."
+msgstr "adónde se envían los avisos de aprobación/rechazo del cliente (por defecto, al correo del administrador del sitio)."
+
+msgid "works on jobs and moves status up to Quality check; cannot edit prices or close jobs."
+msgstr "trabaja en los trabajos y avanza el estado hasta Control de calidad; no puede editar precios ni cerrar trabajos."
 
 msgid "wp_mail reported failure — check the site email / SMTP setup."
 msgstr "wp_mail informó de un fallo — revisa la configuración de correo / SMTP del sitio."
