@@ -199,14 +199,23 @@ msgstr "Cliente rechazó"
 msgid "Client declined estimate — %s"
 msgstr "El cliente rechazó el presupuesto — %s"
 
+msgid "Client email"
+msgstr "Correo del cliente"
+
 msgid "Client email:"
 msgstr "Correo del cliente:"
 
 msgid "Client link"
 msgstr "Enlace para el cliente"
 
+msgid "Client name"
+msgstr "Nombre del cliente"
+
 msgid "Client notes"
 msgstr "Notas del cliente"
+
+msgid "Client phone"
+msgstr "Teléfono del cliente"
 
 msgid "Client: %s"
 msgstr "Cliente: %s"
@@ -954,6 +963,12 @@ msgstr "Notificaciones del taller"
 
 msgid "Workshop Settings"
 msgstr "Ajustes del taller"
+
+msgid "Workshop bikes"
+msgstr "Bicicletas del taller"
+
+msgid "Workshop repair jobs"
+msgstr "Trabajos de reparación del taller"
 
 msgid "Year"
 msgstr "Año"

@@ -190,7 +190,7 @@ msgstr ""
 msgid "Brand"
 msgstr ""
 
-#: includes/admin/class-bikes-list.php:67
+#: includes/admin/class-bikes-list.php:67 includes/class-privacy.php:243
 msgid "Brand / Model"
 msgstr ""
 
@@ -226,7 +226,7 @@ msgstr ""
 msgid "Charger"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:193
+#: includes/admin/class-fleet-check.php:190
 msgid "Check saved."
 msgstr ""
 
@@ -262,6 +262,10 @@ msgstr ""
 msgid "Client declined estimate — %s"
 msgstr ""
 
+#: includes/class-privacy.php:268
+msgid "Client email"
+msgstr ""
+
 #: includes/class-job-meta-boxes.php:186
 msgid "Client email:"
 msgstr ""
@@ -270,8 +274,16 @@ msgstr ""
 msgid "Client link"
 msgstr ""
 
+#: includes/class-privacy.php:267
+msgid "Client name"
+msgstr ""
+
 #: includes/class-repair-job-fields.php:120
 msgid "Client notes"
+msgstr ""
+
+#: includes/class-privacy.php:269
+msgid "Client phone"
 msgstr ""
 
 #: includes/class-notifier.php:225
@@ -314,7 +326,7 @@ msgstr ""
 msgid "Condition rating"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:153
+#: includes/admin/class-fleet-check.php:155
 msgid "Condition:"
 msgstr ""
 
@@ -330,7 +342,7 @@ msgstr ""
 msgid "Crankset"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:226
+#: includes/admin/class-fleet-check.php:225
 msgid "Create a linked repair job (status: received)"
 msgstr ""
 
@@ -342,11 +354,11 @@ msgstr ""
 msgid "Customer bike"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:216
+#: includes/admin/class-fleet-check.php:215
 msgid "Damage notes"
 msgstr ""
 
-#: includes/class-repair-job-fields.php:85
+#: includes/class-privacy.php:270 includes/class-repair-job-fields.php:85
 msgid "Date received"
 msgstr ""
 
@@ -446,11 +458,11 @@ msgstr ""
 msgid "Fleet number"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:95 includes/admin/class-fleet-check.php:96 includes/admin/class-fleet-check.php:132 includes/admin/class-fleet-check.php:190
+#: includes/admin/class-fleet-check.php:97 includes/admin/class-fleet-check.php:98 includes/admin/class-fleet-check.php:134 includes/admin/class-fleet-check.php:187
 msgid "Fleet quick-check"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:224
+#: includes/admin/class-fleet-check.php:223
 msgid "Follow-up"
 msgstr ""
 
@@ -482,7 +494,7 @@ msgstr ""
 msgid "French"
 msgstr ""
 
-#: includes/class-bike-fields.php:166
+#: includes/class-privacy.php:247 includes/class-bike-fields.php:166
 msgid "GDPR consent given"
 msgstr ""
 
@@ -542,7 +554,7 @@ msgstr ""
 msgid "Intake photos"
 msgstr ""
 
-#: includes/admin/class-bikes-list.php:65 includes/class-bike-meta-boxes.php:146
+#: includes/admin/class-bikes-list.php:65 includes/class-privacy.php:242 includes/class-bike-meta-boxes.php:146
 msgid "Internal ID"
 msgstr ""
 
@@ -554,7 +566,7 @@ msgstr ""
 msgid "Invalid request."
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:153
+#: includes/admin/class-fleet-check.php:155
 msgid "Issues"
 msgstr ""
 
@@ -562,7 +574,7 @@ msgstr ""
 msgid "Job Details"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:67 includes/class-job-meta-boxes.php:139
+#: includes/admin/class-jobs-list.php:67 includes/class-job-meta-boxes.php:139 includes/class-privacy.php:266
 msgid "Job ID"
 msgstr ""
 
@@ -590,7 +602,7 @@ msgstr ""
 msgid "Last chain change"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:152
+#: includes/admin/class-fleet-check.php:154
 msgid "Last check:"
 msgstr ""
 
@@ -642,7 +654,7 @@ msgstr ""
 msgid "Mandatory work"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:227
+#: includes/admin/class-fleet-check.php:226
 msgid "Mark the bike as not currently rentable"
 msgstr ""
 
@@ -702,7 +714,7 @@ msgstr ""
 msgid "No notification sent yet for this job."
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:155
+#: includes/admin/class-fleet-check.php:157
 msgid "No post-rental checks recorded yet."
 msgstr ""
 
@@ -742,7 +754,7 @@ msgstr ""
 msgid "Notify the client when a job enters this status"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:57 includes/admin/class-fleet-check.php:153
+#: includes/admin/class-fleet-check.php:57 includes/admin/class-fleet-check.php:155
 msgid "OK"
 msgstr ""
 
@@ -762,7 +774,7 @@ msgstr ""
 msgid "Other"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:200
+#: includes/admin/class-fleet-check.php:199
 msgid "Overall condition OK"
 msgstr ""
 
@@ -774,15 +786,15 @@ msgstr ""
 msgid "Owner / Client"
 msgstr ""
 
-#: includes/class-bike-fields.php:149
+#: includes/class-privacy.php:245 includes/class-bike-fields.php:149
 msgid "Owner email"
 msgstr ""
 
-#: includes/class-bike-fields.php:143
+#: includes/class-privacy.php:244 includes/class-bike-fields.php:143
 msgid "Owner name"
 msgstr ""
 
-#: includes/class-bike-fields.php:154
+#: includes/class-privacy.php:246 includes/class-bike-fields.php:154
 msgid "Owner phone"
 msgstr ""
 
@@ -818,7 +830,7 @@ msgstr ""
 msgid "Photo gallery"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:220 includes/class-bike-fields.php:323
+#: includes/admin/class-fleet-check.php:219 includes/class-bike-fields.php:323
 msgid "Photos"
 msgstr ""
 
@@ -830,7 +842,7 @@ msgstr ""
 msgid "Poor"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:283
+#: includes/admin/class-fleet-check.php:289
 msgid "Post-rental check follow-up."
 msgstr ""
 
@@ -850,7 +862,7 @@ msgstr ""
 msgid "Priority"
 msgstr ""
 
-#: includes/class-repair-job-fields.php:115
+#: includes/class-privacy.php:271 includes/class-repair-job-fields.php:115
 msgid "Problem description"
 msgstr ""
 
@@ -898,7 +910,7 @@ msgstr ""
 msgid "Recommended work"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:158
+#: includes/admin/class-fleet-check.php:160
 msgid "Record post-rental check"
 msgstr ""
 
@@ -966,7 +978,7 @@ msgstr ""
 msgid "Safety status"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:231
+#: includes/admin/class-fleet-check.php:230
 msgid "Save check"
 msgstr ""
 
@@ -1118,7 +1130,7 @@ msgstr ""
 msgid "The public base URL must start with http:// or https://. It has been cleared."
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:174
+#: includes/admin/class-fleet-check.php:176 includes/admin/class-fleet-check.php:251
 msgid "This page is only available for fleet bikes."
 msgstr ""
 
@@ -1130,7 +1142,7 @@ msgstr ""
 msgid "Tossa Cycling"
 msgstr ""
 
-#: includes/admin/class-settings-page.php:170
+#: includes/admin/class-settings-page.php:170 includes/class-privacy.php:62 includes/class-privacy.php:76
 msgid "Tossa Workshop"
 msgstr ""
 
@@ -1270,11 +1282,19 @@ msgstr ""
 msgid "Workshop Settings"
 msgstr ""
 
+#: includes/class-privacy.php:252
+msgid "Workshop bikes"
+msgstr ""
+
+#: includes/class-privacy.php:276
+msgid "Workshop repair jobs"
+msgstr ""
+
 #: includes/class-bike-fields.php:181
 msgid "Year"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:201 includes/class-field-kit.php:95
+#: includes/admin/class-fleet-check.php:200 includes/class-field-kit.php:95
 msgid "Yes"
 msgstr ""
 
@@ -1286,7 +1306,7 @@ msgstr ""
 msgid "You do not have permission to access workshop settings."
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:168 includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:249
+#: includes/admin/class-fleet-check.php:170 includes/admin/class-fleet-check.php:248 includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:249
 msgid "You do not have permission to do this."
 msgstr ""
 

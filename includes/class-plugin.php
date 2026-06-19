@@ -71,6 +71,9 @@ final class Plugin {
 		// approval in M4 fires a status change).
 		Notifier::instance()->register_hooks();
 
+		// GDPR export/erase integration (runs during privacy requests).
+		Privacy::instance()->register_hooks();
+
 		// Admin-only modules.
 		if ( is_admin() ) {
 			Admin\Settings_Page::instance()->register_hooks();
