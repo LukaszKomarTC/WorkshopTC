@@ -258,7 +258,7 @@ msgstr ""
 msgid "Client approval required"
 msgstr ""
 
-#: includes/class-notifier.php:215
+#: includes/class-notifier.php:244
 msgid "Client approved estimate — %s"
 msgstr ""
 
@@ -270,7 +270,7 @@ msgstr ""
 msgid "Client declined"
 msgstr ""
 
-#: includes/class-notifier.php:218
+#: includes/class-notifier.php:247
 msgid "Client declined estimate — %s"
 msgstr ""
 
@@ -298,7 +298,7 @@ msgstr ""
 msgid "Client phone"
 msgstr ""
 
-#: includes/class-notifier.php:225
+#: includes/class-notifier.php:254
 msgid "Client: %s"
 msgstr ""
 
@@ -322,7 +322,7 @@ msgstr ""
 msgid "Colour"
 msgstr ""
 
-#: includes/class-notifier.php:228
+#: includes/class-notifier.php:257
 msgid "Comments: %s"
 msgstr ""
 
@@ -606,7 +606,7 @@ msgstr ""
 msgid "Internal Notes"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:245 includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:246
+#: includes/admin/class-fleet-check.php:245 includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:275
 msgid "Invalid request."
 msgstr ""
 
@@ -1390,7 +1390,7 @@ msgstr ""
 msgid "You do not have permission to access workshop settings."
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:170 includes/admin/class-fleet-check.php:248 includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:249
+#: includes/admin/class-fleet-check.php:170 includes/admin/class-fleet-check.php:248 includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:278
 msgid "You do not have permission to do this."
 msgstr ""
 

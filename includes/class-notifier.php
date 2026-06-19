@@ -107,7 +107,7 @@ class Notifier {
 		$body    = Notification_Templates::render( $tpl['body'], $vars );
 
 		$this->mail_error = '';
-		$sent             = (bool) wp_mail( $email, $subject, $body );
+		$sent             = (bool) wp_mail( $email, $subject, $body, $this->mail_headers() );
 
 		update_post_meta(
 			$job_id,
@@ -123,6 +123,35 @@ class Notifier {
 		);
 
 		return $sent;
+	}
+
+	/**
+	 * Build the From header so notifications route through the same mail/SMTP
+	 * sender as the rest of the site (many SMTP plugins route by From address).
+	 * The From email defaults to the shop contact email, then the site admin
+	 * email; overridable via filter.
+	 *
+	 * @return string[]
+	 */
+	private function mail_headers() {
+		$settings = Admin\Settings_Page::get_settings();
+		$from     = ! empty( $settings['shop_email'] ) && is_email( $settings['shop_email'] )
+			? $settings['shop_email']
+			: get_option( 'admin_email' );
+		$name     = wp_specialchars_decode( get_bloginfo( 'name' ), ENT_QUOTES );
+
+		/**
+		 * Filter the From address used for workshop notifications.
+		 *
+		 * @param string $from From email address.
+		 */
+		$from = apply_filters( 'tcw_mail_from', $from );
+
+		$headers = array();
+		if ( $from && is_email( $from ) ) {
+			$headers[] = sprintf( 'From: %s <%s>', $name, $from );
+		}
+		return $headers;
 	}
 
 	/**
@@ -230,7 +259,7 @@ class Notifier {
 		$lines[] = '';
 		$lines[] = $edit_url;
 
-		return (bool) wp_mail( $to, $subject, implode( "\n", $lines ) );
+		return (bool) wp_mail( $to, $subject, implode( "\n", $lines ), $this->mail_headers() );
 	}
 
 	/**
