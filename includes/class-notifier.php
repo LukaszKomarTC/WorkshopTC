@@ -81,6 +81,20 @@ class Notifier {
 		if ( ! Notification_Templates::is_enabled( $to ) ) {
 			return;
 		}
+
+		/**
+		 * Allow a caller to suppress just the client email for one status change
+		 * while keeping the status, history and the status-changed action. Used
+		 * by the intake "send received email?" toggle.
+		 *
+		 * @param bool   $send   Whether to send.
+		 * @param int    $job_id Job ID.
+		 * @param string $to     New status slug.
+		 */
+		if ( false === apply_filters( 'tcw_send_client_notification', true, $job_id, $to ) ) {
+			return;
+		}
+
 		$this->send( $job_id, $to );
 	}
 

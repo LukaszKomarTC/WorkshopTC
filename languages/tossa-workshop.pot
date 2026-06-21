@@ -114,12 +114,16 @@ msgstr ""
 msgid "Approved"
 msgstr ""
 
-#: includes/class-repair-job-fields.php:80
+#: includes/class-intake-page.php:277 includes/class-repair-job-fields.php:80
 msgid "Assigned mechanic"
 msgstr ""
 
 #: includes/class-bike-fields.php:67
 msgid "Attention needed"
+msgstr ""
+
+#: includes/class-intake-page.php:316
+msgid "Back to intake"
 msgstr ""
 
 #: includes/class-repair-job-fields.php:39
@@ -166,8 +170,12 @@ msgstr ""
 msgid "Bike %s. Please contact the shop for details."
 msgstr ""
 
-#: includes/class-repair-job-fields.php:125
+#: includes/class-intake-page.php:267 includes/class-repair-job-fields.php:125
 msgid "Bike condition on arrival"
+msgstr ""
+
+#: includes/class-intake-actions.php:63
+msgid "Bike not found."
 msgstr ""
 
 #: includes/class-bike-fields.php:94
@@ -258,7 +266,7 @@ msgstr ""
 msgid "Client approval required"
 msgstr ""
 
-#: includes/class-notifier.php:244
+#: includes/class-notifier.php:258
 msgid "Client approved estimate — %s"
 msgstr ""
 
@@ -270,7 +278,7 @@ msgstr ""
 msgid "Client declined"
 msgstr ""
 
-#: includes/class-notifier.php:247
+#: includes/class-notifier.php:261
 msgid "Client declined estimate — %s"
 msgstr ""
 
@@ -298,7 +306,7 @@ msgstr ""
 msgid "Client phone"
 msgstr ""
 
-#: includes/class-notifier.php:254
+#: includes/class-notifier.php:268
 msgid "Client: %s"
 msgstr ""
 
@@ -322,7 +330,7 @@ msgstr ""
 msgid "Colour"
 msgstr ""
 
-#: includes/class-notifier.php:257
+#: includes/class-notifier.php:271
 msgid "Comments: %s"
 msgstr ""
 
@@ -346,6 +354,10 @@ msgstr ""
 msgid "Confirm the site can send email. If notifications are not arriving, install or configure an SMTP plugin. The job Status box shows the exact reason when a send fails."
 msgstr ""
 
+#: includes/class-intake-actions.php:71
+msgid "Could not create the repair job."
+msgstr ""
+
 #: includes/class-qr-generator.php:93
 msgid "Could not render the QR image."
 msgstr ""
@@ -366,7 +378,15 @@ msgstr ""
 msgid "Create a linked repair job (status: received)"
 msgstr ""
 
-#: includes/admin/class-bikes-list.php:106 includes/admin/class-bikes-list.php:146 includes/admin/class-jobs-list.php:204
+#: includes/class-intake-page.php:338
+msgid "Create a new bike (admin)"
+msgstr ""
+
+#: includes/class-intake-page.php:260 includes/class-intake-page.php:289
+msgid "Create repair job"
+msgstr ""
+
+#: includes/admin/class-bikes-list.php:106 includes/admin/class-bikes-list.php:146 includes/admin/class-jobs-list.php:204 includes/class-intake-page.php:180
 msgid "Customer"
 msgstr ""
 
@@ -450,6 +470,14 @@ msgstr ""
 msgid "Edit Status"
 msgstr ""
 
+#: includes/class-intake-page.php:224
+msgid "Edit in admin"
+msgstr ""
+
+#: includes/class-intake-page.php:204
+msgid "Email"
+msgstr ""
+
 #: includes/class-bike-fields.php:34
 msgid "English"
 msgstr ""
@@ -482,7 +510,7 @@ msgstr ""
 msgid "Firmware"
 msgstr ""
 
-#: includes/admin/class-bikes-list.php:106 includes/admin/class-bikes-list.php:146 includes/admin/class-jobs-list.php:204 includes/class-bike-fields.php:418
+#: includes/admin/class-bikes-list.php:106 includes/admin/class-bikes-list.php:146 includes/admin/class-jobs-list.php:204 includes/class-intake-page.php:180 includes/class-bike-fields.php:418
 msgid "Fleet"
 msgstr ""
 
@@ -602,11 +630,15 @@ msgstr ""
 msgid "Internal ID"
 msgstr ""
 
+#: includes/class-intake-page.php:159
+msgid "Internal ID, serial, owner name / email / phone"
+msgstr ""
+
 #: includes/class-bike-fields.php:394
 msgid "Internal Notes"
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:245 includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:275
+#: includes/admin/class-fleet-check.php:245 includes/admin/class-notifications-page.php:177 includes/class-print-label.php:59 includes/class-notifier.php:289 includes/class-intake-actions.php:57
 msgid "Invalid request."
 msgstr ""
 
@@ -750,6 +782,10 @@ msgstr ""
 msgid "Next service due"
 msgstr ""
 
+#: includes/class-intake-page.php:336
+msgid "No bike found for "%s"."
+msgstr ""
+
 #: includes/class-bike-cpt.php:67
 msgid "No bikes found"
 msgstr ""
@@ -814,6 +850,18 @@ msgstr ""
 msgid "Odometer"
 msgstr ""
 
+#: includes/class-intake-page.php:218
+msgid "Open existing job"
+msgstr ""
+
+#: includes/class-intake-page.php:315
+msgid "Open job"
+msgstr ""
+
+#: includes/class-intake-page.php:216
+msgid "Open job already exists:"
+msgstr ""
+
 #: includes/class-bike-meta-boxes.php:156
 msgid "Open scan URL"
 msgstr ""
@@ -834,7 +882,7 @@ msgstr ""
 msgid "Overall condition OK"
 msgstr ""
 
-#: includes/admin/class-bikes-list.php:66
+#: includes/admin/class-bikes-list.php:66 includes/class-intake-page.php:198
 msgid "Owner"
 msgstr ""
 
@@ -882,6 +930,10 @@ msgstr ""
 msgid "Pending"
 msgstr ""
 
+#: includes/class-intake-page.php:201
+msgid "Phone"
+msgstr ""
+
 #: includes/class-bike-fields.php:330
 msgid "Photo gallery"
 msgstr ""
@@ -910,15 +962,15 @@ msgstr ""
 msgid "Print"
 msgstr ""
 
-#: includes/class-bike-meta-boxes.php:162
+#: includes/class-intake-page.php:226 includes/class-bike-meta-boxes.php:162
 msgid "Print label"
 msgstr ""
 
-#: includes/admin/class-jobs-list.php:71 includes/class-repair-job-fields.php:91
+#: includes/admin/class-jobs-list.php:71 includes/class-intake-page.php:269 includes/class-repair-job-fields.php:91
 msgid "Priority"
 msgstr ""
 
-#: includes/class-privacy.php:271 includes/class-repair-job-fields.php:115
+#: includes/class-privacy.php:271 includes/class-intake-page.php:266 includes/class-repair-job-fields.php:115
 msgid "Problem description"
 msgstr ""
 
@@ -926,7 +978,7 @@ msgstr ""
 msgid "Promised"
 msgstr ""
 
-#: includes/class-repair-job-fields.php:98
+#: includes/class-intake-page.php:275 includes/class-repair-job-fields.php:98
 msgid "Promised completion"
 msgstr ""
 
@@ -962,6 +1014,10 @@ msgstr ""
 msgid "Received"
 msgstr ""
 
+#: includes/class-intake-page.php:233
+msgid "Recent jobs"
+msgstr ""
+
 #: includes/class-repair-job-fields.php:163
 msgid "Recommended work"
 msgstr ""
@@ -992,6 +1048,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:447
 msgid "Rental days count"
+msgstr ""
+
+#: includes/class-intake-page.php:308
+msgid "Repair job created"
 msgstr ""
 
 #: includes/admin/class-fleet-check.php:59
@@ -1042,6 +1102,10 @@ msgstr ""
 msgid "Save check"
 msgstr ""
 
+#: includes/class-intake-page.php:158
+msgid "Scan a label or search a bike"
+msgstr ""
+
 #: includes/admin/class-help-page.php:90
 msgid "Scanning a bike QR code sends staff straight to its record; the public sees only a "contact the shop" page."
 msgstr ""
@@ -1080,6 +1144,10 @@ msgstr ""
 
 #: includes/class-job-meta-boxes.php:241 includes/class-job-meta-boxes.php:446
 msgid "Selected:"
+msgstr ""
+
+#: includes/class-intake-page.php:287
+msgid "Send "received" email to the client"
 msgstr ""
 
 #: includes/admin/class-notifications-page.php:134
@@ -1282,6 +1350,10 @@ msgstr ""
 msgid "View Repair Job"
 msgstr ""
 
+#: includes/class-intake-page.php:240
+msgid "View full history"
+msgstr ""
+
 #: includes/class-repair-job-fields.php:136
 msgid "Visible damage"
 msgstr ""
@@ -1304,6 +1376,10 @@ msgstr ""
 
 #: includes/class-bike-fields.php:411
 msgid "Warning flags"
+msgstr ""
+
+#: includes/class-intake-page.php:323
+msgid "WhatsApp client"
 msgstr ""
 
 #: includes/class-bike-fields.php:196
@@ -1350,6 +1426,10 @@ msgstr ""
 msgid "Workshop ID & QR"
 msgstr ""
 
+#: includes/class-intake-page.php:126 includes/class-intake-page.php:129 includes/class-intake-page.php:349
+msgid "Workshop Intake"
+msgstr ""
+
 #: includes/admin/class-help-page.php:105 includes/class-roles.php:110
 msgid "Workshop Manager"
 msgstr ""
@@ -1382,6 +1462,10 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
+#: includes/class-intake-page.php:350
+msgid "You do not have permission to access the workshop intake."
+msgstr ""
+
 #: includes/admin/class-notifications-page.php:86 includes/admin/class-help-page.php:77
 msgid "You do not have permission to access this page."
 msgstr ""
@@ -1390,7 +1474,7 @@ msgstr ""
 msgid "You do not have permission to access workshop settings."
 msgstr ""
 
-#: includes/admin/class-fleet-check.php:170 includes/admin/class-fleet-check.php:248 includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:278
+#: includes/admin/class-fleet-check.php:170 includes/admin/class-fleet-check.php:248 includes/admin/class-notifications-page.php:174 includes/class-print-label.php:62 includes/class-notifier.php:292 includes/class-intake-actions.php:60
 msgid "You do not have permission to do this."
 msgstr ""
 
@@ -1478,7 +1562,7 @@ msgstr ""
 msgid "wp_mail reported failure — check the site email / SMTP setup."
 msgstr ""
 
-#: includes/class-field-kit.php:174
+#: includes/class-field-kit.php:174 includes/class-intake-page.php:281
 msgid "— None —"
 msgstr ""
 

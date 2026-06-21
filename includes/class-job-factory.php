@@ -63,9 +63,12 @@ class Job_Factory {
 	 * @param int    $bike_id Bike ID.
 	 * @param string $problem Problem description.
 	 * @param string $status  Initial status slug.
+	 * @param bool   $notify  Whether to send the client email for the initial
+	 *                        status (false suppresses only the email; status,
+	 *                        history and the status-changed action still fire).
 	 * @return int Job ID, or 0 on failure.
 	 */
-	public static function create_for_bike( $bike_id, $problem = '', $status = 'received' ) {
+	public static function create_for_bike( $bike_id, $problem = '', $status = 'received', $notify = true ) {
 		$job_id = wp_insert_post(
 			array(
 				'post_type'   => Repair_Job_CPT::POST_TYPE,
@@ -99,7 +102,13 @@ class Job_Factory {
 			)
 		);
 
+		if ( ! $notify ) {
+			add_filter( 'tcw_send_client_notification', '__return_false' );
+		}
 		Job_Status::set( $job_id, $status, get_current_user_id() );
+		if ( ! $notify ) {
+			remove_filter( 'tcw_send_client_notification', '__return_false' );
+		}
 
 		return (int) $job_id;
 	}

@@ -38,6 +38,7 @@ class Activator {
 		// Register front-end rewrite rules so the flush below persists them.
 		Scan_Router::instance()->add_rewrite_rules();
 		Client_Status_Page::instance()->add_rewrite_rules();
+		Intake_Page::instance()->add_rewrite_rules();
 
 		// Seed the fixed status terms (idempotent).
 		Job_Status_Taxonomy::insert_terms();

@@ -66,6 +66,10 @@ final class Plugin {
 		// Front-end routers.
 		Scan_Router::instance()->register_hooks();
 		Client_Status_Page::instance()->register_hooks();
+		Intake_Page::instance()->register_hooks();
+
+		// Intake POST handlers (admin-post; logged-in staff only).
+		Intake_Actions::instance()->register_hooks();
 
 		// Notifications listener (must run on front-end too, e.g. client
 		// approval in M4 fires a status change).

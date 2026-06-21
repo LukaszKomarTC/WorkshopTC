@@ -94,6 +94,9 @@ msgstr "Mecánico asignado"
 msgid "Attention needed"
 msgstr "Requiere atención"
 
+msgid "Back to intake"
+msgstr "Volver a recepción"
+
 msgid "Bags"
 msgstr "Bolsas"
 
@@ -129,6 +132,9 @@ msgstr "Bicicleta %s. Contacta con la tienda para más información."
 
 msgid "Bike condition on arrival"
 msgstr "Estado de la bicicleta a la llegada"
+
+msgid "Bike not found."
+msgstr "Bicicleta no encontrada."
 
 msgid "Bike type"
 msgstr "Tipo de bicicleta"
@@ -262,6 +268,9 @@ msgstr "Estado:"
 msgid "Confirm the site can send email. If notifications are not arriving, install or configure an SMTP plugin. The job Status box shows the exact reason when a send fails."
 msgstr "Comprueba que el sitio puede enviar correos. Si las notificaciones no llegan, instala o configura un plugin SMTP. El recuadro Estado del trabajo muestra el motivo exacto cuando un envío falla."
 
+msgid "Could not create the repair job."
+msgstr "No se pudo crear el trabajo de reparación."
+
 msgid "Could not render the QR image."
 msgstr "No se pudo generar la imagen QR."
 
@@ -276,6 +285,12 @@ msgstr "Crea un Trabajo de reparación, vincula la bicicleta con el buscador (po
 
 msgid "Create a linked repair job (status: received)"
 msgstr "Crear un trabajo de reparación vinculado (estado: recibido)"
+
+msgid "Create a new bike (admin)"
+msgstr "Crear una bicicleta nueva (admin)"
+
+msgid "Create repair job"
+msgstr "Crear trabajo de reparación"
 
 msgid "Customer"
 msgstr "Cliente"
@@ -339,6 +354,12 @@ msgstr "Editar trabajo de reparación"
 
 msgid "Edit Status"
 msgstr "Editar estado"
+
+msgid "Edit in admin"
+msgstr "Editar en admin"
+
+msgid "Email"
+msgstr "Correo"
 
 msgid "English"
 msgstr "Inglés"
@@ -454,6 +475,9 @@ msgstr "Fotos de recepción"
 msgid "Internal ID"
 msgstr "ID interno"
 
+msgid "Internal ID, serial, owner name / email / phone"
+msgstr "ID interno, número de serie, nombre / correo / teléfono del propietario"
+
 msgid "Internal Notes"
 msgstr "Notas internas"
 
@@ -565,6 +589,9 @@ msgstr "Nuevo trabajo de reparación"
 msgid "Next service due"
 msgstr "Próximo mantenimiento"
 
+msgid "No bike found for \"%s\"."
+msgstr "No se encontró ninguna bicicleta para \"%s\"."
+
 msgid "No bikes found"
 msgstr "No se encontraron bicicletas"
 
@@ -612,6 +639,15 @@ msgstr "OK"
 
 msgid "Odometer"
 msgstr "Odómetro"
+
+msgid "Open existing job"
+msgstr "Abrir trabajo existente"
+
+msgid "Open job"
+msgstr "Abrir trabajo"
+
+msgid "Open job already exists:"
+msgstr "Ya existe un trabajo abierto:"
 
 msgid "Open scan URL"
 msgstr "Abrir URL de escaneo"
@@ -663,6 +699,9 @@ msgstr "Pedales"
 
 msgid "Pending"
 msgstr "Pendiente"
+
+msgid "Phone"
+msgstr "Teléfono"
 
 msgid "Photo gallery"
 msgstr "Galería de fotos"
@@ -724,6 +763,9 @@ msgstr "Motivo:"
 msgid "Received"
 msgstr "Recibido"
 
+msgid "Recent jobs"
+msgstr "Trabajos recientes"
+
 msgid "Recommended work"
 msgstr "Trabajo recomendado"
 
@@ -747,6 +789,9 @@ msgstr "Categoría de alquiler"
 
 msgid "Rental days count"
 msgstr "Número de días de alquiler"
+
+msgid "Repair job created"
+msgstr "Trabajo de reparación creado"
 
 msgid "Replace"
 msgstr "Sustituir"
@@ -784,6 +829,9 @@ msgstr "Estado de seguridad"
 msgid "Save check"
 msgstr "Guardar revisión"
 
+msgid "Scan a label or search a bike"
+msgstr "Escanea una etiqueta o busca una bicicleta"
+
 msgid "Scanning a bike QR code sends staff straight to its record; the public sees only a \"contact the shop\" page."
 msgstr "Al escanear el código QR de una bicicleta, el personal va directo a su ficha; el público solo ve una página de \"contacta con la tienda\"."
 
@@ -813,6 +861,9 @@ msgstr "Seleccionar imagen"
 
 msgid "Selected:"
 msgstr "Seleccionada:"
+
+msgid "Send \"received\" email to the client"
+msgstr "Enviar correo de \"recibido\" al cliente"
 
 msgid "Send email"
 msgstr "Enviar correo"
@@ -964,6 +1015,9 @@ msgstr "Ver bicicleta"
 msgid "View Repair Job"
 msgstr "Ver trabajo de reparación"
 
+msgid "View full history"
+msgstr "Ver historial completo"
+
 msgid "Visible damage"
 msgstr "Daños visibles"
 
@@ -981,6 +1035,9 @@ msgstr "Esperando piezas"
 
 msgid "Warning flags"
 msgstr "Avisos"
+
+msgid "WhatsApp client"
+msgstr "WhatsApp al cliente"
 
 msgid "Wheel size"
 msgstr "Tamaño de rueda"
@@ -1015,6 +1072,9 @@ msgstr "Recepción del taller"
 msgid "Workshop ID & QR"
 msgstr "ID del taller y QR"
 
+msgid "Workshop Intake"
+msgstr "Recepción del taller"
+
 msgid "Workshop Manager"
 msgstr "Gerente del taller"
 
@@ -1038,6 +1098,9 @@ msgstr "Año"
 
 msgid "Yes"
 msgstr "Sí"
+
+msgid "You do not have permission to access the workshop intake."
+msgstr "No tienes permiso para acceder a la recepción del taller."
 
 msgid "You do not have permission to access this page."
 msgstr "No tienes permiso para acceder a esta página."

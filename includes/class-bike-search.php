@@ -98,10 +98,11 @@ class Bike_Search {
 			}
 
 			$results[] = array(
-				'id'    => $bike->ID,
-				'label' => $label,
+				'id'          => $bike->ID,
+				'internal_id' => $internal_id,
+				'label'       => $label,
 				// jQuery UI autocomplete uses `value` for the input on focus/select.
-				'value' => $label,
+				'value'       => $label,
 			);
 		}
 
