@@ -1,101 +1,97 @@
-# Tossa Workshop — Front-end Employee Intake Module (Build Plan)
+# Tossa Workshop — Front-end Employee Intake Module (FINAL Build Plan)
 
-**Status:** proposal for review (pre-coding)
-**Author:** Tossa Cycling / Claude Code
+**Status:** approved for build (decisions locked)
+**Author:** Tossa Cycling / Claude Code + ChatGPT review
 **Applies to plugin version:** 1.0.x (adds a new isolated module)
 
-This plan describes a **native front-end intake module** built inside the
-existing `tossa-workshop` plugin. It deliberately reuses the plugin's existing
-architecture (CPTs, factories, search, status engine, notifier, capabilities)
-and does **not** use Gravity Forms for the core intake. Gravity Forms remains a
-candidate only for a future *public* repair-request form, out of scope here.
+A **native front-end intake module** inside the existing `tossa-workshop`
+plugin. Reuses the existing architecture (CPTs, factories, search, status
+engine, notifier, capabilities). **No Gravity Forms** in the core intake
+(Gravity Forms remains a candidate only for a future *public* repair-request
+form, out of scope here).
 
 ---
 
 ## 0. Goal & principles
 
 A fast, mobile-first, app-like screen for shop-floor staff to: identify a bike
-(scan or search) → see who/what/history → decide → create a repair job (or a
-new bike + job) in under ~2 minutes.
+(scan or search) → see who/what/history → warn about any open job → create a
+repair job (or a new bike + job) in under ~2 minutes.
 
-Principles (do not violate):
 - **Reuse, don't duplicate.** All writes go through existing helpers
-  (`Job_Factory`, `ID_Generator`, `QR_Generator`, `Job_Status`, `Field_Kit`,
-  `Notifier`). One source of truth for IDs, sanitization and side effects.
-- **Minimum data now, details later.** Intake captures only what's needed to
-  open the job; mechanics complete the record in admin during inspection.
-- **Authenticated staff only.** No public exposure. PII never leaks.
-- **Isolated.** The module is additive; the plugin must function fully with it
-  removed/disabled.
+  (`Job_Factory`, `Bike_Factory`, `ID_Generator`, `QR_Generator`, `Job_Status`,
+  `Field_Kit`, `Notifier`). One source of truth for IDs, sanitization, side
+  effects, and **status slugs**.
+- **Minimum data now, details later.** Mechanics complete the record in admin
+  during inspection.
+- **Authenticated staff only.** No public exposure; PII never leaks.
+- **Capability-based, never role-name-based.** Gate every action on an existing
+  capability.
+- **Isolated.** Additive; the plugin functions fully with the module removed.
 
 ---
 
 ## 1. Scope
 
-### In scope (this module)
-- Protected `/workshop-intake/` front-end route.
-- Find a bike: manual search (reusing `Bike_Search` AJAX) + entry by internal ID;
-  arrival pre-loaded via `?bike=TCB-…` (from a QR scan).
-- Bike card: core details, **open-job warning**, last N jobs.
-- Create a repair job from an existing bike (short form) → `received`.
-- Create a new bike + job when none exists (short form) — requires a new
-  `Bike_Factory`.
+### In scope
+- Protected `/workshop-intake/` front-end route (standalone, app-like).
+- Find a bike: manual search (reusing `Bike_Search` AJAX) + arrival pre-loaded
+  via `?bike=TCB-…` from a QR scan.
+- Bike card: core details, **open-job warning**, last 3 jobs + full-history link.
+- Create a repair job from an existing bike (short form) → `received`, with an
+  optional "send received email" toggle.
+- Create a new bike + job when search finds nothing — requires new `Bike_Factory`.
 - Confirmation screen with next actions.
-- Optional setting to repoint logged-in QR scans to intake.
+- Setting to repoint logged-in QR scans to intake (default on).
 
-### Out of scope (v1 — deferred to phase 2 / later)
-- In-browser camera QR scanning (`html5-qrcode`). Native phone camera scanning
-  the printed QR already lands staff on intake.
-- Photo upload on the front end (capability + media-frame complexity — see §5.3).
+### Out of scope (v1; later phases)
+- In-browser camera QR scanning (`html5-qrcode`) — Phase 3.
+- Photo upload — Phase 2 (controlled uploader, see §5.3).
 - Editing the full bike profile from intake (use the admin screen).
-- Public/customer repair-request form (possible Gravity Forms use, separate).
+- Public/customer repair-request form (possible Gravity Forms, separate project).
 
 ---
 
 ## 2. Architecture decisions (fixed)
 
-- **Native, in-plugin module.** No Gravity Forms in the core intake.
-- **Standalone rendering** (like the M4 client page), not a theme template, to
-  avoid theme CSS conflicts and get the app-like feel. We control a minimal
-  HTML shell + our own CSS/JS.
-- **No new data model.** Bikes and jobs stay as the existing CPTs + meta. The
-  module is a UI/orchestration layer.
-- **Writes via admin-post.php** (logged-in users), so handlers run before output
-  and redirects (PRG) work — same pattern as `Fleet_Check` and the notifications
-  page. The page render is a front-end rewrite route.
-- **i18n via gettext** (site/admin locale). Intake is staff-facing, so unlike the
-  client status page it does not need per-recipient language switching. ES
-  catalog updated as usual.
+- Native, in-plugin module. No Gravity Forms in the core intake.
+- **Standalone rendering** (like the M4 client page) — no theme header/footer,
+  minimal own CSS/JS, app-like, no theme CSS conflicts.
+- **No new data model.** Existing CPTs + meta.
+- **Writes via `admin-post.php`** (logged-in), so handlers run before output and
+  PRG redirects work — same pattern as `Fleet_Check`. Page render is a
+  front-end rewrite route.
+- **i18n via gettext** (site/admin locale; staff-facing). ES catalog updated.
+- **No new capabilities.** Reuse existing caps (see §3).
 
 ---
 
 ## 3. Routing & access control
 
-### Route
-- `GET /workshop-intake/` → query var `tcw_intake=1` (rewrite rule, same pattern
-  as `/workshop-scan/` and `/workshop-status/`). Reserved slug.
+### Routes
+- `GET /workshop-intake/` → query var `tcw_intake=1` (rewrite rule; reserved slug,
+  alongside `/workshop-scan/` and `/workshop-status/`).
 - `GET /workshop-intake/?bike=TCB-000123` → pre-load that bike's card.
-- Search: reuse the existing AJAX endpoint `wp_ajax_tcw_bike_search`
-  (`Bike_Search`) — already cap-checked (`tcw_view_bikes`) and nonce-protected.
-- Writes: `POST wp-admin/admin-post.php`
+- Search: reuse `wp_ajax_tcw_bike_search` (`Bike_Search`) — already cap-checked
+  (`tcw_view_bikes`) and nonce-protected.
+- Writes (admin-post, logged-in):
   - `action=tcw_intake_create_job`
   - `action=tcw_intake_create_bike` (bike + job)
 
-Rewrite flush: the new rule registers on `init`; the existing version-based
-`maybe_flush` (bump `TCW_VERSION`) persists it on the next admin load. Activator
-also registers it before its flush for fresh installs.
+Rewrite flush: rule registers on `init`; the existing version-based `maybe_flush`
+(bump `TCW_VERSION`) persists it; the activator registers it before its flush for
+fresh installs.
 
-### Access control
-- **Not logged in** → `auth_redirect()` (WordPress login, returns to intake).
-- **Logged in, no permission** → polite refusal page ("You do not have
-  permission to access the workshop intake.").
-- Capability gates:
-  - View intake + search + bike card: **`tcw_view_bikes`**.
-  - Create job from existing bike: **`tcw_edit_jobs`**.
-  - Create new bike: **`tcw_edit_bikes`** (so the "new bike" form/CTA only shows
-    to Front Desk / Manager; Mechanic can still scan, view and create jobs).
-- Every POST: `wp_verify_nonce` (action-scoped) **and** the matching capability,
-  re-checked server-side. Client input never trusted beyond the post ID + nonce.
+### Access control (capability-based, **no new caps**)
+- Not logged in → `auth_redirect()` (login, returns to intake).
+- Logged in, lacks `tcw_view_bikes` → polite refusal page.
+- **View / search / bike card / create job:** `tcw_edit_jobs`
+  (Manager, Front Desk, **and Mechanic** — per owner decision, mechanics may
+  create jobs; open-job dedup guards duplicates).
+- **Create new bike (Mode 3):** `tcw_edit_bikes` (Manager + Front Desk only —
+  Mechanic lacks this cap, so the "create new bike" path is hidden for them).
+- Every POST: action-scoped `wp_verify_nonce` **and** the matching capability,
+  re-checked server-side.
 
 | Role | Scan/search/view | Create job | Create new bike |
 | --- | --- | --- | --- |
@@ -103,61 +99,68 @@ also registers it before its flush for fresh installs.
 | Front Desk | ✓ | ✓ | ✓ |
 | Mechanic | ✓ | ✓ | ✗ |
 
+> No `tcw_create_jobs` / `tcw_create_bikes` capabilities are introduced. The
+> existing `tcw_edit_jobs` / `tcw_edit_bikes` already encode the desired
+> separation. If policy later changes to block mechanics from creating jobs, add
+> a single `tcw_create_jobs` cap then — not now.
+
 ---
 
 ## 4. New classes / files
 
 ```
-includes/class-intake-page.php      Intake_Page  — route, render (modes), assets
+includes/class-intake-page.php      Intake_Page    — route, render (modes), assets
 includes/class-intake-actions.php   Intake_Actions — admin-post handlers (POST)
-includes/class-bike-factory.php     Bike_Factory — programmatic bike creation (NEW, see §5)
-assets/js/intake.js                 search/autocomplete, UI, sticky submit
+includes/class-bike-factory.php     Bike_Factory   — programmatic bike + ID/QR (NEW, §5)
+assets/js/intake.js                 search, UI, sticky submit
 assets/css/intake.css               mobile-first app-like styling
 ```
 
 Registered in `Plugin::run()`:
 ```php
-Intake_Page::instance()->register_hooks();      // front-end route + assets
-if ( is_admin() ) { /* admin-post handlers register on every load anyway */ }
-Intake_Actions::instance()->register_hooks();   // admin_post_* (logged-in)
+Intake_Page::instance()->register_hooks();     // front-end route + assets
+Intake_Actions::instance()->register_hooks();  // admin_post_* (logged-in only)
 ```
 
-Reused as-is: `Bike_Search`, `Job_Factory`, `Job_Status`, `Job_Status_Taxonomy`,
-`ID_Generator`, `QR_Generator`, `Field_Kit`, `Bike_Fields`, `Repair_Job_Fields`,
-`Notifier`, `Client_Status_Page::url()`, `Settings_Page`, `Roles`.
+Reused as-is: `Bike_Search`, `Job_Factory`, `Job_Status`,
+`Job_Status_Taxonomy`, `ID_Generator`, `QR_Generator`, `Field_Kit`,
+`Bike_Fields`, `Repair_Job_Fields`, `Notifier`, `Client_Status_Page::url()`,
+`Settings_Page`, `Roles`.
 
 ---
 
-## 5. `Bike_Factory` (the gap that must be filled first)
+## 5. `Bike_Factory` (build & test FIRST)
 
-Today, a bike's `internal_id` + QR are generated only on the **admin save_post**
-path (nonce-gated). A programmatic `wp_insert_post` will NOT mint `TCB-…`/`TCF-…`
-or the QR. Mode 3 (create new bike) therefore needs a factory mirroring
-`Job_Factory`.
+Bikes currently get `internal_id` + QR only on the admin `save_post` path
+(nonce-gated). A programmatic `wp_insert_post` will **not** mint them. Mode 3
+needs a factory mirroring `Job_Factory`. **No intake UI work begins until
+`Bike_Factory` is implemented and unit-tested.**
 
 ### 5.1 API
 ```php
-Bike_Factory::create( array $args ): int   // returns bike post ID, or 0
+Bike_Factory::create( array $args ): int   // bike post ID, or 0 on failure
 ```
-`$args` (minimal): `bike_type` (customer|fleet), `brand`, `model`, and optional
-`owner_name/email/phone/owner_language`, `category`, `frame_size`, `color`,
-`serial_number`, `rental_category` (fleet).
+`$args` minimal: `bike_type` (customer|fleet), `brand`, `model`; optional
+`owner_name/owner_email/owner_phone/owner_language`, `category`, `frame_size`,
+`color`, `serial_number`, `rental_category` (fleet).
 
-### 5.2 Behaviour (mirrors `Job_Factory::create_for_bike`)
-1. `wp_insert_post` (publish), title temporary.
-2. Persist the provided fields via `Field_Kit::sanitize()` per `Bike_Fields`
-   definitions (one source of truth).
+### 5.2 Behaviour (mirrors `Job_Factory`)
+1. `wp_insert_post` (publish), temp title.
+2. Persist provided fields via `Field_Kit::sanitize()` keyed by `Bike_Fields`
+   definitions (one source of truth — same sanitization as the admin form).
 3. `internal_id = ID_Generator::generate_bike_id( $type, $rental_category )`.
 4. `qr_attachment_id = QR_Generator::generate_for_bike( $id, $internal_id )`.
-5. Set readable title `"{brand} {model} ({internal_id})"`.
+5. Title `"{brand} {model} ({internal_id})"`.
 6. Return ID.
 
 ### 5.3 Photo note
-Front-end `wp.media` needs the `upload_files` capability, which the workshop
-roles do **not** have. **v1 intake omits photo upload** (or a single basic
-`<input type=file>` gated behind `upload_files` if a role is granted it later).
-Photos are added on the admin screen at inspection. This keeps intake fast and
-avoids widening the upload surface. (Open question Q3.)
+- **Phase 1: no photo upload** at intake.
+- **Phase 2: a controlled uploader** — a plain `<input type="file">` →
+  `wp_handle_upload` + `wp_insert_attachment`, gated by our own `tcw_edit_jobs`
+  check, image-only, size-limited, attached to the job, IDs stored in
+  `intake_photos`. **No `upload_files` grant needed** (only the JS `wp.media`
+  frame requires that cap — we don't use it). Photos otherwise added on the
+  admin screen at inspection.
 
 ---
 
@@ -166,27 +169,27 @@ avoids widening the upload surface. (Open question Q3.)
 Standalone HTML shell (header = shop name, minimal CSS). Three modes:
 
 ### Mode 1 — Find bike
-- Big "Scan QR" hint (native camera in v1) + a large search box.
-- Search via `Bike_Search` AJAX: internal ID, serial, owner name/email/phone,
-  brand/model. Mobile-friendly results list; selecting one loads Mode 2.
+Big "Scan QR" hint (native phone camera in v1) + a large search box.
+`Bike_Search` AJAX: internal ID, serial, owner name/email/phone, brand/model.
+Selecting a result loads Mode 2.
 
 ### Mode 2 — Bike found (card)
-Shows (staff only): internal ID, brand/model, category, size, type
-(customer/fleet), owner name/phone/email/language, serial.
-- **Open-job warning** (see §7): if an active job exists, show it prominently
-  with "Open existing job" vs "Create another anyway".
-- Last 3 jobs (job_id, status, date).
-- Actions: **Create repair job** · Edit in admin · Print label.
+Staff-only details: internal ID, brand/model, category, size, type, owner
+name/phone/email/language, serial.
+- **Open-job warning** (§7), prominent, with "Open existing job" vs "Create
+  another anyway".
+- **Last 3 jobs** (job_id, status, date) + **"View full history"** link.
+- Actions: **Create repair job** · **Edit in admin** · **Print label**.
 
-### Mode 3 — Bike not found
-- "Create new bike + repair job" → short combined form (Bike_Factory then
-  Job_Factory). Required-only fields per §5.1 + problem description, priority.
+### Mode 3 — Bike not found (only after a search returns nothing)
+"Create new bike + repair job" → short combined form (`Bike_Factory` then
+`Job_Factory`). Required-only fields per §5.1 + problem description, priority.
+Mode 3 is **never shown before a search** — this is the primary duplicate guard.
 
 ### Create-job form (from existing bike)
-Compact subset: `problem_description`, `client_notes`,
-`bike_condition_on_arrival`, `priority`, `promised_completion`,
-`assigned_mechanic`, and a **"Send received email?"** toggle. (Accessories /
-visible damage optional — keep short.)
+Compact: `problem_description`, `client_notes`, `bike_condition_on_arrival`,
+`priority`, `promised_completion`, `assigned_mechanic`, and a **"Send received
+email?" toggle (default checked)**.
 
 ### Confirmation screen
 ```
@@ -198,107 +201,126 @@ Repair job created — TCW-2026-0052  (Bike TCB-000123)
 
 ---
 
-## 7. Open-job dedup (high value)
+## 7. Open-job dedup (essential)
 
-Before/at the bike card, query repair jobs linked to the bike whose status is
-**not** in `{delivered, closed, cancelled, declined}` (i.e. still active). If any
-exist, surface the most recent with a clear warning and a one-tap link to open
-it, plus an explicit "create another anyway". Prevents duplicate jobs — the most
-common workshop floor error.
+Active job = a job linked to the bike whose status is **NOT** in the closed set.
 
-Implementation: `WP_Query` on `tcw_repair_job` with `meta_query bike_id = X` and
-a `tax_query` excluding the closed-set statuses (or fetch + filter in PHP).
+Real status slugs (underscores) from `Job_Status_Taxonomy::status_slugs()`:
+```
+received, inspected, waiting_approval, approved, waiting_parts, parts_arrived,
+in_repair, quality_check, ready, delivered, closed, declined, cancelled
+```
+Closed/terminal set (exclude from "active"): `delivered, closed, cancelled,
+declined`. Everything else counts as an open job.
 
----
+On the bike card, query `tcw_repair_job` with `meta_query bike_id = X` and a
+`tax_query` excluding the closed set. If any active job exists, show the most
+recent with a warning + "Open existing job" and an explicit "Create another
+anyway". Prevents the classic "same bike, two open jobs" mistake.
 
-## 8. Security checklist
-
-- Front-end route renders nothing without `is_user_logged_in()` +
-  `current_user_can('tcw_view_bikes')`.
-- All POST writes: action-scoped nonce + capability re-check; sanitize every
-  field via `Field_Kit`; escape all output.
-- Status always set server-side via `Job_Status::set()` (client can't choose
-  arbitrary status).
-- `?bike=` is treated as a lookup key only; bike resolved by `internal_id` meta,
-  output escaped.
-- No PII in any non-authenticated path (intake is fully gated; public scan page
-  behaviour unchanged).
-- admin-post handlers `wp_safe_redirect` + `exit` (PRG; no double submit).
+> Implementation must use the exact underscore slugs above — never hyphenated
+> variants — to avoid creating phantom statuses.
 
 ---
 
-## 9. Scan-redirect setting (phase 2)
+## 8. "Send received email?" toggle — exact behaviour
 
-New setting `scan_destination ∈ { intake, admin }`, default **intake**.
-- `Scan_Router`: logged-in + `tcw_view_bikes` → redirect to
+The toggle suppresses **only the client email**. It must NOT suppress job
+creation, the `received` status, or the status-history/audit entry.
+
+Mechanism (request-scoped, not global):
+- `Job_Factory::create_for_bike( $bike_id, $problem, $status = 'received', $notify = true )`.
+- When `$notify === false`, wrap the internal `Job_Status::set()` call:
+  ```php
+  add_filter( 'tcw_send_client_notification', '__return_false' );
+  Job_Status::set( $job_id, 'received', get_current_user_id() );
+  remove_filter( 'tcw_send_client_notification', '__return_false' );
+  ```
+- `Notifier::on_status_changed()` gains one guard:
+  ```php
+  if ( false === apply_filters( 'tcw_send_client_notification', true, $job_id, $to ) ) {
+      return;
+  }
+  ```
+Result: status changes, history is written, the `tcw_job_status_changed` action
+still fires (future listeners unaffected) — only the email is skipped.
+
+---
+
+## 9. Scan-redirect setting (Phase 2)
+
+New setting `scan_destination ∈ { intake, admin }`, **default `intake`**.
+- `Scan_Router`: logged-in + `tcw_view_bikes` →
   `/workshop-intake/?bike={internal_id}` (default) or the admin edit screen.
-- Bike card always offers "Edit in admin", so nothing is lost.
-- Public/unauthenticated scan behaviour is **unchanged** (minimal no-PII page).
+- Bike card always offers **"Edit in admin"**, so nothing is lost.
+- **Public/unauthenticated scan behaviour is unchanged** (minimal no-PII page).
 
 ---
 
 ## 10. Internationalization
-
 - All UI strings via `__()`/`esc_html__()` (text domain `tossa-workshop`).
-- Full ES translation added to the existing catalog (`tools/i18n-extract.php`
-  + `tools/build-translations.php`), as with every milestone.
-- Staff see the site/admin locale (ES on this install).
+- Full ES translation added via `tools/i18n-extract.php` +
+  `tools/build-translations.php`, as every milestone.
 
 ---
 
 ## 11. Phasing & acceptance criteria
 
-### Phase 1 — Core intake (highest daily ROI)
-1. `Bike_Factory` (+ unit test for ID/QR/title generation).
-2. `/workshop-intake/` route, auth + capability gating, standalone shell.
+### Phase 1 — Core intake
+1. `Bike_Factory` (+ unit test: ID/QR/title/sanitized meta == admin-created).
+2. `/workshop-intake/` route, auth + `tcw_view_bikes`/`tcw_edit_jobs` gating,
+   standalone shell.
 3. Mode 1 search (reuse `Bike_Search`) + Mode 2 bike card with **open-job
-   warning** + last 3 jobs.
+   warning** + last 3 jobs + full-history link.
 4. Create job from existing bike → `Job_Factory::create_for_bike()` + extra
-   fields + optional received email → confirmation screen.
+   fields + the "send received email" toggle (§8) → confirmation screen.
 
-*Accept:* a logged-in Front Desk user can open `/workshop-intake/`, search a
-bike by serial/owner phone, see its card + any open job, create a job that gets
-`TCW-…`, inherits client contact, lands in `received`, optionally emails the
-client, and reaches the confirmation screen. Logged-out → login; no-cap →
-refusal. Plugin still works with the module disabled.
+*Accept:* a logged-in Front Desk **or Mechanic** user opens `/workshop-intake/`,
+searches a bike by serial/owner phone, sees its card + any open job, creates a
+job that gets `TCW-…`, inherits client contact, lands in `received`, optionally
+emails the client (toggle), and reaches confirmation. Logged-out → login;
+lacks `tcw_view_bikes` → refusal. Plugin still works with the module disabled.
 
-### Phase 2 — New bike, scan redirect, polish
+### Phase 2 — New bike, scan redirect, polish, dedup-on-create
 5. Mode 3 create new bike + job (`Bike_Factory` + `Job_Factory`), gated by
-   `tcw_edit_bikes`.
-6. `scan_destination` setting; repoint logged-in scans to intake.
-7. Mobile UX polish: sticky submit, big touch targets, "Copy WhatsApp message".
+   `tcw_edit_bikes`; shown only after a search returns nothing.
+6. **Duplicate-bike warning** when creating: if the entered phone/email/serial
+   already matches an existing bike, warn (non-blocking) with the match.
+7. `scan_destination` setting; repoint logged-in scans to intake.
+8. Controlled photo uploader (§5.3). Mobile polish: sticky submit, big targets,
+   "Copy WhatsApp message".
 
 ### Phase 3 — Optional
-8. In-browser camera scanning (`html5-qrcode`, lazy-loaded).
-9. Front-end photo upload (only if a role is granted `upload_files`).
+9. In-browser camera scanning (`html5-qrcode`, lazy-loaded).
 
 ---
 
-## 12. Open questions for review (ChatGPT)
+## 12. Resolved decisions (was: open questions)
 
-- **Q1.** Scan redirect default — switch logged-in scans to intake by default,
-  or keep admin-edit as default and make intake opt-in? (Plan assumes intake
-  default + "Edit in admin" button.)
-- **Q2.** Should Mechanics be able to create **new bikes** from intake, or is
-  that strictly Front Desk / Manager? (Plan: Front Desk / Manager only.)
-- **Q3.** Photo upload at intake — defer to admin (plan's choice), grant
-  `upload_files` to workshop roles, or use a lightweight direct uploader?
-- **Q4.** "Send received email?" — should the toggle suppress just that one
-  notification while still firing the status-changed audit action? (Needs a
-  small per-request suppression hook in `Notifier`; design detail to confirm.)
-- **Q5.** How many recent jobs on the card — 3 (plan) or more?
-- **Q6.** Standalone page vs theme-wrapped — plan picks standalone for speed/
-  isolation; confirm that's acceptable (no theme header/footer).
+- **Q1 scan default:** `intake` (with "Edit in admin" on the card). Public scan
+  unchanged.
+- **Q2 mechanics create new bikes:** **No** — gated by `tcw_edit_bikes`
+  (Manager/Front Desk only). No new cap.
+- **Q2b mechanics create jobs:** **Yes** — gated by `tcw_edit_jobs` (owner
+  decision). No new cap.
+- **Q3 photos:** none in Phase 1; controlled uploader in Phase 2 (no
+  `upload_files` grant).
+- **Q4 send-email toggle:** suppresses only the email via the
+  `tcw_send_client_notification` filter; status/history/action preserved.
+  Default checked.
+- **Q5 recent jobs:** last 3 + "View full history".
+- **Q6 rendering:** standalone, no theme header/footer.
+- **Extra:** force search before "create new bike"; duplicate-bike warning in
+  Phase 2.
 
 ---
 
 ## 13. Verification approach
-
-Consistent with the rest of the build (no WP runtime in the dev container):
 - `php -l` + `node --check`.
-- Standalone unit tests for pure logic: `Bike_Factory` ID/QR/title, open-job
-  query filter, capability matrix helper.
-- WP-stub activation smoke test extended to load the new classes/route.
+- Unit tests (no WP runtime): `Bike_Factory` (ID/QR/title/meta), open-job query
+  filter (correct slug set), capability matrix helper, send-email suppression
+  filter.
+- WP-stub activation smoke extended to load the new classes/route.
 - Per-phase high-effort code review before commit.
 - Real activation/scan/create-flow tested on staging by Tossa.
 ```
