@@ -300,6 +300,12 @@ class Intake_Page {
 		if ( Repair_Job_CPT::POST_TYPE !== get_post_type( $job_id ) ) {
 			return;
 		}
+		// Only show the panel (which exposes the client token/contact) for a job
+		// this user can edit — same bar as the admin job screen. Prevents
+		// harvesting tokens by enumerating arbitrary ?created= IDs.
+		if ( ! current_user_can( 'edit_post', $job_id ) ) {
+			return;
+		}
 		$job_number = get_post_meta( $job_id, 'job_id', true );
 		$bike_id    = (int) get_post_meta( $job_id, 'bike_id', true );
 		$internal   = $bike_id ? get_post_meta( $bike_id, 'internal_id', true ) : '';
